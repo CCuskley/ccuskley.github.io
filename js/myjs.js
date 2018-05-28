@@ -217,12 +217,12 @@ $(document).ready(function() {
 
 	$("#rdGoToPubs").click(function() {
 		$("#goPub").click();
-		$("#ssSelect").click();
+		$("#rdSelect").click();
 	});
 
 	$("#egGoToPubs").click(function() {
 		$("#goPub").click();
-		$("#ssSelect").click();
+		$("#egSelect").click();
 	});
 
 	$(".moretest").click(function() {
