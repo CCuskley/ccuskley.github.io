@@ -151,7 +151,8 @@ border-radius:.25rem;
 
 .flip-container {
 	min-height:300px;
-	min-width:200px;
+	max-height:300px;
+	min-width:300px;
 	padding-bottom:20px;
 	/*width: 320px;
 	height: 480px;*/
