@@ -139,6 +139,8 @@ border-radius:.25rem;
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
+	padding-left:5px;
+	padding-right:5px;
 }
 	/* flip the pane when hovered */
 /*.flip-container:hover .flipper, .flip-container.hover .flipper {
