@@ -1,0 +1,192 @@
+body {
+	font-family:'Raleway';
+}
+
+section {
+	padding-top:10vh;
+}
+
+.teachCard {
+	min-width:300px;
+}
+.paperCitation {
+	margin-bottom:0px;
+}
+
+.pubContainer {
+	margin-bottom:1vh;
+}
+
+.nav-link {
+	font-variant:small-caps;
+	font-size:15px;
+}
+
+.pubCard {
+	padding-bottom:5px;
+}
+
+#research {
+	padding-top: 10vh;
+}
+
+.top-button {
+	font-size:18px !important;
+}
+
+#projects {
+	min-height:500px;
+	padding-top:80px;
+}
+
+
+.projTitle {
+	font-family:'Raleway';
+	margin-top:30%;
+}
+
+.card-img-overlay {
+	height:15rem;
+}
+
+#ssImage {
+border-radius:.25rem;
+  background:
+	  linear-gradient(
+	    rgba(0, 0, 0, 0.5),
+	    rgba(0, 0, 0, 0.5)
+	  ),
+	  url('../img/soundsymbolism.png');
+	background-size:cover;	
+
+}
+
+.card-body {
+	font-size:13px;
+	line-height:13px;
+}
+#rdImage {
+	border-radius:.25rem;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('../img/3state.png');
+  background-size:cover;	
+}
+#gameImage {
+	border-radius:.25rem;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('../img/ComplexCell.png');
+  background-size:cover;	
+}
+#hobbyImage {
+	border-radius:.25rem;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('../img/hobbies.jpg');
+  background-size:cover;	
+}
+
+.pub-icon {
+
+	font-size:20px;
+}
+
+.pocket-logo {
+  background: url(get-pocket.svg);
+}
+
+.jssocials-share {
+	font-size:10px;
+}
+
+
+
+#subHeader1, #subHeader2 {
+	margin-bottom:5px;
+	line-height:12px;
+}
+
+.btn-proj {
+	background:transparent;
+}
+
+.paperTitle {
+	font-family:'Open Sans',sans-serif;
+	font-weight:bold;
+	color:black;
+	font-size:18px;
+}
+
+.paperCitation {
+	font-family:'Open Sans',sans-serif;
+	color:grey;
+	font-size:12px;
+	line-height:15px;
+}
+
+/*Flipper*/
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+/*.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}*/
+
+#ssReverse, #rdReverse,#egReverse, #hbReverse {
+	padding:5px;
+}
+
+.flip-container {
+	min-height:300px;
+	min-width:200px;
+	padding-bottom:20px;
+	/*width: 320px;
+	height: 480px;*/
+}
+
+.front, .back {
+	width:100%;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+
+}
+
+/* back, initially hidden pane */
+.back {
+	/*transform: rotateY(180deg);*/
+}
