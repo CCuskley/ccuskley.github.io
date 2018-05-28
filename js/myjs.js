@@ -159,7 +159,7 @@ $(document).ready(function() {
 			//hide others
 			$('.rd').slideUp();
 			$('.eg').slideUp();
-			$('.none').slideToggle();
+			$('.none').slideUp();
 			//show this
 			$('.ss').slideDown();
 			$(this).removeClass('btn-light').addClass('btn-default')
@@ -178,7 +178,7 @@ $(document).ready(function() {
 			//hide others
 			$('.ss').slideUp();
 			$('.eg').slideUp();
-			$('.none').slideToggle();
+			$('.none').slideUp();
 			//show this
 			$('.rd').slideDown();
 			$(this).removeClass('btn-light').addClass('btn-default')
@@ -196,7 +196,7 @@ $(document).ready(function() {
 			//hide others
 			$('.rd').slideUp();
 			$('.ss').slideUp();
-			$('.none').slideToggle();
+			$('.none').slideUp();
 			//show this
 			$('.eg').slideDown();
 			$(this).removeClass('btn-light').addClass('btn-default')
