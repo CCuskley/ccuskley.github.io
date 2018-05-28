@@ -236,6 +236,18 @@ $(document).ready(function() {
 	$(function () {
   		$('[data-toggle="tooltip"]').tooltip()
 	})
+	var hobbiesShowing=false;
+	$("#toggleHobbies").click(function() {
+		$(".hobbyInfo").slideToggle();
+		if (hobbiesShowing) {
+			$(this).removeClass('btn-default').addClass('btn-light')
+			hobbiesShowing=false;
+		} else {
+			$(this).removeClass('btn-light').addClass('btn-default')
+			hobbiesShowing=true;
+
+		}
+	})
 
 });
 
