@@ -12,7 +12,7 @@
 	},
 */
 
-var pubTemplate ='<div class="card pubContainer element-item %CATEGORY"><div class="card-header"><h5 class="paperTitle align-middle">%SUMMARY</h5></div><div class="card-body pubCard"><a href="%PUBDL" target="_blank"><p class="paperCitation"><i class="pub-icon fa fa-download"></i>&nbsp %FULLCITATION</p></a><div class="shareBar" id="%SHAREID_inner" style="top:-10px"></div></div></div>'
+var pubTemplate ='<div class="card pubContainer element-item %CATEGORY"><div class="card-header"><a href="%EXTLINK"><h5 class="paperTitle align-middle">%SUMMARY</h5></a></div><div class="card-body pubCard"><a href="%PUBDL" target="_blank"><p class="paperCitation"><i class="pub-icon fa fa-download"></i>&nbsp %FULLCITATION</p></a><div class="shareBar" id="%SHAREID_inner" style="top:-10px"></div></div></div>'
 var ssFlipped =false;
 var rdFlipped=false;
 var gameFlipped=false;
@@ -78,8 +78,9 @@ $(document).ready(function() {
 		var thisPub=pubTemplate.replace("%SUMMARY",output.summary)
 		thisPub=thisPub.replace("%FULLCITATION",output.reference)
 		thisPub=thisPub.replace("%PUBDL",output.dllink)
-		thisPub=thisPub.replace("%SHAREID",output.id)
-		thisPub=thisPub.replace("%CATEGORY",output.category)
+		thisPub=thisPub.replace("%SHAREID",output.id)//
+		thisPub=thisPub.replace("%CATEGORY",output.category)//
+		thisPub=thisPub.replace("%EXTLINK",output.sharelink)
 		console.log(output.title,output.dllink)
 		
 		if (output.type=="article") {

@@ -33,7 +33,7 @@ var mypubs = [
 	{
 		"reference":"Cuskley, C., Colaiori, F., Castellano, C., Loreto, V., Pugliese, M., and Tria, F. (2015). The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task.  Journal of Memory and Language, 84, 205-223.",
 		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0749596X15000790",
-		"link": "preprints/Cuskley_etal2015b.pdf",
+		"dllink": "preprints/Cuskley_etal2015b.pdf",
 		"title":"The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task",
 		"id":"Cuskley_etal2015b",
 		"summary":"Non-native English speakers are more likely to irregularise novel verbs.",
