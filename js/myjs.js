@@ -12,7 +12,7 @@
 	},
 */
 
-var pubTemplate ='<div class="card pubContainer element-item %CATEGORY"><div class="card-header"><a href="%EXTLINK"><h5 class="paperTitle align-middle">%SUMMARY</h5></a></div><div class="card-body pubCard"><a href="%PUBDL" target="_blank"><p class="paperCitation"><i class="pub-icon fa fa-download"></i>&nbsp %FULLCITATION</p></a><div class="shareBar" id="%SHAREID_inner" style="top:-10px"></div></div></div>'
+var pubTemplate ='<div class="card pubContainer element-item %CATEGORY"><div class="card-header"><a href="%EXTLINK" target="_blank"><h5 class="paperTitle align-middle">%SUMMARY</h5></a></div><div class="card-body pubCard"><a href="%PUBDL" target="_blank"><p class="paperCitation"><i class="pub-icon fa fa-download"></i>&nbsp %FULLCITATION</p></a><div class="shareBar" id="%SHAREID_inner" style="top:-10px"></div></div></div>'
 var ssFlipped =false;
 var rdFlipped=false;
 var gameFlipped=false;
