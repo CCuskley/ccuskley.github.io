@@ -32,20 +32,20 @@ function preload() {
     }
     nameList.push(thisWord);
   }
-  agentMax=(PI*(550/8)*2)/12;
+  agentMax=(PI*(1100/8)*2)/12;
   
 }
-var innerWidth = 550;
+var innerWidth = 1000;
 var cnv;
 function setup() {
-  cnv = createCanvas(750,550);
-  cnv.position(325,175)
+  cnv = createCanvas(1500,1000);
+  //cnv.position(325,175)
   //cnv.parent("sketch-holder")
   colorMode(HSB, 360,100,100);
   background(0,0,100);
   textSize(10);
   lgRad=innerWidth/8;
-  cx=((innerWidth-innerWidth/4)/2);
+  cx=((innerWidth-innerWidth/4)/2)+30;
   cy=((height-height/4)/2);
   bottomY=cy+height/3;
   popul=[];
@@ -57,17 +57,17 @@ function setup() {
   startFrame=0;
   frameSlider=createSlider(5,65,35);
   frameSlider.size(width/10);
-  frameSlider.position(325+innerWidth-75,cy-(height/3)+15+175);
+  frameSlider.position(innerWidth-75,cy-(height/3)+15);
   agentSlider=createSlider(5,30);
   agentSlider.size(width/10);
-  agentSlider.position(325+innerWidth-75,175+75);
+  agentSlider.position(innerWidth-75,100);
   meaningSlider=createSlider(1,11);
   meaningSlider.size(width/10);
-  meaningSlider.position(325+innerWidth-75,175+110);
+  meaningSlider.position(innerWidth-75,150);
   meaningSlider.value(L);
   agentSlider.value(N);
   resetButton=createButton("Restart");
-  resetButton.position(325+innerWidth-75,175+130);
+  resetButton.position(innerWidth-75,200);
   resetButton.mousePressed(resetSim);
 }
 
@@ -75,7 +75,7 @@ function draw() {
   frameRate(frameSlider.value());
   fill(0,0,100);
   noStroke();
-  rect(0,0,700,height-5-height/4)
+  rect(0,0,width,10+height-height/4)
   var s= randInt(0,N-1);
   var h= randInt(0,N-1);
   var t= randInt(0,L-1);
@@ -111,12 +111,12 @@ function draw() {
   }
   fill(0);
   textAlign(LEFT);
-  textSize(15)
+  textSize(20)
   text("Interaction Rate",innerWidth-100,cy-(height/3)+7);
-  text("Meanings", innerWidth-100,105);
-  text("Agents", innerWidth-100,70);
-  text(meaningSlider.value(),innerWidth,113);
-  text(agentSlider.value(), innerWidth,78);
+  text("Meanings", innerWidth-100,140);
+  text("Agents", innerWidth-100,90);
+  text(meaningSlider.value(),innerWidth+70,140);
+  text(agentSlider.value(), innerWidth+70,90);
   if (frameCount-startFrame>tMax) {
     resetSim();
   }
@@ -176,17 +176,17 @@ function avgBar(rate) {
   var graphTop=height-height/4;
   var graphBottom=height-20;
   line(20,graphTop,20,graphBottom+2);
-  line(20,graphBottom+2,450,graphBottom+2);
+  line(20,graphBottom+2,750,graphBottom+2);
   noStroke()
-  var timeRange=450-20;
+  var timeRange=750-20;
   var timeProp=(frameCount-startFrame)/tMax;
   var thexloc=20+(timeRange*timeProp);
   var sucYRange = graphBottom-graphTop;
   console.log(sucYRange);
   for (var i = 0; i<L; i++) {
-    var theyloc=530-acrossPop[i].successRate*sucYRange;
+    var theyloc=(height-20)-acrossPop[i].successRate*sucYRange;
     fill(meaningHues[i],100,100,60);
-    ellipse(thexloc,theyloc,2,2);
+    ellipse(thexloc,theyloc,4,4);
   }
   var topY = cy-height/3;
   var yrange = bottomY-topY;
@@ -200,8 +200,8 @@ function avgBar(rate) {
   textSize(8);
   textAlign(CENTER);
   var theIntNum=frameCount-startFrame;
-  textSize(15)
-  text("Time (N interactions): "+round(theIntNum/agentSlider.value()),innerWidth-115,bottomY+10);
+  textSize(20)
+  text("Time (N interactions): "+round(theIntNum/agentSlider.value()),innerWidth-115,bottomY+20);
 }
 
 
@@ -389,8 +389,8 @@ function Agent(x,y,vSize, aSize,angl) {
       }
       noStroke();
       textAlign(CENTER);
-      textSize(15);
-      text(wrd, 0,-i*10);
+      textSize(25);
+      text(wrd, 0,-i*20);
     }
     pop();
   }
