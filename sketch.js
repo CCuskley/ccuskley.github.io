@@ -36,8 +36,11 @@ function preload() {
   
 }
 var innerWidth = 550;
+var cnv;
 function setup() {
-  createCanvas(750,550);
+  cnv = createCanvas(750,550);
+  cnv.position(325,175)
+  cnv.parent("sketch-holder")
   colorMode(HSB, 360,100,100);
   background(0,0,100);
   textSize(10);
@@ -54,17 +57,17 @@ function setup() {
   startFrame=0;
   frameSlider=createSlider(5,65,35);
   frameSlider.size(width/10);
-  frameSlider.position(innerWidth-75,cy-(height/3)+15);
+  frameSlider.position(325+innerWidth-75,cy-(height/3)+15+175);
   agentSlider=createSlider(5,30);
   agentSlider.size(width/10);
-  agentSlider.position(innerWidth-75,75);
+  agentSlider.position(325+innerWidth-75,175+75);
   meaningSlider=createSlider(1,11);
   meaningSlider.size(width/10);
-  meaningSlider.position(innerWidth-75,110);
+  meaningSlider.position(325+innerWidth-75,175+110);
   meaningSlider.value(L);
   agentSlider.value(N);
   resetButton=createButton("Restart");
-  resetButton.position(innerWidth-75,130);
+  resetButton.position(325+innerWidth-75,175+130);
   resetButton.mousePressed(resetSim);
 }
 
@@ -109,9 +112,9 @@ function draw() {
   fill(0);
   textAlign(LEFT);
   textSize(15)
-  text("Interaction Rate",innerWidth-100,cy-(height/3)+5);
-  text("Meanings", innerWidth-100,100);
-  text("Agents", innerWidth-100,65);
+  text("Interaction Rate",innerWidth-100,cy-(height/3)+7);
+  text("Meanings", innerWidth-100,105);
+  text("Agents", innerWidth-100,70);
   text(meaningSlider.value(),innerWidth,113);
   text(agentSlider.value(), innerWidth,78);
   if (frameCount-startFrame>tMax) {
