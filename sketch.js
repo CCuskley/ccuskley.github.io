@@ -173,7 +173,7 @@ function avgBar(rate) {
 
   stroke(0,25,25);
   strokeWeight(0.5);
-  var graphTop=height-height/4;
+  var graphTop=(height-height/4)-5;
   var graphBottom=height-20;
   line(20,graphTop,20,graphBottom+2);
   line(20,graphBottom+2,750,graphBottom+2);
