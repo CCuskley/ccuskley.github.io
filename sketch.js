@@ -40,7 +40,7 @@ var cnv;
 function setup() {
   cnv = createCanvas(750,550);
   cnv.position(325,175)
-  cnv.parent("sketch-holder")
+  //cnv.parent("sketch-holder")
   colorMode(HSB, 360,100,100);
   background(0,0,100);
   textSize(10);
