@@ -36,10 +36,10 @@ function preload() {
   agentMax=(PI*(900/8)*2)/12;
   
 }
-var innerWidth = 900;
+var innerWidth = 800;
 var cnv;
 function setup() {
-  cnv = createCanvas(1200,1000);
+  cnv = createCanvas(1000,700);
   //cnv.position(325,175)
   //cnv.parent("sketch-holder")
   colorMode(HSB, 360,100,100);

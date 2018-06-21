@@ -1,7 +1,7 @@
 var matrixD,N,w,h,population;
 
 function setup() {
-  matrixD=20;
+  matrixD=50;
   N=matrixD*matrixD;
   w=600;
   h=600;
@@ -12,7 +12,7 @@ function setup() {
   for (var i=0;i<matrixD;i++) {
     for (var j=0;j<matrixD;j++) {
       var dice=random()
-      if (dice>0.5) {
+      if (dice>0.25) {
         var at="c"
       } else {
         var at="a"
@@ -40,7 +40,7 @@ function draw() {
     population[i].show();
   }
   var s=Math.floor(random(population.length))
-  population[s].updateWinner();
+  population[s].updateSimilar();
   fill(0)
   textSize(20)
   text("t = "+frameCount.toString(),10,h+20)
@@ -76,12 +76,8 @@ function Agent(kind, matrixIndex, locx, locy, hue) {
     return this.hue;
   }
 
-  this.updateBinary = function() {
-    var edges=['l','r','t','b']
-    if (this.kind == "z" ) {
-      //do nothing
-    } else {
-      var posPartners =[];
+  this.getPartners = function() {
+    var posPartners =[];
       var l =this.ind-1;
       var r =this.ind+1;
       var t =this.ind-matrixD;
@@ -105,69 +101,85 @@ function Agent(kind, matrixIndex, locx, locy, hue) {
       if (b<population.length) {
         posPartners.push(b)
       } 
-      var ri = Math.floor(random(posPartners.length))
-      var partnerIndex =posPartners[ri];
-      
-      if (this.kind =="a") {
-        var pHue=population[partnerIndex].giveHue()
-        if (pHue==100) {
-          this.hue=300;
-        } else {
-          this.hue=100;
-        }
-      }
+      return posPartners
+  }
 
-      if (this.kind == "c") {
-        var pHue=population[partnerIndex].giveHue()
-        this.hue=pHue;
-
+  this.updateBinary = function() {
+    var posPartners=this.getPartners()
+    var ri = Math.floor(random(posPartners.length))
+    var partnerIndex =posPartners[ri];
+    if (this.kind =="a") {
+      var pHue=population[partnerIndex].giveHue()
+      if (pHue==100) {
+        this.hue=300;
+      } else {
+        this.hue=100;
       }
     }
-  
+
+    if (this.kind == "c") {
+      var pHue=population[partnerIndex].giveHue()
+      this.hue=pHue;
+
+    }
+  }
+
+  this.updateSimilar = function() {
+
+    var posPartners=this.getPartners()
+    var partDistances=[]
+    for (var i=0;i<posPartners.length;i++) {
+      var partnerHue= population[posPartners[i]].giveHue()
+      var degDist
+      if (partnerHue>=this.hue) {
+        degDist=partnerHue-this.hue;
+      } else {
+        degDist=this.hue-partnerHue
+      }
+
+      if (degDist>=180) {
+        degDist=360-degDist;
+      }
+      partDistances.push(TWO_PI*(degDist/360))
+    }
+
+    var lowest = 0;
+    for (var i = 1; i < partDistances.length; i++) {
+      if (partDistances[i] < partDistances[lowest]) lowest = i;
+    }
+
+    if (this.kind =="a") {
+      var pHue=population[partnerIndex].giveHue()
+      if (pHue==100) {
+        this.hue=300;
+      } else {
+        this.hue=100;
+      }
+    }
+
+    if (this.kind == "c") {
+      this.hue=population[lowest].giveHue()
+    }
+
   }
 
   this.updateWinner =function() {
-    var edges=['l','r','t','b']
-    if (this.kind == "z" ) {
-      //do nothing
-    } else {
-      var posPartners =[];
-      var l =this.ind-1;
-      var r =this.ind+1;
-      var t =this.ind-matrixD;
-      var b=this.ind+matrixD;
-      if (this.ind%matrixD == 0) {
-
-      } else {
-        posPartners.push(l)
-      }
-
-      if ((this.ind+1)%matrixD==0) {
-
-      } else {
-        posPartners.push(r)
-      }
-
-      if(t>=0) {
-        posPartners.push(t)
-      }
-
-      if (b<population.length) {
-        posPartners.push(b)
-      } 
-      var ri = Math.floor(random(posPartners.length))
-      var partnerIndex =posPartners[ri];
+    var posPartners=this.getPartners()
+    var ri = Math.floor(random(posPartners.length))
+    var partnerIndex =posPartners[ri];
       
-      if (this.kind =="a") {
-        var pHue=population[partnerIndex].giveHue()
-        this.hue=pHue-180;
+    if (this.kind =="a") {
+      var newHue=population[partnerIndex].giveHue()-180
+      if (newHue<0) {
+        this.hue=360+newHue
+      } else {
+        this.hue=newHue;
       }
+    }
 
-      if (this.kind == "c") {
-        var pHue=population[partnerIndex].giveHue()
-        this.hue=pHue;
-
-      }
+    if (this.kind == "c") {
+      var pHue=population[partnerIndex].giveHue()
+      this.hue=pHue;
     }
   }
 }
