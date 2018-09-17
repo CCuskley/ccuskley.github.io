@@ -33,7 +33,7 @@ function preload() {
     }
     nameList.push(thisWord);
   }
-  agentMax=(PI*(900/8)*2)/12;
+  agentMax=(PI*(700/8)*2)/12;
   
 }
 var innerWidth = 800;
@@ -41,7 +41,7 @@ var cnv;
 function setup() {
   cnv = createCanvas(1000,700);
   //cnv.position(325,175)
-  //cnv.parent("sketch-holder")
+  cnv.parent("#ngcontain")
   colorMode(HSB, 360,100,100);
   background(0,0,100);
   textSize(10);
@@ -394,8 +394,8 @@ function Agent(x,y,vSize, aSize,angl) {
       }
       noStroke();
       textAlign(CENTER);
-      textSize(20);
-      text(wrd, 0,-i*20);
+      textSize(15);
+      text(wrd, 0,-i*15);
     }
     pop();
   }

@@ -4,10 +4,10 @@
     <title>Naming Game Visualisation</title>
   
   
-    <script src="js/p5/p5.js"></script>
+    <script src="p5/p5.js"></script>
 
     <!-- Uncomment the lines below to include extra p5 libraries -->
-    <script src="js/p5/p5.dom.js"></script>
+    <script src="p5/p5.dom.js"></script>
     <!--<script src="libraries/p5.sound.js" type="text/javascript"></script>-->
     <style type="text/css">
 
@@ -16,5 +16,13 @@
     <script src="colornamesmall.js" type="text/javascript"></script>
     </head>
   <body>
+    <p>(scroll down for explanation)
+    <div id="ngcontain"></div>
+    <div>
+      <h3>A toy visualisation of the naming game</h3>
+      <p>The small demonstration below illustrates the Naming Game, a simulation that shows how agents interacting can bootstrap small a shared vocabulary from nothing. For more details, see <a href="https://arxiv.org/pdf/0803.0398.pdf" target="_blank">Baronchelli, Loreto and Steels (2008)</a>.</p>
+      <p>The agents are communicating about different colours (meanings). Agents start with no word for any of the colors (?), but through repeated communicative interaction, they evolve shared words. Just by choosing random strings and adjusting their vocabularies according to whether those strings are communicatively successful, the populatoin evolves shared names. The graph on the bottom shows success over time for each color "meaning"; success is at first low for all colors, but increases over time, indicating that a shared name for the color is emerging. The time to consensus is shorter when there are fewer meanings. Note that in the NG, one unit of time is generally defined as <em>N</em> interactions, where <em>N</em> is the population size.</p>
+      <p>You can speed up time by changing the Interaction Rate, or change the number of agents or colors to see how this changes the rate at which consensus is reached among the agents. The large bar on the right indicates average success over the population for a sliding window of 100 interactions. The "eyes" of the agents indicate their individual success over the same window. When the population has reached consensus on a name for a color, it brightens.</p>
+    </div>
   </body>
 </html>
