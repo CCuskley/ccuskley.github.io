@@ -1,6 +1,16 @@
 var mypubs = [
 
 	{
+		"reference":"Cuskley, C., Dingemanse, M., Kirby, S. and van Leeuwen, T. (to appear). Cross-modal associations and synaesthesia: Categorical perception and structure in vowel-colour mappings in a large online sample. Behavior Research Methods (Special issue on \"Beyond the Lab: Using Big Data to Discover Principles of Cognition\")",
+		"title":"Cross-modal associations and synaesthesia: Categorical perception and structure in vowel-colour mappings in a large online sample",
+		"dllink": "preprints/Cuskley_etal2019a.pdf",
+		"sharelink":"",
+		"id":"Cuskley_etal2019a",
+		"summary":"Coloured vowels in a large online sample of Dutch speakers",
+		"type":"article",
+		"category":"ss"
+	},
+	{
 		"reference": "Cuskley, C., Loreto, V. and Kirby, S. (2018). A Social Approach to Rule Dynamics Using an Agent-Based Model. Topics in Cognitive Science. doi: 10.1111/tops.12327",
 		"title":"A Social Approach to Rule Dynamics Using an Agent-Based Model",
 		"dllink":"preprints/CuskleyLoretoKirby2018.pdf",
