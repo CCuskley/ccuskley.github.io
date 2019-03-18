@@ -33,11 +33,11 @@ function preload() {
     }
     nameList.push(thisWord);
   }
-<<<<<<< HEAD
+//<<<<<<< HEAD
   agentMax=(PI*(700/8)*2)/12;
-=======
-  agentMax=(PI*(800/8)*2)/12;
->>>>>>> ad090fd7616e2eaf1cf97e1f323ceb5b91f8c92f
+//=======
+  //agentMax=(PI*(800/8)*2)/12;
+//>>>>>>> ad090fd7616e2eaf1cf97e1f323ceb5b91f8c92f
   
 }
 var innerWidth = 800;
