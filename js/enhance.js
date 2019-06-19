@@ -134,7 +134,8 @@ var nouns = [
 		"moron",
 		"cable news wet dream",
 		"truth void",
-		"sham"
+		"sham",
+		"Boris Johnson enthusiast"
 		];
 
 var usedphrases;
