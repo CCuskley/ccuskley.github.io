@@ -11,92 +11,78 @@
 		"type":"article",
 	},
 */
+var subjIcon_eye='<i class="fas fa-eye"></i>'
+var subjIcon_rules='<i class="fas fa-users"></i>'
+var subjIcon_games='<i class="fas fa-gamepad"></i>'
+var subjIcon_book='<i class="fas fa-book"></i>'
+var subjIcon_abs='<i class="fas fa-signature"></i>'
+var oaicon='<span class="ai ai-open-access"></span>'
+var pdficon='<a href="%PDFLINK" target="_blank"><span class="far fa-file-pdf publink"></span></a>'
+var githubicon='<a href="%GITHUBLINK" target="_blank"><span class="fab fa-github publink"></span></a>'
+var osficon='<a href="%OSFLINK" target="_blank"><span class="ai ai-osf"></span></a>'
 
-var pubTemplate ='<div class="card pubContainer element-item %CATEGORY"><div class="card-header"><a href="%EXTLINK" target="_blank"><h5 class="paperTitle align-middle">%SUMMARY</h5></a></div><div class="card-body pubCard"><a href="%PUBDL" target="_blank"><p class="paperCitation"><i class="pub-icon fa fa-download"></i>&nbsp %FULLCITATION</p></a><div class="shareBar" id="%SHAREID_inner" style="top:-10px"></div></div></div>'
-var ssFlipped =false;
-var rdFlipped=false;
-var gameFlipped=false;
-var hobbyFlipped=false;
+var pubTemplate ='<div class="row"><div class="col process p-3 %TYPECLASS">\
+              <span class="number">%SUBJICON</span>\
+              <div>\
+                <h3>%OAICON<a href="%EXTLINK" target="_blank">%SUMMARY</a></h3>\
+                <p>%PDFICON%GITHUB%FULLREF</p>\
+              </div>\
+            </div></div>'
 
-
-function flipCard(cardID) {
-	$(cardID).css("transform", "rotateY(180deg)");
-	$(cardID+'>.flipper').css("transform","rotateY(180deg)");
-	$(cardID+'>.flip-container.hover .flipper').css("transform","rotateY(180deg)");
-	$(cardID+'>.flip-container.flip .flipper').css("transform","rotateY(180deg)");
-	setTimeout(function() {
-		$(cardID+">.flipper>.front").hide();
-	},200)
-}
-
-function reverseCard(cardID) {
-	$(cardID).css("transform", "rotateY(0deg)");
-	$(cardID+'>.flipper').css("transform","rotateY(0deg)");
-	$(cardID+'>.flip-container.hover .flipper').css("transform","rotateY(0deg)");
-	$(cardID+'>.flip-container.flip .flipper').css("transform","rotateY(0deg)");
-	setTimeout(function() {
-		$(cardID+">.flipper>.front").show();
-	},200)
-		
-}
-
-(function($) {
-  "use strict"; // Start of use strict
-
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 54
-  });
-
-})(jQuery); // End of use strict
 
 $(document).ready(function() {
-	$('#emailTT').tooltip({trigger:'manual'});
+	$('[data-toggle="tooltip"]').tooltip();
 
 	for (var i=0; i<mypubs.length;i++) {
 		var output=mypubs[i]
-		var thisPub=pubTemplate.replace("%SUMMARY",output.summary)
-		thisPub=thisPub.replace("%FULLCITATION",output.reference)
-		thisPub=thisPub.replace("%PUBDL",output.dllink)
-		thisPub=thisPub.replace("%SHAREID",output.id)//
-		thisPub=thisPub.replace("%CATEGORY",output.category)//
+		var thisPub=pubTemplate.replace("%SUMMARY",output["summary"])
 		thisPub=thisPub.replace("%EXTLINK",output.sharelink)
-		console.log(output.title,output.dllink)
+		thisPub=thisPub.replace("%FULLREF",output.reference)
+		thisPub=thisPub.replace("%TYPECLASS",output["type"])
 		
-		if (output.type=="article") {
-			$("#journals").append(thisPub)
-		} else {
-			$("#other").append(thisPub)
+		if (output.category=="ss") {
+			thisPub=thisPub.replace("%SUBJICON",subjIcon_eye)
 		}
 
-		$("#"+output.id+"_inner").jsSocials({
-			shares:["twitter","facebook",{share:"pocket",logo:'fa fa-get-pocket'}],
-			url:output.sharelink,
-			shareCount:false,
-			text:"Check out this research: "+output.title,
-			shareIn:"popup",
-			showLabel:false
-		});
+		if (output.category=="rd") {
+			thisPub=thisPub.replace("%SUBJICON",subjIcon_rules)
+		}
+
+		if (output.category=="eg") {
+			thisPub=thisPub.replace("%SUBJICON",subjIcon_games)
+		}
+
+		if (output.category=="book") {
+			thisPub=thisPub.replace("%SUBJICON",subjIcon_book)
+		}
+
+		if (output.isopen) {
+			thisPub=thisPub.replace("%OAICON",oaicon)
+			thisPub=thisPub.replace("%PDFICON","")
+		} else {
+			thisPub=thisPub.replace("%OAICON","")
+			var plink=pdficon.replace("%PDFLINK",output.dllink)
+			thisPub=thisPub.replace("%PDFICON",plink)
+		}
+
+		if (output.github) {
+			var git=githubicon.replace("%GITHUBLINK",output.github)
+			thisPub=thisPub.replace("%GITHUB",git)
+		} else {
+			thisPub=thisPub.replace("%GITHUB","")
+		}
+
+		if (output.osf) {
+			var osf=osficon.replace("%OSFLINK",output.osf)
+			thisPub=thisPub.replace("%OSF",osf)
+			console.log("ooh found osf!")
+		} else {
+			console.log("deleting osf!")
+			thisPub=thisPub.replace("%OSF","")
+		}
+
+		$("#publist").append(thisPub)
+
 
 
 	}

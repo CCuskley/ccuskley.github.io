@@ -1,0 +1,97 @@
+#resbox {
+	max-width:100%
+}
+
+.icon-link,.icon-ttip {
+	color:white;
+}
+
+.publink {
+	padding:3px;
+	color:#007BFF;
+}
+
+.icon-link, .icon-ttip .publink { 
+	transition: all .2s ease-in-out; 
+}
+.icon-link:hover,.icon-ttip:hover,.publink:hover {
+	transform: scale(1.2); 
+}
+
+
+.zlink { 
+  transition: all .3s ease-in-out; 
+}
+.zlink:hover {
+  transform: scale(1.1); 
+}
+
+.p-title {
+	color:#A499B3;
+}
+
+/* The slider itself */
+.inactive-slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 90%; /* Full-width */
+  height: 15px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius:3px;
+}
+
+/* The slider itself */
+.active-slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 90%; /* Full-width */
+  height: 15px; /* Specified height */
+  background: #c3c3c3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius:3px;
+}
+
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.inactive-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #c3c3c3; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius:15px;
+}
+
+.inactive-slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #c3c3c3; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius:15px;
+}
+
+.active-slider::-webkit-slider-thumb {
+-webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius:15px;
+}
+
+.active-slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius:15px;
+}

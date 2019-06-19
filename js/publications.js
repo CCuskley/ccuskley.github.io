@@ -1,96 +1,33 @@
 var mypubs = [
 
 	{
-		"reference":"Cuskley, C., Dingemanse, M., Kirby, S. and van Leeuwen, T. (to appear). Cross-modal associations and synaesthesia: Categorical perception and structure in vowel-colour mappings in a large online sample. Behavior Research Methods (Special issue on \"Beyond the Lab: Using Big Data to Discover Principles of Cognition\")",
-		"title":"Cross-modal associations and synaesthesia: Categorical perception and structure in vowel-colour mappings in a large online sample",
+		"reference":"Cuskley, C., Dingemanse, M., Kirby, S. and van Leeuwen, T. (2019). Cross-modal associations and synaesthesia: Categorical perception and structure in vowel-colour mappings in a large online sample. <em>Behavior Research Methods</em>, https://doi.org/10.3758/s13428-019-01203-7",
 		"dllink": "preprints/Cuskley_etal2019a.pdf",
-		"sharelink":"",
+		"sharelink":"https://doi.org/10.3758/s13428-019-01203-7",
 		"id":"Cuskley_etal2019a",
 		"summary":"Coloured vowels in a large online sample of Dutch speakers",
 		"type":"article",
-		"category":"ss"
+		"category":"ss",
+		"isopen":true,
+		"github":"https://github.com/mdingemanse/colouredvowels",
+		"osf":false
 	},
 	{
-		"reference": "Cuskley, C., Loreto, V. and Kirby, S. (2018). A Social Approach to Rule Dynamics Using an Agent-Based Model. Topics in Cognitive Science. doi: 10.1111/tops.12327",
+		"reference": "Cuskley, C., Loreto, V. and Kirby, S. (2018). A Social Approach to Rule Dynamics Using an Agent-Based Model. <em>Topics in Cognitive Science</em>. doi: 10.1111/tops.12327",
 		"title":"A Social Approach to Rule Dynamics Using an Agent-Based Model",
 		"dllink":"preprints/CuskleyLoretoKirby2018.pdf",
 		"sharelink":"https://onlinelibrary.wiley.com/doi/abs/10.1111/tops.12327",
 		"id":"Cuskley_etal2018",
 		"summary":"Investigating the role of population growth in rule dynamics",
 		"type":"article",
-		"category":"rd"
+		"category":"rd",
+		"isopen":false,
+		"github":"https://github.com/CCuskley/RuleEmergence",
+		"osf":false
 	},
-	{
-		"reference": "Cuskley, C., Castellano, C., Colaiori, F., Loreto, V., Pugliese, M. and Tria, F. (2017). The regularity game: investigating linguistic rule dynamics in a population of interacting agents. Cognition, 159, 25-32.",
-		"title":"The regularity game: investigating linguistic rule dynamics in a population of interacting agents",
-		"dllink":"preprints/Cuskley_etal2017.pdf",
-		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0010027716302670",
-		"id":"Cuskley_etal2017",
-		"summary":"Using an agent-based model to investigate how lanaguages sustain exceptions to rules.",
-		"type":"article",
-		"category":"rd"
-	},
-	{
-		"reference":"Cuskley, C., Simner, J. and Kirby, S. (2015). Phonological and orthographic influences in the bouba-kiki effect. Psychological Research, doi: 10.1007/s00426-015-0709-2.",
-		"title":"Phonological and orthographic influences in the bouba-kiki effect",
-		"dllink": "preprints/Cuskley_etal2015a.pdf",
-		"sharelink":"https://link.springer.com/article/10.1007/s00426-015-0709-2",
-		"id":"Cuskley_etal2015a",
-		"summary":"Literacy as culturally acquired sound symbolism.",
-		"type":"article",
-		"category":"ss"
-	},
-	{
-		"reference":"Cuskley, C., Colaiori, F., Castellano, C., Loreto, V., Pugliese, M., and Tria, F. (2015). The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task.  Journal of Memory and Language, 84, 205-223.",
-		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0749596X15000790",
-		"dllink": "preprints/Cuskley_etal2015b.pdf",
-		"title":"The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task",
-		"id":"Cuskley_etal2015b",
-		"summary":"Non-native English speakers are more likely to irregularise novel verbs.",
-		"type":"article",
-		"category":"rd"
-	},
-	{
-		"reference":"Colaiori, F., Castellano, C., Cuskley, C., Loreto, V., Pugliese, M. and Tria, F. (2015). General three-state model with biased population replacement: Analytical solution and application to language dynamics. Phys. Rev. E, 91, 012808.",
-		"dllink": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.91.012808",
-		"sharelink": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.91.012808",
-		"id":"Colaiori_etal2015",
-		"title":"General three-state model with biased population replacement: Analytical solution and application to language dynamics",
-		"summary":"An analytical model of how irregularities persist in language.",
-		"type":"article",
-		"category":"rd"
-	},
-	{
-		"reference":"Cuskley, C., Pugliese, M., Castellano, C., Colaiori, F., Loreto, V. and Tria, F. (2014). Internal and external dynamics in language: Evidence from verb regularity in a historical corpus of English. PLoS ONE: 9(8): e102882. doi: 10.1371/journal.pone.0102882.",
-		"title":"Internal and external dynamics in language: Evidence from verb regularity in a historical corpus of English",
-		"dllink": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102882",
-		"sharelink": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102882",
-		"id":"Cuskley_etal2014",
-		"summary":"An investigation of the evolution of the English past tense in a historical corpus.",
-		"type":"article",
-		"category":"rd"
-	},
-	{
-		"reference":"Cuskley, C. (2013). Mappings between linguistic sound and motion. Public Journal of Semiotics, 5(1), 39-62.",
-		"dllink": "preprints/Cuskley2013a.pdf",
-		"title":"Mappings between linguistic sound and motion",
-		"sharelink":"http://pjos.org/index.php/pjos/article/view/9651",
-		"id":"Cuskley2013a",
-		"summary":"Sound symbolism in motion: Back vowels are slow, and reduplication is fast.",
-		"type":"article",
-		"category":"ss"
-	},
-	{
-		"reference":"Simner, J., Cuskley, C. and Kirby, S. (2010). What sound does that taste? Cross-modal mappings across gustation and audition. Perception, 39(4), 553-569.",
-		"sharelink": "http://www.perceptionweb.com/abstract.cgi?id=p6591",
-		"dllink":"https://pdfs.semanticscholar.org/1cc8/89c32c933757874936ae1f39dcad68b066dc.pdf",
-		"id":"Simner_etal2010",
-		"title":"What sound does that taste? Cross-modal mappings across gustation and audition",
-		"summary":"Participants map basic tastes to sounds: sweet is higher than bitter.",
-		"type":"article",
-		"image":"taste.png",
-		"category":"ss"
-	},
+
+
+	
 	{
 		"reference":"Cuskley, C., Flaherty, M., Little, H., McCrohon, L., Ravignani, A. & Verhoef, T. (Eds.) (2018). The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII).",
 		"title":"The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)",
@@ -99,7 +36,78 @@ var mypubs = [
 		"id":"Evolang2018",
 		"summary":"Proceedings of the 12th International Conference on the Evolution of Language (EVOLANG XII)",
 		"type":"other",
-		"category":"none"
+		"category":"book",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+	
+	
+	{
+		"reference":"Cuskley, C. (2018). Alien symbols for alien language: iterated learning in a unique, novel signal space. In Cuskley, C., Flaherty, M., Little, H., McCrohon, L., Ravignani, A. & Verhoef, T. (Eds.): The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII).",
+		"dllink": "http://evolang.org/torun/proceedings/papertemplate.html?p=42",
+		"sharelink": "http://evolang.org/torun/proceedings/papertemplate.html?p=42",
+		"id":"alien2018",
+		"title":"Alien symbols for alien language: iterated learning in a unique, novel signal space",
+		"summary":"Constraints on a novel form space effect outcomes in interated sequence learning.",
+		"type":"other",
+		"image":"ferros.png",
+		"category":"eg",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+		{
+		"reference": "Cuskley, C., Castellano, C., Colaiori, F., Loreto, V., Pugliese, M. and Tria, F. (2017). The regularity game: investigating linguistic rule dynamics in a population of interacting agents. <em>Cognition</em>, 159, 25-32.",
+		"title":"The regularity game: investigating linguistic rule dynamics in a population of interacting agents",
+		"dllink":"preprints/Cuskley_etal2017.pdf",
+		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0010027716302670",
+		"id":"Cuskley_etal2017",
+		"summary":"Using an agent-based model to investigate how languages sustain exceptions to rules.",
+		"type":"article",
+		"category":"rd",
+		"isopen":false,
+		"github":false,
+		"osf":false
+	},
+		{
+		"reference":"Cuskley, C., Simner, J. and Kirby, S. (2017). Phonological and orthographic influences in the bouba-kiki effect. <em>Psychological Research</em>, doi: 10.1007/s00426-015-0709-2.",
+		"title":"Phonological and orthographic influences in the bouba-kiki effect",
+		"dllink": "preprints/Cuskley_etal2015a.pdf",
+		"sharelink":"https://link.springer.com/article/10.1007/s00426-015-0709-2",
+		"id":"Cuskley_etal2015a",
+		"summary":"Literacy as culturally acquired sound symbolism.",
+		"type":"article",
+		"category":"ss",
+		"isopen":false,
+		"github":false,
+		"osf":false
+	},
+	{
+		"reference":"Cuskley C. (2017). A sensory theory of protolanguage emergence. Presentation at Protolang 5, Barcelona, Spain, September 25-28, 2017.",
+		"sharelink": "preprints/protolang2017.pdf",
+		"dllink":"preprints/Protolang2017.pdf",
+		"title":"A sensory theory of protolanguage emergence",
+		"summary":"A theoretical account of how cross-modality evolved from more general abilities like cross-modal transfer, and helped to bootstrap a shared lexicon",
+		"type":"other",
+		"category":"ss",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+
+	{
+		"reference":"Cuskley C., Monechi B., Gravino P. and Loreto V. (2016). The Evolution Of Collaborative Stories. In S.G. Roberts, C. Cuskley, L. McCrohon, L. Barceló-Coblijn, O. Fehér & T. Verhoef (eds.) The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11).",
+		"dllink": "http://evolang.org/neworleans/papers/133.html",
+		"sharelink": "http://evolang.org/neworleans/papers/133.html",
+		"title":"The Evolution of Collaborative Stories",
+		"id":"CreaStoria",
+		"summary":"Using an online story game to study the dynamics of creativity and innovation",
+		"type":"other",
+		"category":"eg",
+		"isopen":true,
+		"github":false,
+		"osf":false
 	},
 	{
 		"reference":"Roberts, S., Cuskley, C., McCrohon, L., Barceló-Coblijn, L., Feher, O., & Verhoef, T. (Eds.). (2016). The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11). doi:10.17617/2.2248195.",
@@ -109,7 +117,62 @@ var mypubs = [
 		"id":"Evolang2016",
 		"summary":"Proceedings of the 11th International Conference on the Evolution of Language (EVOLANG11)",
 		"type":"other",
-		"category":"none"
+		"category":"book",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+		{
+		"reference":"Cuskley, C., Colaiori, F., Castellano, C., Loreto, V., Pugliese, M., and Tria, F. (2015). The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task.  <em>Journal of Memory and Language</em>, 84, 205-223.",
+		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0749596X15000790",
+		"dllink": "preprints/Cuskley_etal2015b.pdf",
+		"title":"The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task",
+		"id":"Cuskley_etal2015b",
+		"summary":"Non-native English speakers are more likely to irregularise novel verbs.",
+		"type":"article",
+		"category":"rd",
+		"isopen":false,
+		"github":false,
+		"osf":false
+	},
+	{
+		"reference":"Colaiori, F., Castellano, C., Cuskley, C., Loreto, V., Pugliese, M. and Tria, F. (2015). General three-state model with biased population replacement: Analytical solution and application to language dynamics. <em>Phys. Rev. E</em>, 91, 012808.",
+		"dllink": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.91.012808",
+		"sharelink": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.91.012808",
+		"id":"Colaiori_etal2015",
+		"title":"General three-state model with biased population replacement: Analytical solution and application to language dynamics",
+		"summary":"An analytical model of how irregularities persist in language.",
+		"type":"article",
+		"category":"rd",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+	{
+		"reference":"Cuskley, C., Pugliese, M., Castellano, C., Colaiori, F., Loreto, V. and Tria, F. (2014). Internal and external dynamics in language: Evidence from verb regularity in a historical corpus of English. <em>PLoS ONE</em>: 9(8): e102882. doi: 10.1371/journal.pone.0102882.",
+		"title":"Internal and external dynamics in language: Evidence from verb regularity in a historical corpus of English",
+		"dllink": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102882",
+		"sharelink": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102882",
+		"id":"Cuskley_etal2014",
+		"summary":"The evolution of the English past tense in a historical corpus.",
+		"type":"article",
+		"category":"rd",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+	{
+		"reference":"Cuskley, C. (2013). Mappings between linguistic sound and motion. <em>Public Journal of Semiotics</em>, 5(1), 39-62.",
+		"dllink": "preprints/Cuskley2013a.pdf",
+		"title":"Mappings between linguistic sound and motion",
+		"sharelink":"http://pjos.org/index.php/pjos/article/view/9651",
+		"id":"Cuskley2013a",
+		"summary":"Sound symbolism in motion: Back vowels are slow, and reduplication is fast.",
+		"type":"article",
+		"category":"ss",
+		"isopen":true,
+		"github":false,
+		"osf":false
 	},
 	{
 		"reference":"Cuskley, C. and Kirby, S. (2013). Synaesthesia, cross-modality and language evolution. In: Simner, J. and Hubbard E.M. (Eds) Oxford Handbook of Synaesthesia, pp. 869-907.",
@@ -120,37 +183,10 @@ var mypubs = [
 		"summary":"An outline of the relevance of cross-modality to sound symbolism and langauge evolution.",
 		"type":"article",
 		"image":"oup.png",
-		"category":"ss"
-	},
-	{
-		"reference":"Cuskley, C. (2018). Alien symbols for alien language: iterated learning in a unique, novel signal space. In Cuskley, C., Flaherty, M., Little, H., McCrohon, L., Ravignani, A. & Verhoef, T. (Eds.): The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII).",
-		"dllink": "http://evolang.org/torun/proceedings/papertemplate.html?p=42",
-		"sharelink": "http://evolang.org/torun/proceedings/papertemplate.html?p=42",
-		"id":"alien2018",
-		"title":"Alien symbols for alien language: iterated learning in a unique, novel signal space",
-		"summary":"Constraints on a novel form space effect outcomes in interated sequence learning.",
-		"type":"other",
-		"image":"ferros.png",
-		"category":"eg"
-	},
-	{
-		"reference":"Cuskley C. (2017). A sensory theory of protolanguage emergence. Presentation at Protolang 5, Barcelona, Spain, September 25-28, 2017.",
-		"sharelink": "preprints/protolang2017.pdf",
-		"dllink":"preprints/Protolang2017.pdf",
-		"title":"A sensory theory of protolanguage emergence",
-		"summary":"A theoretical account of how cross-modality evolved from more general abilities like cross-modal transfer, and helped to bootstrap a shared lexicon",
-		"type":"other",
-		"category":"ss"
-	},
-	{
-		"reference":"Cuskley C., Monechi B., Gravino P. and Loreto V. (2016). The Evolution Of Collaborative Stories. In S.G. Roberts, C. Cuskley, L. McCrohon, L. Barceló-Coblijn, O. Fehér & T. Verhoef (eds.) The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11).",
-		"dllink": "http://evolang.org/neworleans/papers/133.html",
-		"sharelink": "http://evolang.org/neworleans/papers/133.html",
-		"title":"The Evolution of Collaborative Stories",
-		"id":"CreaStoria",
-		"summary":"Using an online story game to study the dynamics of creativity and innovation",
-		"type":"other",
-		'category':"eg"
+		"category":"ss",
+		"isopen":false,
+		"github":false,
+		"osf":false
 	},
 	{
 		"reference":"Cuskley, C. (2013). Shared cross-modal associations and the emergence of the lexicon. University of Edinburgh Doctoral Thesis.",
@@ -159,7 +195,24 @@ var mypubs = [
 		"id":"thesis",
 		"summary":"Theoretical underpinnings and experimental evidence for the relevance of linguistic cross-modality to language evolution",
 		'title':"Shared cross-modal associations and the emergence of the lexicon",
-		"type":"other",
-		'category':'ss'
+		"type":"book",
+		"category":'ss',
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+	{
+		"reference":"Simner, J., Cuskley, C. and Kirby, S. (2010). What sound does that taste? Cross-modal mappings across gustation and audition. Perception, 39(4), 553-569.",
+		"sharelink": "http://www.perceptionweb.com/abstract.cgi?id=p6591",
+		"dllink":"https://pdfs.semanticscholar.org/1cc8/89c32c933757874936ae1f39dcad68b066dc.pdf",
+		"id":"Simner_etal2010",
+		"title":"What sound does that taste? Cross-modal mappings across gustation and audition",
+		"summary":"Participants map basic tastes to sounds: sweet is higher than bitter.",
+		"type":"article",
+		"image":"taste.png",
+		"category":"ss",
+		"isopen":false,
+		"github":false,
+		"osf":false
 	}
 ]
