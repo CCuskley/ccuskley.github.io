@@ -54,6 +54,7 @@ var mods = ["racist",
 		"brazen"];
 var nouns = [
 		"hotshot",
+		"cup of flat white privelege",
 		"dried apricot",
 		"expired canteloupe",
 		"Garfield impersonator",
@@ -67,15 +68,13 @@ var nouns = [
 		"slowly collapsing traffic cone",
 		"eye sore",
 		"windbag",
-		"hot air balloon",
-		"giant duckling",
-		"wax museum figure on a very hot day",
+		"giant bathtub duckling",
+		"wax museum figure on a hot day",
 		"human-sized hair plug",
 		"Donald Trump enthusiast",
 		"candied yam",
 		"pumpkin pie",
 		"mix of lint and cheeto dust",
-		"shit stain",
 		"Kim Jong Un enthusiast",
 		"douche canoe",
 		"whopee cushion",
@@ -88,15 +87,12 @@ var nouns = [
 		"toupee stand",
 		"spray tanned sphincter",
 		"expired candycorn",
-		"lint trap",
-		"attention whore",
 		"business orangutan",
 		"spectre of mediocrity",
 		"dish rag",
 		"gold-plated toilet-haver",
 		"national embarassment",
 		"bottle ginger",
-		"toe wound",
 		"white noise machine",
 		"fever dream",
 		"collective hallucination",
@@ -282,7 +278,11 @@ $(document).ready(function() {
 			$("#entext").show()
 		}			
 	});//close click function
-		
+	$("#usewiki").click(function() {
+		var wikitext=$("#wikitext").text()
+		$("#origText").val(wikitext)
+		$("#trumpify").click()
+	})
 });///close docready
 
 
