@@ -172,7 +172,7 @@ $(document).ready(function() {
 			$("#enhancedText").text(d+" Donald Trump's presidency continues. Trump, "+art+" "+d2+", is already campainging for 2020.");
 			$("#loader").empty();
 		} else {
-			var newtext=origtext.replace(/Mr. Trump's/g,' Trump');
+			var newtext=origtext.replace("Mr. Trump's","Trump's");
 			newtext=origtext.replace(/Mr. Trump/g,' #MISTA');
 			newtext=origtext.replace(/Mr. Donald J Trump/g,'#MISTA');
 			newtext=newtext.replace(/President Trump/g,'#RPCTR');
