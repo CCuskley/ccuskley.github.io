@@ -172,10 +172,10 @@ $(document).ready(function() {
 			$("#enhancedText").text(d+" Donald Trump's presidency continues. Trump, "+art+" "+d2+", is already campainging for 2020.");
 			$("#loader").empty();
 		} else {
-			var newtext=origtext.replace("Mr. Trump's","Trump's");
-			newtext=origtext.replace(/Mr. Trump/g,' #MISTA');
-			newtext=origtext.replace(/Mr. Donald J Trump/g,'#MISTA');
-			newtext=newtext.replace(/President Trump/g,'#RPCTR');
+			var newtext= origtext.replace(/Mr. Trump's/g,' Donald Trump\'s'),
+			newtext=newtext.replace(/Mr. Trump/g,' #MISTA');
+			newtext=newtext.replace(/Mr. Donald J Trump/g,'#MISTA');
+			//newtext=newtext.replace(/President Trump/g,'#RPCTR');
 			newtext=newtext.replace(/the president/g,'#RPFRR');
 			newtext=newtext.replace(/The president/g,'#RPFRR');
 			newtext=newtext.replace(/US president/g,'#RPFRR');
@@ -185,7 +185,7 @@ $(document).ready(function() {
 			newtext=newtext.replace(/GOP presidential front-runner Donald Trump/g,'#RPFRR');
 			newtext=newtext.replace(/GOP presidential front-runner Donald J Trump/g,'#RPFRR');
 			newtext=newtext.replace(/GOP presidential frontrunner Donald Trump/g,'#RPFRR');
-			newtext=newtext.replace(/GOP presidential frontrunner Donald J Trump/g,'#RPFRR');
+			newtext=newtext.replace(/President Trump/g,'#RPFRR');
 			newtext=newtext.replace(/presidential candidate Donald Trump/g,'#PCTRU');
 			newtext=newtext.replace(/Donald Trump/g,' #FIRST');
 			newtext=newtext.replace(/Donald J. Trump/g,' #FIRST');
