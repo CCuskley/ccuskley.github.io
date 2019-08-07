@@ -55,7 +55,7 @@ var mypubs = [
 	},
 	
 	
-	{
+	/*{
 		"reference":"Cuskley, C. (2018). Alien symbols for alien language: iterated learning in a unique, novel signal space. In Cuskley, C., Flaherty, M., Little, H., McCrohon, L., Ravignani, A. & Verhoef, T. (Eds.): The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII).",
 		"dllink": "http://evolang.org/torun/proceedings/papertemplate.html?p=42",
 		"sharelink": "http://evolang.org/torun/proceedings/papertemplate.html?p=42",
@@ -68,7 +68,7 @@ var mypubs = [
 		"isopen":true,
 		"github":false,
 		"osf":false
-	},
+	},*/
 		{
 		"reference": "Cuskley, C., Castellano, C., Colaiori, F., Loreto, V., Pugliese, M. and Tria, F. (2017). The regularity game: investigating linguistic rule dynamics in a population of interacting agents. <em>Cognition</em>, 159, 25-32.",
 		"title":"The regularity game: investigating linguistic rule dynamics in a population of interacting agents",
