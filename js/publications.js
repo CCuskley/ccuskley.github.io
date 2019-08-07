@@ -1,4 +1,16 @@
 var mypubs = [
+{
+		"reference":"Cuskley, C. (2019). Alien forms for alien language: investigating novel form spaces in cultural evolution. <em>Palgrave Communications</em>, 5(1), 1-15 https://doi.org/10.1057/s41599-019-0299-5",
+		"dllink": "https://www.nature.com/articles/s41599-019-0299-5.pdf",
+		"sharelink":"https://doi.org/10.1057/s41599-019-0299-5",
+		"id":"Cuskley_etal2019b",
+		"summary":"Iterated sequence learning with novel alien forms",
+		"type":"article",
+		"category":"eg",
+		"isopen":true,
+		"github":"https://github.com/CCuskley/AlienForms",
+		"osf":false
+	},
 
 	{
 		"reference":"Cuskley, C., Dingemanse, M., Kirby, S. and van Leeuwen, T. (2019). Cross-modal associations and synaesthesia: Categorical perception and structure in vowel-colour mappings in a large online sample. <em>Behavior Research Methods</em>, https://doi.org/10.3758/s13428-019-01203-7",
