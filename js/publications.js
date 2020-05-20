@@ -1,5 +1,27 @@
 var mypubs = [
 {
+		"reference":"Saitis, C., Weinzierl, S., von Kriegstein, K., Ystad, S., & Cuskley, C. (2020). Timbre semantics through the lens of crossmodal correspondences: A new way of asking old questions. <em>Acoustical Science and Technology</em>, 41(1), 365-368.",
+		"dllink": "https://www.jstage.jst.go.jp/article/ast/41/1/41_E19258/_pdf/-char/ja",
+		"sharelink":"	https://doi.org/10.1250/ast.41.365",
+		"id":"Saitis_etal2020",
+		"summary":"Considering timbre and metaphor in music through cross-modal associations",
+		"type":"article",
+		"category":"ss",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},{
+		"reference":"Cuskley, C., Roberts, S.G., Politzer-Ahles, S. & Verhoef, T. (2020) Double-blind reviewing and gender biases at EvoLang conferences: An update. <em>Journal of Language Evolution</em>, 5(1), 92–99, https://doi.org/10.1093/jole/lzz007",
+		"dllink": "preprints/CuskleyEtal2019Preprint.pdf",
+		"sharelink":"https://doi.org/10.1093/jole/lzz007",
+		"id":"Cuskley_etal2019c",
+		"summary":"Results of the move to double-blind reviewing at the EvoLang conference series.",
+		"type":"article",
+		"category":"book",
+		"isopen":false,
+		"github":"https://github.com/seannyD/EvoLang12DoubleBlindData",
+		"osf":false
+	},{
 		"reference":"Cuskley, C. (2019). Alien forms for alien language: investigating novel form spaces in cultural evolution. <em>Palgrave Communications</em>, 5(1), 1-15 https://doi.org/10.1057/s41599-019-0299-5",
 		"dllink": "https://www.nature.com/articles/s41599-019-0299-5.pdf",
 		"sharelink":"https://doi.org/10.1057/s41599-019-0299-5",
