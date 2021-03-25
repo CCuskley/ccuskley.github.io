@@ -16,6 +16,7 @@ var subjIcon_rules='<i class="fas fa-users"></i>'
 var subjIcon_games='<i class="fas fa-gamepad"></i>'
 var subjIcon_book='<i class="fas fa-book"></i>'
 var subjIcon_abs='<i class="fas fa-signature"></i>'
+var subjIcon_info='<i class="fas fa-wave-square"></i>'
 var oaicon='<span class="ai ai-open-access"></span>'
 var pdficon='<a href="%PDFLINK" target="_blank"><span class="far fa-file-pdf publink"></span></a>'
 var githubicon='<a href="%GITHUBLINK" target="_blank"><span class="fab fa-github publink"></span></a>'
@@ -54,6 +55,10 @@ $(document).ready(function() {
 
 		if (output.category=="book") {
 			thisPub=thisPub.replace("%SUBJICON",subjIcon_book)
+		}
+
+		if (output.category=="inf") {
+			thisPub=thisPub.replace("%SUBJICON",subjIcon_info)
 		}
 
 		if (output.isopen) {

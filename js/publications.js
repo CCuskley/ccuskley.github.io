@@ -1,5 +1,29 @@
 var mypubs = [
 {
+		"reference":"Wallenberg, J.C., Bailes, R., Cuskley, C. & Ingason, A.K. (2021). Smooth Signals and Syntactic Change. <em>Languages</em>, 6(60). https://doi.org/10.3390/languages6020060",
+		"dllink": "https://www.mdpi.com/2226-471X/6/2/60",
+		"sharelink":"https://www.mdpi.com/2226-471X/6/2/60",
+		"id":"Wallenberg_etal2020",
+		"summary":"An information theoretic account of word order shifts in English and Icelandic. ",
+		"type":"article",
+		"category":"inf",
+		"isopen":true,
+		"github":"https://raw.githubusercontent.com/joelcw/constantentropy/master/infoTheoryTest.R",
+		"osf":false
+	},
+{
+		"reference":"Cuskley, C., Bailes, R., & Wallenberg, J. (2020). Noise resistance in communication: Quantifying uniformity and optimality. (Preprint). https://doi.org/10.31234/osf.io/wpvq4",
+		"dllink": "https://www.jstage.jst.go.jp/article/ast/41/1/41_E19258/_pdf/-char/ja",
+		"sharelink":"https://doi.org/10.1250/ast.41.365",
+		"id":"Cuskley_etal2020a",
+		"summary":"Details a new descriptive measure for utterance uniformity, and tests the noise resistance conferred by uniformity using a simulation with data from the PYCCLE corpus.",
+		"type":"article",
+		"category":"inf",
+		"isopen":true,
+		"github":"https://raw.githubusercontent.com/joelcw/constantentropy/master/dormUido.R",
+		"osf":false
+	},
+{
 		"reference":"Saitis, C., Weinzierl, S., von Kriegstein, K., Ystad, S., & Cuskley, C. (2020). Timbre semantics through the lens of crossmodal correspondences: A new way of asking old questions. <em>Acoustical Science and Technology</em>, 41(1), 365-368.",
 		"dllink": "https://www.jstage.jst.go.jp/article/ast/41/1/41_E19258/_pdf/-char/ja",
 		"sharelink":"	https://doi.org/10.1250/ast.41.365",
