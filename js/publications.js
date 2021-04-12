@@ -143,7 +143,7 @@ var mypubs = [
 	},
 	{
 		"reference":"Cuskley C. (2017). A sensory theory of protolanguage emergence. Presentation at Protolang 5, Barcelona, Spain, September 25-28, 2017.",
-		"sharelink": "preprints/protolang2017.pdf",
+		"sharelink": "preprints/Protolang2017.pdf",
 		"dllink":"preprints/Protolang2017.pdf",
 		"title":"A sensory theory of protolanguage emergence",
 		"summary":"A theoretical account of how cross-modality evolved from more general abilities like cross-modal transfer, and helped to bootstrap a shared lexicon",
