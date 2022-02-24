@@ -72,7 +72,7 @@ function setup() {
   //resetButton=createButton("Restart");
   //resetButton.position(innerWidth-75,200);
   //resetButton.mousePressed(resetSim);
-  frameRate(interRate)
+  //frameRate(interRate)
   
 }
 

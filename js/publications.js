@@ -1,5 +1,17 @@
 var mypubs = [
 {
+		"reference":"Bailes, R.& Cuskley, C. (forthcoming). Cultural evolution of language. Oxford Handbook of Cultural Evolution.",
+		"dllink": "https://psyarxiv.com/qxykg",
+		"sharelink":"https://psyarxiv.com/qxykg",
+		"id":"BailesCuskley2022",
+		"summary":"An overview of how cultural processes contribute to the evolution of language, including the interaction of culture, development, and biology. ",
+		"type":"article",
+		"category":"book",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+{
 		"reference":"Wallenberg, J.C., Bailes, R., Cuskley, C. & Ingason, A.K. (2021). Smooth Signals and Syntactic Change. <em>Languages</em>, 6(60). https://doi.org/10.3390/languages6020060",
 		"dllink": "https://www.mdpi.com/2226-471X/6/2/60",
 		"sharelink":"https://www.mdpi.com/2226-471X/6/2/60",
@@ -13,14 +25,14 @@ var mypubs = [
 	},
 {
 		"reference":"Cuskley, C., Bailes, R., & Wallenberg, J. (2020). Noise resistance in communication: Quantifying uniformity and optimality. (Preprint). https://doi.org/10.31234/osf.io/wpvq4",
-		"dllink": "https://www.jstage.jst.go.jp/article/ast/41/1/41_E19258/_pdf/-char/ja",
-		"sharelink":"https://doi.org/10.1250/ast.41.365",
+		"dllink": "https://doi.org/10.31234/osf.io/wpvq4",
+		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0010027721001736",
 		"id":"Cuskley_etal2020a",
 		"summary":"Details a new descriptive measure for utterance uniformity, and tests the noise resistance conferred by uniformity using a simulation with data from the PYCCLE corpus.",
 		"type":"article",
 		"category":"inf",
-		"isopen":true,
-		"github":"https://raw.githubusercontent.com/joelcw/constantentropy/master/dormUido.R",
+		"isopen":false,
+		"github":"https://github.com/CCuskley/NoiseResistance",
 		"osf":false
 	},
 {
@@ -223,7 +235,7 @@ var mypubs = [
 		"reference":"Cuskley, C. (2013). Mappings between linguistic sound and motion. <em>Public Journal of Semiotics</em>, 5(1), 39-62.",
 		"dllink": "preprints/Cuskley2013a.pdf",
 		"title":"Mappings between linguistic sound and motion",
-		"sharelink":"http://pjos.org/index.php/pjos/article/view/9651",
+		"sharelink":"https://journals.lub.lu.se/pjos/article/view/9651",
 		"id":"Cuskley2013a",
 		"summary":"Sound symbolism in motion: Back vowels are slow, and reduplication is fast.",
 		"type":"article",
