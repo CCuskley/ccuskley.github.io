@@ -1,6 +1,6 @@
 var mypubs = [
 {
-		"reference":"Bailes, R.& Cuskley, C. (forthcoming). Cultural evolution of language. Oxford Handbook of Cultural Evolution.",
+		"reference":"Bailes, R.& Cuskley, C. (forthcoming). Cultural Evolution of Language. In Tehrani, J.J. (Ed.) <em>The Oxford Handbook of Cultural Evolution</em>.",
 		"dllink": "https://psyarxiv.com/qxykg",
 		"sharelink":"https://psyarxiv.com/qxykg",
 		"id":"BailesCuskley2022",
@@ -20,11 +20,11 @@ var mypubs = [
 		"type":"article",
 		"category":"inf",
 		"isopen":true,
-		"github":"https://raw.githubusercontent.com/joelcw/constantentropy/master/infoTheoryTest.R",
+		"github":false,
 		"osf":false
 	},
 {
-		"reference":"Cuskley, C., Bailes, R., & Wallenberg, J. (2020). Noise resistance in communication: Quantifying uniformity and optimality. (Preprint). https://doi.org/10.31234/osf.io/wpvq4",
+		"reference":"Cuskley, C., Bailes, R., & Wallenberg, J. (2021). Noise resistance in communication: Quantifying uniformity and optimality. Cognition. 214, p.104754",
 		"dllink": "https://doi.org/10.31234/osf.io/wpvq4",
 		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0010027721001736",
 		"id":"Cuskley_etal2020a",
