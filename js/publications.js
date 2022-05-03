@@ -1,6 +1,6 @@
 var mypubs = [
 {
-		"reference":"Bailes, R.& Cuskley, C. (forthcoming). Cultural Evolution of Language. In Tehrani, J.J. (Ed.) <em>The Oxford Handbook of Cultural Evolution</em>.",
+		"reference":"Bailes, R.& Cuskley, C. (forthcoming). Cultural Evolution of Language. In Tehrani, J.J., Kendal, J. and Kendal, R. (Eds.) <em>The Oxford Handbook of Cultural Evolution</em>.",
 		"dllink": "https://psyarxiv.com/qxykg",
 		"sharelink":"https://psyarxiv.com/qxykg",
 		"id":"BailesCuskley2022",
