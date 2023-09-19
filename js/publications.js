@@ -18,7 +18,7 @@ var mypubs = [
 		"id":"OhmerCuskley2023",
 		"summary":"An integration of perspectives from economic game theory and AI on dyadic communication games, including pseudocode and applications of the method.",
 		"type":"preprint",
-		"category":"users",
+		"category":"rd",
 		"isopen":true,
 		"github":false,
 		"osf":false
@@ -41,7 +41,7 @@ var mypubs = [
 		"sharelink":"https://psyarxiv.com/w7qy9/8",
 		"id":"CuskleySulik2022",
 		"summary":"Shifting perceptions of online data collection: a call for understanding the effort and expertise involved in collecting high quality data online.",
-		"type":"article",
+		"type":"preprint",
 		"category":"eg",
 		"isopen":true,
 		"github":false,
