@@ -17,6 +17,7 @@ var subjIcon_games='<i class="fas fa-gamepad"></i>'
 var subjIcon_book='<i class="fas fa-book"></i>'
 var subjIcon_abs='<i class="fas fa-signature"></i>'
 var subjIcon_info='<i class="fas fa-info-circle"></i>'
+var subjIcon_pen='<i class="fas fa-pen"></i>'
 var oaicon='<span class="ai ai-open-access"></span>'
 var pdficon='<a href="%PDFLINK" target="_blank"><span class="far fa-file-pdf publink"></span></a>'
 var githubicon='<a href="%GITHUBLINK" target="_blank"><span class="fab fa-github publink"></span></a>'
@@ -60,6 +61,9 @@ $(document).ready(function() {
 		if (output.category=="inf") {
 			thisPub=thisPub.replace("%SUBJICON",subjIcon_info)
 		}
+		if (output.category=="pen") {
+			thisPub=thisPub.replace("%SUBJICON",subjIcon_pen)
+		}
 
 		if (output.isopen) {
 			thisPub=thisPub.replace("%OAICON",oaicon)
@@ -86,7 +90,11 @@ $(document).ready(function() {
 			thisPub=thisPub.replace("%OSF","")
 		}
 
-		$("#publist").append(thisPub)
+		if (output.type == "preprint") {
+			$("#pprintlist").append(thisPub)
+		} else {
+			$("#publist").append(thisPub)
+		}
 
 
 

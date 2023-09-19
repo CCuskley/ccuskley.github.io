@@ -1,18 +1,80 @@
 var mypubs = [
-{
-		"reference":"Bailes, R.& Cuskley, C. (forthcoming). Cultural Evolution of Language. In Tehrani, J.J., Kendal, J. and Kendal, R. (Eds.) <em>The Oxford Handbook of Cultural Evolution</em>.",
-		"dllink": "https://psyarxiv.com/qxykg",
-		"sharelink":"https://psyarxiv.com/qxykg",
-		"id":"BailesCuskley2022",
-		"summary":"An overview of how cultural processes contribute to the evolution of language, including the interaction of culture, development, and biology. ",
+	{
+		"reference":"Karjus, A., & <b>Cuskley, C.</b> (2023). Evolving linguistic divergence on polarizing social media. arXiv preprint. <a href='https://doi.org/10.48550/arXiv.2309.01659' target='_blank'>https://doi.org/10.48550/arXiv.2309.01659</a>",
+		"dllink": "https://arxiv.org/abs/2309.01659",
+		"sharelink":"https://arxiv.org/abs/2309.01659",
+		"id":"KarjusCuskley2023",
+		"summary":"Investigating lexical divergence and variation along political lines in large corpus of tweets.",
+		"type":"preprint",
+		"category":"rd",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	{
+		"reference":"Ohmer, X. I., & <b>Cuskley, C.</b> (2023). Communication games: Modeling language evolution through dyadic agent interactions. To appear in Boeckx, C. and Raviv, L. (Eds.) <em>The Oxford Handbook of Empirical Approaches to Language Evolution</em>.",
+		"dllink": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283628",
+		"sharelink":"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283628",
+		"id":"OhmerCuskley2023",
+		"summary":"An integration of perspectives from economic game theory and AI on dyadic communication games, including pseudocode and applications of the method.",
+		"type":"preprint",
+		"category":"users",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+	},
+	{
+		"reference":"<b>Cuskley, C.</b>, & Sommer, K. (2022). The evolution of linguistic iconicity and the cross-modal cognitive suite. https://doi.org/10.31234/osf.io/924ap",
+		"dllink": "https://psyarxiv.com/924ap/",
+		"sharelink":"https://psyarxiv.com/924ap/",
+		"id":"CuskleySommer2022",
+		"summary":"Connecting language iconicity to cross-modality, and identifying self-domestication as a key selection pressure in the evolution of the uniquely human cross-modal cognitive suite.",
+		"type":"preprint",
+		"category":"ss",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+
+	{
+		"reference":"<b>Cuskley, C.</b>, & Sulik, J. (2022). The burden for high-quality online data collection lies with researchers, not recruitment platforms. PsyArxiv Preprint. https://doi.org/10.31234/osf.io/w7qy9",
+		"dllink": "https://psyarxiv.com/w7qy9/",
+		"sharelink":"https://psyarxiv.com/w7qy9/8",
+		"id":"CuskleySulik2022",
+		"summary":"Shifting perceptions of online data collection: a call for understanding the effort and expertise involved in collecting high quality data online.",
 		"type":"article",
-		"category":"book",
+		"category":"eg",
+		"isopen":true,
+		"github":false,
+		"osf":false
+	},
+
+	{
+		"reference":"Lo Sardo, D. R., Gravino, P., <b>Cuskley, C.</b>, & Loreto, V. (2023). Exploitation and exploration in text evolution. Quantifying planning and translation flows during writing. <em>PloS One</em>, 18(3), e0283628.",
+		"dllink": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283628",
+		"sharelink":"https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283628",
+		"id":"LoSardoEtal2023",
+		"summary":"Using versioning software to capture the process of writing, including cycles of planning and translation during revision.",
+		"type":"article",
+		"category":"pen",
 		"isopen":true,
 		"github":false,
 		"osf":false
 	},
 {
-		"reference":"Wallenberg, J.C., Bailes, R., Cuskley, C. & Ingason, A.K. (2021). Smooth Signals and Syntactic Change. <em>Languages</em>, 6(60). https://doi.org/10.3390/languages6020060",
+		"reference":"Bailes, R.& <b>Cuskley, C.</b> (2023). Cultural Evolution of Language. In Tehrani, J.J., Kendal, J. and Kendal, R. (Eds.) <em>The Oxford Handbook of Cultural Evolution</em>.",
+		"dllink": "https://psyarxiv.com/qxykg",
+		"sharelink":"https://academic.oup.com/edited-volume/45648/chapter/402524948",
+		"id":"BailesCuskley2022",
+		"summary":"An overview of how cultural processes contribute to the evolution of language, including the interaction of culture, development, and biology. ",
+		"type":"article",
+		"category":"book",
+		"isopen":false,
+		"github":false,
+		"osf":false
+	},
+{
+		"reference":"Wallenberg, J.C., Bailes, R., <b>Cuskley, C.</b> & Ingason, A.K. (2021). Smooth Signals and Syntactic Change. <em>Languages</em>, 6(60). https://doi.org/10.3390/languages6020060",
 		"dllink": "https://www.mdpi.com/2226-471X/6/2/60",
 		"sharelink":"https://www.mdpi.com/2226-471X/6/2/60",
 		"id":"Wallenberg_etal2020",
@@ -24,7 +86,7 @@ var mypubs = [
 		"osf":false
 	},
 {
-		"reference":"Cuskley, C., Bailes, R., & Wallenberg, J. (2021). Noise resistance in communication: Quantifying uniformity and optimality. Cognition. 214, p.104754",
+		"reference":"<b>Cuskley, C.</b>, Bailes, R., & Wallenberg, J. (2021). Noise resistance in communication: Quantifying uniformity and optimality. Cognition. 214, p.104754",
 		"dllink": "https://doi.org/10.31234/osf.io/wpvq4",
 		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0010027721001736",
 		"id":"Cuskley_etal2020a",
@@ -36,7 +98,7 @@ var mypubs = [
 		"osf":false
 	},
 {
-		"reference":"Saitis, C., Weinzierl, S., von Kriegstein, K., Ystad, S., & Cuskley, C. (2020). Timbre semantics through the lens of crossmodal correspondences: A new way of asking old questions. <em>Acoustical Science and Technology</em>, 41(1), 365-368.",
+		"reference":"Saitis, C., Weinzierl, S., von Kriegstein, K., Ystad, S., & <b>Cuskley, C.</b> (2020). Timbre semantics through the lens of crossmodal correspondences: A new way of asking old questions. <em>Acoustical Science and Technology</em>, 41(1), 365-368.",
 		"dllink": "https://www.jstage.jst.go.jp/article/ast/41/1/41_E19258/_pdf/-char/ja",
 		"sharelink":"	https://doi.org/10.1250/ast.41.365",
 		"id":"Saitis_etal2020",
@@ -47,7 +109,7 @@ var mypubs = [
 		"github":false,
 		"osf":false
 	},{
-		"reference":"Cuskley, C., Roberts, S.G., Politzer-Ahles, S. & Verhoef, T. (2020) Double-blind reviewing and gender biases at EvoLang conferences: An update. <em>Journal of Language Evolution</em>, 5(1), 92–99, https://doi.org/10.1093/jole/lzz007",
+		"reference":"<b>Cuskley, C.</b>, Roberts, S.G., Politzer-Ahles, S. & Verhoef, T. (2020) Double-blind reviewing and gender biases at EvoLang conferences: An update. <em>Journal of Language Evolution</em>, 5(1), 92–99, https://doi.org/10.1093/jole/lzz007",
 		"dllink": "preprints/CuskleyEtal2019Preprint.pdf",
 		"sharelink":"https://doi.org/10.1093/jole/lzz007",
 		"id":"Cuskley_etal2019c",
@@ -58,7 +120,7 @@ var mypubs = [
 		"github":"https://github.com/seannyD/EvoLang12DoubleBlindData",
 		"osf":false
 	},{
-		"reference":"Cuskley, C. (2019). Alien forms for alien language: investigating novel form spaces in cultural evolution. <em>Palgrave Communications</em>, 5(1), 1-15 https://doi.org/10.1057/s41599-019-0299-5",
+		"reference":"<b>Cuskley, C.</b> (2019). Alien forms for alien language: investigating novel form spaces in cultural evolution. <em>Palgrave Communications</em>, 5(1), 1-15 https://doi.org/10.1057/s41599-019-0299-5",
 		"dllink": "https://www.nature.com/articles/s41599-019-0299-5.pdf",
 		"sharelink":"https://doi.org/10.1057/s41599-019-0299-5",
 		"id":"Cuskley_etal2019b",
@@ -71,7 +133,7 @@ var mypubs = [
 	},
 
 	{
-		"reference":"Cuskley, C., Dingemanse, M., Kirby, S. and van Leeuwen, T. (2019). Cross-modal associations and synaesthesia: Categorical perception and structure in vowel-colour mappings in a large online sample. <em>Behavior Research Methods</em>, https://doi.org/10.3758/s13428-019-01203-7",
+		"reference":"<b>Cuskley, C.</b>, Dingemanse, M., Kirby, S. and van Leeuwen, T. (2019). Cross-modal associations and synaesthesia: Categorical perception and structure in vowel-colour mappings in a large online sample. <em>Behavior Research Methods</em>, https://doi.org/10.3758/s13428-019-01203-7",
 		"dllink": "preprints/Cuskley_etal2019a.pdf",
 		"sharelink":"https://doi.org/10.3758/s13428-019-01203-7",
 		"id":"Cuskley_etal2019a",
@@ -83,7 +145,7 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference": "Cuskley, C., Loreto, V. and Kirby, S. (2018). A Social Approach to Rule Dynamics Using an Agent-Based Model. <em>Topics in Cognitive Science</em>. doi: 10.1111/tops.12327",
+		"reference": "<b>Cuskley, C.</b>, Loreto, V. and Kirby, S. (2018). A Social Approach to Rule Dynamics Using an Agent-Based Model. <em>Topics in Cognitive Science</em>. doi: 10.1111/tops.12327",
 		"title":"A Social Approach to Rule Dynamics Using an Agent-Based Model",
 		"dllink":"preprints/CuskleyLoretoKirby2018.pdf",
 		"sharelink":"https://onlinelibrary.wiley.com/doi/abs/10.1111/tops.12327",
@@ -99,7 +161,7 @@ var mypubs = [
 
 	
 	{
-		"reference":"Cuskley, C., Flaherty, M., Little, H., McCrohon, L., Ravignani, A. & Verhoef, T. (Eds.) (2018). The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII).",
+		"reference":"<b>Cuskley, C.</b>, Flaherty, M., Little, H., McCrohon, L., Ravignani, A. & Verhoef, T. (Eds.) (2018). The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII).",
 		"title":"The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)",
 		"dllink": "http://evolang.org/torun/proceedings/index.html",
 		"sharelink": "http://evolang.org/torun/proceedings/index.html",
@@ -128,7 +190,7 @@ var mypubs = [
 		"osf":false
 	},*/
 		{
-		"reference": "Cuskley, C., Castellano, C., Colaiori, F., Loreto, V., Pugliese, M. and Tria, F. (2017). The regularity game: investigating linguistic rule dynamics in a population of interacting agents. <em>Cognition</em>, 159, 25-32.",
+		"reference": "<b>Cuskley, C.</b>, Castellano, C., Colaiori, F., Loreto, V., Pugliese, M. and Tria, F. (2017). The regularity game: investigating linguistic rule dynamics in a population of interacting agents. <em>Cognition</em>, 159, 25-32.",
 		"title":"The regularity game: investigating linguistic rule dynamics in a population of interacting agents",
 		"dllink":"preprints/Cuskley_etal2017.pdf",
 		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0010027716302670",
@@ -141,7 +203,7 @@ var mypubs = [
 		"osf":false
 	},
 		{
-		"reference":"Cuskley, C., Simner, J. and Kirby, S. (2017). Phonological and orthographic influences in the bouba-kiki effect. <em>Psychological Research</em>, doi: 10.1007/s00426-015-0709-2.",
+		"reference":"<b>Cuskley, C.</b>, Simner, J. and Kirby, S. (2017). Phonological and orthographic influences in the bouba-kiki effect. <em>Psychological Research</em>, doi: 10.1007/s00426-015-0709-2.",
 		"title":"Phonological and orthographic influences in the bouba-kiki effect",
 		"dllink": "preprints/Cuskley_etal2015a.pdf",
 		"sharelink":"https://link.springer.com/article/10.1007/s00426-015-0709-2",
@@ -153,8 +215,8 @@ var mypubs = [
 		"github":false,
 		"osf":false
 	},
-	{
-		"reference":"Cuskley C. (2017). A sensory theory of protolanguage emergence. Presentation at Protolang 5, Barcelona, Spain, September 25-28, 2017.",
+	/*{
+		"reference":"<b>Cuskley, C.</b> (2017). A sensory theory of protolanguage emergence. Presentation at Protolang 5, Barcelona, Spain, September 25-28, 2017.",
 		"sharelink": "preprints/Protolang2017.pdf",
 		"dllink":"preprints/Protolang2017.pdf",
 		"title":"A sensory theory of protolanguage emergence",
@@ -164,10 +226,10 @@ var mypubs = [
 		"isopen":true,
 		"github":false,
 		"osf":false
-	},
+	},*/
 
 	{
-		"reference":"Cuskley C., Monechi B., Gravino P. and Loreto V. (2016). The Evolution Of Collaborative Stories. In S.G. Roberts, C. Cuskley, L. McCrohon, L. Barceló-Coblijn, O. Fehér & T. Verhoef (eds.) The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11).",
+		"reference":"<b>Cuskley, C.</b>, Monechi B., Gravino P. and Loreto V. (2016). The Evolution Of Collaborative Stories. In S.G. Roberts, C. Cuskley, L. McCrohon, L. Barceló-Coblijn, O. Fehér & T. Verhoef (eds.) The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11).",
 		"dllink": "http://evolang.org/neworleans/papers/133.html",
 		"sharelink": "http://evolang.org/neworleans/papers/133.html",
 		"title":"The Evolution of Collaborative Stories",
@@ -180,7 +242,7 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference":"Roberts, S., Cuskley, C., McCrohon, L., Barceló-Coblijn, L., Feher, O., & Verhoef, T. (Eds.). (2016). The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11). doi:10.17617/2.2248195.",
+		"reference":"Roberts, S., <b>Cuskley, C.</b>, McCrohon, L., Barceló-Coblijn, L., Feher, O., & Verhoef, T. (Eds.). (2016). The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11). doi:10.17617/2.2248195.",
 		"title":"The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11)",
 		"dllink": "http://evolang.org/neworleans/index.html",
 		"sharelink": "http://evolang.org/neworleans/index.html",
@@ -193,7 +255,7 @@ var mypubs = [
 		"osf":false
 	},
 		{
-		"reference":"Cuskley, C., Colaiori, F., Castellano, C., Loreto, V., Pugliese, M., and Tria, F. (2015). The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task.  <em>Journal of Memory and Language</em>, 84, 205-223.",
+		"reference":"<b>Cuskley, C.</b>, Colaiori, F., Castellano, C., Loreto, V., Pugliese, M., and Tria, F. (2015). The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task.  <em>Journal of Memory and Language</em>, 84, 205-223.",
 		"sharelink":"https://www.sciencedirect.com/science/article/pii/S0749596X15000790",
 		"dllink": "preprints/Cuskley_etal2015b.pdf",
 		"title":"The adoption of linguistic rules in native and non-native speakers: Evidence from a Wug task",
@@ -206,7 +268,7 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference":"Colaiori, F., Castellano, C., Cuskley, C., Loreto, V., Pugliese, M. and Tria, F. (2015). General three-state model with biased population replacement: Analytical solution and application to language dynamics. <em>Phys. Rev. E</em>, 91, 012808.",
+		"reference":"Colaiori, F., Castellano, C., <b>Cuskley, C.</b>, Loreto, V., Pugliese, M. and Tria, F. (2015). General three-state model with biased population replacement: Analytical solution and application to language dynamics. <em>Phys. Rev. E</em>, 91, 012808.",
 		"dllink": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.91.012808",
 		"sharelink": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.91.012808",
 		"id":"Colaiori_etal2015",
@@ -219,7 +281,7 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference":"Cuskley, C., Pugliese, M., Castellano, C., Colaiori, F., Loreto, V. and Tria, F. (2014). Internal and external dynamics in language: Evidence from verb regularity in a historical corpus of English. <em>PLoS ONE</em>: 9(8): e102882. doi: 10.1371/journal.pone.0102882.",
+		"reference":"<b>Cuskley, C.</b>, Pugliese, M., Castellano, C., Colaiori, F., Loreto, V. and Tria, F. (2014). Internal and external dynamics in language: Evidence from verb regularity in a historical corpus of English. <em>PLoS ONE</em>: 9(8): e102882. doi: 10.1371/journal.pone.0102882.",
 		"title":"Internal and external dynamics in language: Evidence from verb regularity in a historical corpus of English",
 		"dllink": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102882",
 		"sharelink": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102882",
@@ -232,7 +294,7 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference":"Cuskley, C. (2013). Mappings between linguistic sound and motion. <em>Public Journal of Semiotics</em>, 5(1), 39-62.",
+		"reference":"<b>Cuskley, C.</b> (2013). Mappings between linguistic sound and motion. <em>Public Journal of Semiotics</em>, 5(1), 39-62.",
 		"dllink": "preprints/Cuskley2013a.pdf",
 		"title":"Mappings between linguistic sound and motion",
 		"sharelink":"https://journals.lub.lu.se/pjos/article/view/9651",
@@ -245,7 +307,7 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference":"Cuskley, C. and Kirby, S. (2013). Synaesthesia, cross-modality and language evolution. In: Simner, J. and Hubbard E.M. (Eds) Oxford Handbook of Synaesthesia, pp. 869-907.",
+		"reference":"<b>Cuskley, C.</b> and Kirby, S. (2013). Synaesthesia, cross-modality and language evolution. In: Simner, J. and Hubbard E.M. (Eds) Oxford Handbook of Synaesthesia, pp. 869-907.",
 		"dllink": "preprints/OUPChapter43.pdf",
 		"sharelink":"http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199603329.001.0001/oxfordhb-9780199603329-e-043",
 		"title":"Synaesthesia, cross-modality and language evolution",
@@ -259,7 +321,7 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference":"Cuskley, C. (2013). Shared cross-modal associations and the emergence of the lexicon. University of Edinburgh Doctoral Thesis.",
+		"reference":"<b>Cuskley, C.</b> (2013). Shared cross-modal associations and the emergence of the lexicon. University of Edinburgh Doctoral Thesis.",
 		"dllink": "https://www.era.lib.ed.ac.uk/handle/1842/7702",
 		"sharelink": "https://www.era.lib.ed.ac.uk/handle/1842/7702",
 		"id":"thesis",
@@ -272,7 +334,7 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference":"Simner, J., Cuskley, C. and Kirby, S. (2010). What sound does that taste? Cross-modal mappings across gustation and audition. Perception, 39(4), 553-569.",
+		"reference":"Simner, J., <b>Cuskley, C.</b> and Kirby, S. (2010). What sound does that taste? Cross-modal mappings across gustation and audition. Perception, 39(4), 553-569.",
 		"sharelink": "http://www.perceptionweb.com/abstract.cgi?id=p6591",
 		"dllink":"https://pdfs.semanticscholar.org/1cc8/89c32c933757874936ae1f39dcad68b066dc.pdf",
 		"id":"Simner_etal2010",
