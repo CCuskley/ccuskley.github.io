@@ -10,7 +10,7 @@ var mypubs = [
 		"isopen":true,
 		"github":false,
 		"osf":false
-			},
+	},
 	{
 		"reference":"Ohmer, X. I., & <b>Cuskley, C.</b> (2023). Communication games: Modeling language evolution through dyadic agent interactions. To appear in Boeckx, C. and Raviv, L. (Eds.) <em>The Oxford Handbook of Empirical Approaches to Language Evolution</em>.",
 		"dllink": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283628",
@@ -23,7 +23,6 @@ var mypubs = [
 		"github":false,
 		"osf":false
 	},
-
 	{
 		"reference":"<b>Cuskley, C.</b>, & Sommer, K. (2022). The evolution of linguistic iconicity and the cross-modal cognitive suite. https://doi.org/10.31234/osf.io/924ap",
 		"dllink": "https://psyarxiv.com/924ap/",
@@ -36,7 +35,6 @@ var mypubs = [
 		"github":false,
 		"osf":false
 	},
-
 	{
 		"reference":"<b>Cuskley, C.</b>, & Sulik, J. (2022). The burden for high-quality online data collection lies with researchers, not recruitment platforms. PsyArxiv Preprint. https://doi.org/10.31234/osf.io/w7qy9",
 		"dllink": "https://psyarxiv.com/w7qy9/",
