@@ -1,14 +1,26 @@
 var mypubs = [
-	{
-		"reference":"Karjus, A., & <b>Cuskley, C.</b> (2023). Evolving linguistic divergence on polarizing social media. arXiv preprint. <a href='https://doi.org/10.48550/arXiv.2309.01659' target='_blank'>https://doi.org/10.48550/arXiv.2309.01659</a>",
-		"dllink": "https://arxiv.org/abs/2309.01659",
-		"sharelink":"https://arxiv.org/abs/2309.01659",
-		"id":"KarjusCuskley2023",
-		"summary":"Investigating lexical divergence and variation along political lines in large corpus of tweets.",
-		"type":"preprint",
-		"category":"rd",
+{
+		"reference":"Cuskley, C., Woods, R., & Flaherty, M. (2024). The limitations of large language models for understanding human language and cognition. To appear in <a href= 'https://direct.mit.edu/opmi' target='_blank'><em>Open Mind</em></a>.",
+		"dllink": "https://osf.io/preprints/psyarxiv/hbwrg",
+		"sharelink":"https://osf.io/preprints/psyarxiv/hbwrg",
+		"id":"CuskleyWoodsFlaherty2024",
+		"summary":"Using an ethological framework to understand the key differences between humans and LLMs, and the limits of the explanatory power of LLMs for big questions about human language.",
+		"type":"article",
+		"category":"pen",
 		"isopen":true,
 		"github":false,
+		"osf":false
+	},
+	{
+		"reference":"Karjus, A., & <b>Cuskley, C.</b> (2024). Evolving linguistic divergence on polarizing social media. Humanities and Social Sciences Communications, 11(1), 1-14.",
+		"dllink": "https://www.nature.com/articles/s41599-024-02922-9",
+		"sharelink":"https://www.nature.com/articles/s41599-024-02922-9",
+		"id":"KarjusCuskley2023",
+		"summary":"Investigating lexical divergence and variation along political lines in large corpus of tweets.",
+		"type":"article",
+		"category":"rd",
+		"isopen":true,
+		"github":"https://github.com/andreskarjus/evolving_divergence",
 		"osf":false
 	},
 	{
@@ -36,12 +48,12 @@ var mypubs = [
 		"osf":false
 	},
 	{
-		"reference":"<b>Cuskley, C.</b>, & Sulik, J. (2022). The burden for high-quality online data collection lies with researchers, not recruitment platforms. PsyArxiv Preprint. https://doi.org/10.31234/osf.io/w7qy9",
-		"dllink": "https://psyarxiv.com/w7qy9/",
-		"sharelink":"https://psyarxiv.com/w7qy9/8",
-		"id":"CuskleySulik2022",
+		"reference":"<b>Cuskley, C.</b>, & Sulik, J. (2024). The Burden for High-Quality Online Data Collection Lies With Researchers, Not Recruitment Platforms. <em>Perspectives on Psychological Science</em>, 0(0). https://doi.org/10.1177/17456916241242734",
+		"dllink": "https://journals.sagepub.com/doi/10.1177/17456916241242734",
+		"sharelink":"https://journals.sagepub.com/doi/10.1177/17456916241242734",
+		"id":"CuskleySulik2024",
 		"summary":"Shifting perceptions of online data collection: a call for understanding the effort and expertise involved in collecting high quality data online.",
-		"type":"preprint",
+		"type":"article",
 		"category":"eg",
 		"isopen":true,
 		"github":false,
