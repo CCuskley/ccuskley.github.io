@@ -1,0 +1,114 @@
+<html>
+  <head>
+  	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" rel="stylesheet">
+  	<link href="../css/voidstyle.css" rel="stylesheet">
+ 	
+  	
+  </head>
+  <body>
+  	<div class="container-fluid main">
+  		<div class="align-middle text-center">Welcome to The Void</div>
+  		<div class="align-middle text-center" style="font-size:1rem">It's here to listen</div>
+  		<div class="align-middle text-center" style="font-size:0.8rem">Howling by <a href="http://soundbible.com/1810-Wind.html" target="_blank">Mark Diangelo</a></div>
+  		<div class="align-middle text-center">
+  			<button class="btn btn-lg btn-light start">Settings</button>
+  			<button class="btn btn-lg btn-light faq">FAQ</button>
+  		</div>
+
+  		<div class="align-middle text-left wInput" style="display:none">
+  			<div class="form-group" style="padding-top:15px">
+  				<label>Type what you what to scream below. When you're ready, press </label>
+  				<button class="btn btn-lg btn-light" style="display:none" id="scream">SCREAM</button>
+    			<textarea  id="writeToVoid" class="form-control" id="exampleFormControlTextarea1" rows="100"></textarea>
+  			</div>
+  		</div>
+  		<div class="d-flex align-items-center sendScream">
+  			<p id="toScream" style="color:white"></p>
+  		</div>
+
+		<div class="modal fade" id="startModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  		<div class="modal-dialog modal-dialog-centered" role="document">
+	    		<div class="modal-content">
+	      			<div class="modal-body">
+	        			<p>The Void is ready for you.</p>
+	        			<p>The Void's interface is in English, but you can use it any language.</p>
+	        			<p>The Void supports simultaneous multi-modal input, and always supports signed or spoken input as default. Toggle below to add written input.</p>
+	        			<div class="row">
+							<div class="col">
+								<div class="form-group">
+									<span class="switch">
+  										<p>
+			    							<input type="checkbox" class="switch" id="modality">
+			    								<label style="color:black" for="modality">Written input <span class="modinput">off</span></label>
+			    						</p>
+			  						</span>
+								</div>
+							</div>
+						</div>
+						<p>Do you want to hear the void?</p>
+						<div class="row">
+							<div class="col">
+								<div class="form-group">
+									<span class="switch">
+  										<p>No
+			    							<input type="checkbox" class="switch" id="sound">
+			    								<label style="color:black" for="sound">Yes</label>
+			    						</p>
+			  						</span>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<p>Once you've chosen your settings, you're ready to start using the void. The void is completely secure and won't store any of your data or ramblings. When you're ready to begin, simply interface with The Void in your chosen modality/ies. It's listening.</p>
+	      			</div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn btn-lg btn-light start" data-dismiss="modal">Go to The Void</button>
+	        			<button type="button" class="btn btn-lg btn-light .faq" data-dismiss="modal">FAQ</button>
+	      			</div>
+	    		</div>
+	  		</div>
+		</div>
+		<div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	    		<div class="modal-content">
+	    			<div class="modal-header">
+        				<h3 class="modal-title" style="color:grey">Welcome to The Void</h5>
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          					<span aria-hidden="true">&times;</span>
+        				</button>
+      				</div>
+	      			<div class="modal-body">
+	        			<h3>What is The Void for?</h3>
+	        			<p>The Void is for screaming into, both literally AND IN WRITTEN FORM. Unlike other voids, for example, the one you might find inside yourself before eating an entire pint of ice cream stuffed inside a pizza like its a giant taco, this one is completely safe. You can say whatever you want to it; it's a void, so no one will hear you. The Void is for everyone - you can scream into The Void instead of at software that isn't working, or about when that person somehow snuck ahead of you in line for coffee and you even said something but they had headhpones on and you weren't going to actually <em>touch</em> them, what are you, a monster??</p>
+	        			<p>ANYWAY. The Void can also be used for more serious purposes - direct trolls who are full hateful garbage to The Void. The Void is ready for their bullshit. Screaming into The Void is much like writing something anywhere on the internet, except here no one will see it because it isn't stored or recorded, not because you have no followers.</p>
+	        			<h3>Do I need to register for The Void?</h3>
+	        			<p>No, just scream directly into it.</p>
+	        			<h3>How does The Void work?</h3>
+	        			<p>The Void uses sophisticated audio and visual technology to create the illusion of a bottomless hole on your screen, which may or may not be whistling with the depth of an endless abandoned mine depending on your audio settings. When you shout into it, your thoughts are released from your brain and into The Void, which goes nowhere.</p>
+	        			<h3>Is The Void safe?</h3>
+	        			<p>The Void is completely safe, secure, and GDPR compliant. The Void does not collect any information about you, nor does it store the screams (literal OR FIGURATIVE) that you pour into it. It's a void.</p>
+	        			<h3>Who made the void?</h3>
+	        			<p>The Void is eternal - it is everywhere and nowhere, and has been for all of time. However, this iteration of The Void was made by <a href="ccuskley.github.io" target="_blank">C. Cuskley</a>, while struggling to use an online manuscript submission system.</p>
+	        			<h3>Where can I give feedback about The Void?</h3>
+	        			<p>Any feedback on The Void, including ideas about the interface, design, implementation, and general concept, can be fed directly back into The Void itself, in written, spoken, or signed modality. It will never get back to you, nor will it change.</p>
+	      			</div>
+	      			<div class="modal-footer">
+	      				<button type="button" class="btn btn-lg btn-light start">Choose Settings</button>
+	        			<button type="button" class="btn btn-lg btn-light" data-dismiss="modal">Close</button>
+	      			</div>
+	    		</div>
+	  		</div>
+		</div>
+  	</div>
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+  <script src="../js/void.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Donald Trump Accuracy Enhancer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex">
+        
+        <div id="description" class="p-2">
+          <h2>News Enhancer</h2>
+          <hr>
+        <p style="font-size:8px">This is satire btw</p>
+          <p>This filter will scan text about Donald Trump in particular and add additional information where relevant to enhance its accuracy.</p>
+          <p>Try starting with some text from his Wikipedia entry</p>
+
+        </div>
+
+      </div>
+      <div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Paste a block of text about Donald Trump below to recieve an enhanced, accurate, and up-to-date version.</label>
+          <textarea class="form-control" id="origText" rows="3"></textarea>
+        </div>
+      </div>
+      <button id="trumpify" class="btn btn-success">Enhance</button>
+      <button id="usewiki" class="btn btn-info">Use Wikipedia Text</button>
+      <hr>
+      <p id="wikitext" style="display:none">Donald Trump entered the 2016 presidential race as a Republican and defeated sixteen opponents in the primaries. Commentators described his political positions as populist, protectionist, and nationalist. Trump was elected president in a surprise victory over Democratic nominee Hillary Clinton, although he lost the popular vote. Mr. Trump became the oldest and wealthiest person ever to assume the presidency, and the first without prior military or government service. His election and policies have sparked numerous protests. Trump has made many false or misleading statements during his campaign and presidency. The statements have been documented by fact-checkers, and the media have widely described the phenomenon as unprecedented in American politics. Many of his comments and actions have been characterized as racially charged or racist.
+
+During his presidency, Trump ordered a travel ban on citizens from several Muslim-majority countries, citing security concerns; after legal challenges, the Supreme Court upheld the policy's third revision. He enacted a tax cut package for individuals and businesses, which also rescinded the individual health insurance mandate and allowed oil drilling in the Arctic Refuge. He appointed Neil Gorsuch and Brett Kavanaugh to the Supreme Court. Mr. Trump enacted a ban on most transgender applicants to the military. In foreign policy, Trump pursued his America First agenda, withdrawing the U.S. from the Trans-Pacific Partnership trade negotiations, the Paris Agreement on climate change, and the Iran nuclear deal. He recognized Jerusalem as the capital of Israel; imposed import tariffs on various goods, triggering a trade war with China; and started negotiations with North Korea seeking denuclearization.</p>
+      <div class="d-flex">
+        <div class="p-2">
+          <h3 id="entext" style="display:none">Enhanced text</h3>
+          <p style="color:blue" id="enhancedText"></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- MDB core JavaScript-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
+  <script type="text/javascript" src="../js/enhance.js"></script>
+  </body>
+</html>
+
