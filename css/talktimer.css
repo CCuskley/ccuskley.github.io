@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 
+.visHolder {
+  min-height:200px;
+}
+
 .btn-padded {
   margin:5px;
 }

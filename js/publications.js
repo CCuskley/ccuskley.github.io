@@ -1,8 +1,8 @@
 var mypubs = [
 {
-		"reference":"Cuskley, C., Woods, R., & Flaherty, M. (2024). The limitations of large language models for understanding human language and cognition. To appear in <a href= 'https://direct.mit.edu/opmi' target='_blank'><em>Open Mind</em></a>.",
-		"dllink": "https://osf.io/preprints/psyarxiv/hbwrg",
-		"sharelink":"https://osf.io/preprints/psyarxiv/hbwrg",
+		"reference":"Cuskley, C., Woods, R., & Flaherty, M. (2024). The limitations of large language models for understanding human language and cognition. Open Mind, 8, 1058-1083.",
+		"dllink": "https://doi.org/10.1162/opmi_a_00160",
+		"sharelink":"https://doi.org/10.1162/opmi_a_00160",
 		"id":"CuskleyWoodsFlaherty2024",
 		"summary":"Using an ethological framework to understand the key differences between humans and LLMs, and the limits of the explanatory power of LLMs for big questions about human language.",
 		"type":"article",
