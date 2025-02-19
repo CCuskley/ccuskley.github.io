@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Experimental Methods in Linguistics</title>
+  <meta name="description" content="These are the lab excercise for SEL2229: Experimental Methods in Linguistics at Newcastle University" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Experimental Methods in Linguistics" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="These are the lab excercise for SEL2229: Experimental Methods in Linguistics at Newcastle University" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Experimental Methods in Linguistics" />
+  
+  <meta name="twitter:description" content="These are the lab excercise for SEL2229: Experimental Methods in Linguistics at Newcastle University" />
+  
+
+<meta name="author" content="Christine Cuskley" />
+
+
+<meta name="date" content="2025-01-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="introducing-r.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html">Experimental Methods in Linguistics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> New Tools</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#aims"><i class="fa fa-check"></i><b>1.1</b> Aims</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#introduction"><i class="fa fa-check"></i><b>1.2</b> Introduction</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#perusall"><i class="fa fa-check"></i><b>1.3</b> Perusall</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#context"><i class="fa fa-check"></i><b>1.3.1</b> Context</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#tasks"><i class="fa fa-check"></i><b>1.3.2</b> Tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#posit"><i class="fa fa-check"></i><b>1.4</b> Posit</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#context-1"><i class="fa fa-check"></i><b>1.4.1</b> Context</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#tasks-1"><i class="fa fa-check"></i><b>1.4.2</b> Tasks</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introducing-r.html"><a href="introducing-r.html"><i class="fa fa-check"></i><b>2</b> Introducing R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introducing-r.html"><a href="introducing-r.html#getting-started-with-r"><i class="fa fa-check"></i><b>2.1</b> Getting started with R</a></li>
+<li class="chapter" data-level="2.2" data-path="introducing-r.html"><a href="introducing-r.html#exploring-the-interface"><i class="fa fa-check"></i><b>2.2</b> Exploring the interface</a></li>
+<li class="chapter" data-level="2.3" data-path="introducing-r.html"><a href="introducing-r.html#dealing-with-external-data"><i class="fa fa-check"></i><b>2.3</b> Dealing with external data</a></li>
+<li class="chapter" data-level="2.4" data-path="introducing-r.html"><a href="introducing-r.html#try-swirl"><i class="fa fa-check"></i><b>2.4</b> Try Swirl</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html"><i class="fa fa-check"></i><b>3</b> Scripts &amp; Troubleshooting</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#using-documentation"><i class="fa fa-check"></i><b>3.1</b> Using documentation</a></li>
+<li class="chapter" data-level="3.2" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#troubleshooting"><i class="fa fa-check"></i><b>3.2</b> Troubleshooting</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#using-an-existing-script"><i class="fa fa-check"></i><b>3.2.1</b> Using an existing script</a></li>
+<li class="chapter" data-level="3.2.2" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#fixing-bugs"><i class="fa fa-check"></i><b>3.2.2</b> Fixing bugs</a></li>
+<li class="chapter" data-level="3.2.3" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#adding-comments"><i class="fa fa-check"></i><b>3.2.3</b> Adding comments</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html"><i class="fa fa-check"></i><b>4</b> Tidying &amp; Visualisation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#tidying"><i class="fa fa-check"></i><b>4.1</b> Tidying</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#cleaning"><i class="fa fa-check"></i><b>4.1.1</b> Cleaning</a></li>
+<li class="chapter" data-level="4.1.2" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#coding"><i class="fa fa-check"></i><b>4.1.2</b> Coding</a></li>
+<li class="chapter" data-level="4.1.3" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#wrangling"><i class="fa fa-check"></i><b>4.1.3</b> Wrangling</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#introduction-to-visualization"><i class="fa fa-check"></i><b>4.2</b> Introduction to visualization</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#data-visualisation"><i class="fa fa-check"></i><b>4.2.1</b> Data visualisation</a></li>
+<li class="chapter" data-level="4.2.2" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#understanding-plotting-code"><i class="fa fa-check"></i><b>4.2.2</b> Understanding plotting code</a></li>
+<li class="chapter" data-level="4.2.3" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#explore-layers-and-geoms"><i class="fa fa-check"></i><b>4.2.3</b> Explore layers and geoms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="creating-surveys.html"><a href="creating-surveys.html"><i class="fa fa-check"></i><b>5</b> Creating surveys</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="creating-surveys.html"><a href="creating-surveys.html#what-is-a-survey"><i class="fa fa-check"></i><b>5.1</b> What is a survey?</a></li>
+<li class="chapter" data-level="5.2" data-path="creating-surveys.html"><a href="creating-surveys.html#creating-a-survey"><i class="fa fa-check"></i><b>5.2</b> Creating a survey</a></li>
+<li class="chapter" data-level="5.3" data-path="creating-surveys.html"><a href="creating-surveys.html#logic-and-validation"><i class="fa fa-check"></i><b>5.3</b> Logic and validation</a></li>
+<li class="chapter" data-level="5.4" data-path="creating-surveys.html"><a href="creating-surveys.html#moving-it-to-your-assignment"><i class="fa fa-check"></i><b>5.4</b> Moving it to your assignment</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="acceptability-judgement-data.html"><a href="acceptability-judgement-data.html"><i class="fa fa-check"></i><b>6</b> Acceptability Judgement Data</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="acceptability-judgement-data.html"><a href="acceptability-judgement-data.html#load-the-data"><i class="fa fa-check"></i><b>6.1</b> Load the data</a></li>
+<li class="chapter" data-level="6.2" data-path="acceptability-judgement-data.html"><a href="acceptability-judgement-data.html#visualising-trends"><i class="fa fa-check"></i><b>6.2</b> Visualising trends</a></li>
+<li class="chapter" data-level="6.3" data-path="acceptability-judgement-data.html"><a href="acceptability-judgement-data.html#plotting-means-and-standard-error"><i class="fa fa-check"></i><b>6.3</b> Plotting means and standard error</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="lexical-decision-data.html"><a href="lexical-decision-data.html"><i class="fa fa-check"></i><b>7</b> Lexical Decision Data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="lexical-decision-data.html"><a href="lexical-decision-data.html#get-the-data"><i class="fa fa-check"></i><b>7.1</b> Get the data</a></li>
+<li class="chapter" data-level="7.2" data-path="lexical-decision-data.html"><a href="lexical-decision-data.html#load-and-understand-the-data"><i class="fa fa-check"></i><b>7.2</b> Load and understand the data</a></li>
+<li class="chapter" data-level="7.3" data-path="lexical-decision-data.html"><a href="lexical-decision-data.html#make-a-plot"><i class="fa fa-check"></i><b>7.3</b> Make a plot</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html"><i class="fa fa-check"></i><b>8</b> Artificial Language Learning Data</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#get-the-data-1"><i class="fa fa-check"></i><b>8.1</b> Get the data</a></li>
+<li class="chapter" data-level="8.2" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#clean-the-data"><i class="fa fa-check"></i><b>8.2</b> Clean the data</a></li>
+<li class="chapter" data-level="8.3" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#calculating-edit-distances"><i class="fa fa-check"></i><b>8.3</b> Calculating edit distances</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#normalising-distances"><i class="fa fa-check"></i><b>8.3.1</b> Normalising distances</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#summarise-and-plot"><i class="fa fa-check"></i><b>8.4</b> Summarise and plot</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="submitting-your-assignment.html"><a href="submitting-your-assignment.html"><i class="fa fa-check"></i><b>9</b> Submitting your assignment</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Experimental Methods in Linguistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Experimental Methods in Linguistics</h1>
+<p class="author"><em>Christine Cuskley</em></p>
+<p class="date"><em>2025-01-29</em></p>
+</div>
+<div id="new-tools" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Week 1</span> New Tools<a href="index.html#new-tools" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="aims" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Aims<a href="index.html#aims" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Set up accounts with new tools, become familiar with Posit, understand
+how to complete weekly reflections in Posit for your first assignment.</p>
+</div>
+<div id="introduction" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Before we get started, let’s understand a bit about how these labs will
+work. Each week in lab is a chapter in this “book” that goes through
+some specific sequence of tasks, which are related to reflection
+questions - these are available in an assignment template that you make
+your own personal copy of (more on this soon). Because you will be
+working through this independently at your own pace, there is a fair bit
+of text to guide you; where you see a colon before a <a href="#Explain">:word or
+phrase</a>, you can click on it to unpack some extra information
+or context. The entire guide is written in R and RMarkdown using
+bookdown (this will mean something to you shortly): you can navigate
+through the whole thing using the table of contents on the left, and use
+the menu at the top to show/hide the table of contents, search all the
+text, or change how it looks while you’re reading. I’ve also provided
+<a href="Assignment1_Checklist.pdf" target="_blank">a checklist of all
+the tasks that you can use to actually tick things off</a> (this is also
+available as a word document on Canvas).</p>
+<p>While you’re working your way through the tasks, you might get stuck -
+this is part of the learning process. The instructions I provide here
+are explicit, but will be increasingly general as you gain independence:
+they are meant to <a href="#Guide">:guide</a> you through figuring things out for
+yourself. From time to time, we may <a href="#DeliberateBugs">:deliberately</a> put
+bugs into our lab tasks to help you develop this skill. The good news is
+that when you do get stuck, we’re here to help - just raise your hand or
+call me over and someone can help you figure it out. You can really ask
+us anything. You might also want to chat to your peers nearby - if
+you’ve had a problem, someone else has probably encountered it, too -
+they may have already found a solution they can share. Overall,
+especially when it comes to code, what’s important is that it works and
+you can explain how it works - but not every problem has a single
+solution!</p>
+<p>If you run into something you want to ask about after lab - since you
+may need to dedicate time to finishing a week’s task outside of the
+timetabled hour - use the dedicated Discussion board to raise a question
+on Canvas. I’ll hop in as soon as I can to help.</p>
+<p>You can use the table of contents on the left to jump to particular
+tasks for the week as needed - but note that the walkthrough is meant to
+be…walked through. You should read it all and work through it
+sequentially. To keep overall track of your progress in each week coming
+up to the assignment deadline, use the
+<a href="Assignment1_Checklist.pdf" target="_blank">full checklist
+document</a>. You will want to either print this or keep a saved copy of
+it (e.g., in your OneDrive) where you cross of finished tasks. Although
+the tasks aren’t numbered, they’re designed to be done in the order
+they’re listed/presented here. In many cases, a single task will involve
+multiple steps - towards the start of module, I’ll make these explicit
+while you’re still learning. However, in later exercises (particularly
+from week 4 onwards), the idea is that you will know the steps to take
+to get from point A to point B without me having to list every single
+thing.</p>
+</div>
+<div id="perusall" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Perusall<a href="index.html#perusall" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="context" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Context<a href="index.html#context" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Perusall is a tool for collaborative reading. If you’re like most
+students, you <a href="#DoTheReading">:do your reading</a> on your own. Perusall
+allows you to get more out of the reading by interacting with others
+over the text, much in the way you might comment on a post or article
+elsewhere on the internet. “Others” here means other students on the
+module, but also me as the module leader - each reading will be released
+with my annotations, which should help you to understand exactly what I
+expect you to get out of the reading, often with explicit ties to other
+parts of the module (lectures, labs, and assignments). If you comment on
+a reading (even if this is anonymous), I’ll try to answer.</p>
+<p>This may come as a shock, but there is a point to this beyond it being
+cute and fun: getting in the habit of engaging in the reading this way
+means you are more likely to actually keep up with doing it (which, of
+course, you were planning to do anyway, right?), and as a consequence,
+you are more likely to do well in the module.</p>
+</div>
+<div id="tasks" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Tasks<a href="index.html#tasks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Sign up</strong>: Go to the
+<a href="https://perusall.com" target="_blank">Perusall website</a>
+and create an account using your <a href="#UniversityEmail">:university
+email</a>.</li>
+<li><strong>Join module</strong>: Perusall is a service that anyone can use, and
+there are loads of modules on it (referred to as “courses” to cater
+to the US market). Figure out how to use the <strong>join code
+CUSKLEY-B2XB3</strong> to access readings for SEL2229.</li>
+</ul>
+<p>Now explore around a bit. Find the reading for week 1 and explore it a
+bit; it’s already annotated. Try out some features:</p>
+<ul>
+<li>Create or reply to a comment</li>
+<li>Search the reading for all instances of the word ‘variable’</li>
+<li>Figure out how to upvote existing comment/annotation</li>
+<li>Explore the hashtags for the module</li>
+<li>Get Perusall to read aloud to you</li>
+</ul>
+<p>You’ll need one of the phrases I’ve annotated for your reflections
+shortly, so keep the tab open.</p>
+</div>
+</div>
+<div id="posit" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Posit<a href="index.html#posit" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="context-1" class="section level3 hasAnchor" number="1.4.1">
+<h3><span class="header-section-number">1.4.1</span> Context<a href="index.html#context-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Posit is an <em>interactive development environment</em>, also known as an IDE.
+In other words, it’s a piece of software that you can write (i.e.,
+develop) <a href="#ProgramsOrCode">:programs or code</a> in (in this case, in the
+programming language known as R). It’s important to note that Posit used
+to be called RStudio, and the in-browser version used to be called
+called RStudio Cloud.</p>
+<p>You’ll need to know this for troubleshooting; this is just a fancy word
+for figuring things out if you have a problem. Like any other software,
+you might Google what you want to know with the name of the software
+(e.g. “how do I make a table in Word”). Because they’ve renamed RStudio
+to Posit just in the last couple years, searching something like “how do
+I create a new script in Posit” may not get you the solutions you need,
+so be prepared to search “how do I create a new script in RStudio”
+instead.</p>
+<p><strong>Note that Google is slightly ruined by default</strong> - the default is now
+that you need to scroll past AI-generated garbage results
+<a href="https://www.reddit.com/r/ChatGPT/comments/zdjpyi/on_the_benefits_of_eating_glass_why_you_can_never/" target="_blank">telling
+you to eat glass</a> to get to answers that will actually be useful to
+you. <strong>You can add “-ai” to any search to suppress this, e.g., search
+“how do I create a new script in RStudio -ai”.</strong></p>
+<p>You will need to do this - troubleshoot problems using Google - as
+you’re learning R with Posit at some point. In fact, you will probably
+watch me do this to help find answers to problems during labs. This is
+not just a performance for teaching purposes: I use R/Posit all the
+time, and have for a decade, and I am constantly searching for
+solutions, often using Google.</p>
+<p>Your aim today is just to get signed up to Posit, look around a bit, and
+set up the project that you’ll eventually submit for your first
+assignment. You’re not expected to understand much of what you see
+immediately; don’t let it scare you, just poke around. Next week we’ll
+start on our journey of actually understanding how to use it; by having
+a look now, you’ll make that start a little bit easier on yourself.</p>
+</div>
+<div id="tasks-1" class="section level3 hasAnchor" number="1.4.2">
+<h3><span class="header-section-number">1.4.2</span> Tasks<a href="index.html#tasks-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Sign up</strong>: Go to the
+<a href="https://posit.cloud" target="_blank">Posit</a> website and
+create an account. Once you’re logged in, you want to go to Posit
+Cloud.</li>
+</ul>
+<p>Once you’ve done this, it will stick you somewhere called “Your
+Workspace”. Throughout the module, you’ll do your seminar work in an R
+Project. Think of an R Project like a bundle of files related to your
+work that are all in the same place so they can talk to each other.
+You’ll submit this bundle for your first assignment. We’ll work on a
+range of exercises, some adapted from Bodo Winter’s
+<a href="https://libsearch.ncl.ac.uk/permalink/f/1jraif3/NCL_ALMA51162941930002411" target="_blank"><em>Statistics
+for Linguists: An Introduction Using R</em></a>, which will also be the
+target reading for the first few weeks. Eventually we’ll get into more
+complex things, and you may need to port files from that into your R
+Project. But first, let’s get it going.</p>
+<ul>
+<li><strong>Access the template</strong>
+<a href= "https://posit.cloud/content/9506980" target="_blank">using
+this link</a>. You will use this as a template for your first
+assignment, working in it over the next 7-8 weeks. Quickly look
+around and see what you can make sense of. Where can you type? Where
+can you click? What are the options in the different menus?</li>
+<li>At the top of the assignment template, there’s a red warning that
+says ‘Temporary Copy’. If you think about it even <em>very</em> briefly,
+you probably do not want the project you’re using to prepare your
+first assignment to be temporary. Temporary means it will blink out
+of existence as soon as you close the browser window. Figure out how
+to make this a permanent copy.</li>
+<li>Why might it be that any project shared in this way defaults to a
+temporary copy? <a href="#TemporaryCopy">:hint</a></li>
+</ul>
+<p>Once you’ve gotten your assignment template saved as a project within
+your own account, think about what you’re looking at. There are four
+panes in Posit, and each has several tabs. For now, we’ll only focus on
+the default tabs.</p>
+<ul>
+<li>The <strong>top left pane</strong> displays files (which you can edit) or
+variables/data (which you can only look at).</li>
+<li>The <strong>bottom left pane</strong> displays the console. This is where you
+interact directly with R, or where lines of code are sent to execute
+or run.</li>
+<li>The <strong>top right pane</strong> displays the environment. This shows what
+variables and objects are loaded into your R session.</li>
+<li>The <strong>bottom right pane</strong> shows files - this is where your
+reflections file is (<code>assignment_reflections.Rmd</code>), and where you’ll
+put anything else you work on in Posit throughout the semester.</li>
+</ul>
+<p>Start by going to the files pane and opening the file
+<code>assignment_reflections.rmd</code>. The next thing you’re going to do is
+switch into Posit and work your way through this file, which has
+specific questions for you to answer (some of which you’ll be able to do
+right away). But before we do that, let me explain a little bit about
+this <code>.Rmd</code> file, and files in general:</p>
+<ul>
+<li>The <em>file extension</em> here is <code>.Rmd</code>, which you probably haven’t seen
+before. Extensions you have probably seen are things like <code>.docx</code>
+(Word), <code>.xlsx</code> (Excel) and <code>.txt</code> (plain text). Note that because
+file extensions start with a “.”, filenames can’t include one (for
+any kind of file).</li>
+<li><code>.Rmd</code> stands for R Markdown. You can
+<a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">read
+more about markdown in general here</a>, but the gist is it’s just a
+way of creating text that can have formatting (e.g., bold, italics)
+much like Word.</li>
+<li>Ok great. So why can’t you just do this in Word, which you’ve almost
+certainly used before? A few reasons:
+<ul>
+<li>Part of the point of this module is to learn to use R/Posit,
+<em>not</em> Word. It may come as a shock, but learning new things is
+good and you should try to do it on occasion.</li>
+<li>RMarkdown can do things Word can’t, like embed code. Look at the
+first week of the assignment reflections file and you’ll see a
+code chunk (the file itself explains a bit more).</li>
+<li>I’m using the assignment as a way to make you learn to use this,
+but it isn’t just for this assignment. Because RMarkdown lets
+you do much more complicated things than Word, it’s very useful
+for managing large documents (like, for example, a
+dissertation).</li>
+</ul></li>
+</ul>
+<p>It used to be that using RMarkdown involved <em>really</em> learning markdown
+itself. This isn’t really hard, it’s just different: for example,
+instead of selecting a paragraph and then selecting Header 1 from a
+menu, you just put a single hashtag in front of the paragraph (and two
+hashtags is Header 2, etc., with other special characters for any other
+kind of text formatting you can imagine). Learning RMarkdown in this way
+is still useful: if you type fast, it makes everything much faster
+because you’re not fiddling with point and click mouse stuff to format
+text. However, Posit now has a “visual” mode for RMarkdown that just
+makes it into a simplified little word processor that should be very
+easy to use. If you want, you can still use normal markdown syntax in
+this editor, but there is also a familiar menu bar at the top for any
+formatting needs.</p>
+<p>The default for an RMarkdown file in Posit is “Source” mode, which shows
+the hashtags etc. that it would typeset into e.g., headers. <strong>On the
+menu within the file’s tab, click “Visual” to see this word processor
+style instead.</strong> It may prompt you to install some R packages required
+to make this work (e.g., Pandoc) - go ahead and accept this suggestion
+(we’ll get to it later, but think of a package like an add-on).</p>
+<p>Now you’re ready to get on with your reflections for this week. The
+document itself has more information about what these should look like -
+<strong>pay close attention to this</strong>. I strongly suggest you complete these
+reflections now when things are fresh in your mind, and you can rest
+easy knowing you’ve already started your first assignment! This
+recommendation holds for every week: <strong>you should do your reflections
+during or immediately after completing the lab task</strong>. Trust me when I
+say that <em>you cannot do this all at once right before the deadline</em>; all
+the extensions in the world would not make this more feasible either.
+The lab work and reflections are designed to be done <em>as you go</em>
+throughout the module, and is not amenable to cramming.</p>
+</div>
+</div>
+<div id="nutshells" class="section level2 nutshells unlisted unnumbered hasAnchor">
+<h2>Nutshells<a href="index.html#nutshells" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+<div id="bonus-tasks" class="section level3 hasAnchor" number="1.4.3">
+<h3><span class="header-section-number">1.4.3</span> Bonus Tasks<a href="index.html#bonus-tasks" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This means that they are a bonus for you in a general sense, but they
+are not part of the assignment <em>at all</em>, i.e., will not get you bonus
+“marks” of any kind.</p>
+</div>
+<div id="explain" class="section level3 hasAnchor" number="1.4.4">
+<h3><span class="header-section-number">1.4.4</span> Explain<a href="index.html#explain" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Clicking on these unpacks a bit of extra text if you want information.
+This may deepen your understanding or give you an extra hint, but I
+don’t expect that everyone will click on every info point.</p>
+</div>
+<div id="guide" class="section level3 hasAnchor" number="1.4.5">
+<h3><span class="header-section-number">1.4.5</span> Guide<a href="index.html#guide" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This is not because I am unable to give you very explicit instructions;
+it’s because getting used to finding your own solutions is a key skill
+for experimental design and analysis. The tasks are not something you
+can plod through without paying much attention to what you’re doing, and
+you won’t learn how to do much if I instruct you like I would a computer
+(we’ll learn more about this in week 2).</p>
+</div>
+<div id="deliberate-bugs" class="section level3 hasAnchor" number="1.4.6">
+<h3><span class="header-section-number">1.4.6</span> Deliberate Bugs<a href="index.html#deliberate-bugs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There may also be bugs or other issues with the task because I’m not
+perfect; don’t worry, we’ll find a way to learn from those, too.</p>
+</div>
+<div id="do-the-reading" class="section level3 hasAnchor" number="1.4.7">
+<h3><span class="header-section-number">1.4.7</span> Do The Reading<a href="index.html#do-the-reading" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Note that I assume you do, in fact, <em>do</em> the reading, both for the
+purposes of this exercise and when it comes to marking your work. I
+wouldn’t assign it if it weren’t a key part of doing well in the
+module - but also note this isn’t the only reading you’re expected to
+do. You should also be finding and reading literature on your own to
+support you in your second assignment. We’ll refer to primary literature
+in the lectures all the time; look out for it.</p>
+</div>
+<div id="university-email" class="section level3 hasAnchor" number="1.4.8">
+<h3><span class="header-section-number">1.4.8</span> University Email<a href="index.html#university-email" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Why your university email? Because I might answer your question(s) on
+Perusall, it’s easier if I can follow up on who you are if we want to
+continue a discussion via email. It can be difficult to tell who someone
+like <a href="mailto:mk2003@gmail.com" class="email">mk2003@gmail.com</a> is. You can
+still choose to post anonymously on Perusall and I won’t be able to tell
+who you are.</p>
+</div>
+<div id="programs-or-code" class="section level3 hasAnchor" number="1.4.9">
+<h3><span class="header-section-number">1.4.9</span> Programs or Code<a href="index.html#programs-or-code" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you’re already sitting there like, what does ‘program’ even mean
+exactly…? Code?? Don’t worry, that’s a perfectly reasonable thought,
+and we’ll get into this next week.</p>
+</div>
+<div id="temporary-copy" class="section level3 hasAnchor" number="1.4.10">
+<h3><span class="header-section-number">1.4.10</span> Temporary Copy<a href="index.html#temporary-copy" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Some services where you share a link to editable content, like Google
+Docs, just allow anyone to edit it (if you’ve calibrated the link in
+this way). However, imagine for a second the chaos that would cause
+here: I have shared the same link to a template to everyone in the
+class…and also asked everyone to edit it and eventually submit it for
+their assignment. If this link didn’t lead to a copy (thereby forcing
+you to save your own personal copy), it would be a mess. While you can
+type into many different files in an R project (As we’ll see throughout
+the semester), it is different in important ways to a Google doc. As
+such, it’s impossible to share a real-time editing link of this kind for
+a Posit Cloud project. If you want to collaborate in real-time with
+someone on an RProject, you add them as an editor instead.</p>
+</div>
+<div id="critical-thinking" class="section level3 hasAnchor" number="1.4.11">
+<h3><span class="header-section-number">1.4.11</span> Critical Thinking<a href="index.html#critical-thinking" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If you don’t use reference management software, you might not realise
+it, but you are haemmorhaging valuable cognitive resources doing tasks
+that are better left to your computer: keeping a library organised with
+your own idiosyncratic system and straining your eyes moving punctuation
+around just before an assignment deadline is taxing your
+<a href="https://en.wikipedia.org/wiki/Executive_functions" target="_blank">executive
+function</a>. You might know people who don’t use this kind of software
+and do fine, but this is likely because they’ve spent years (or decades)
+building up their own systems and strategies for managing literature and
+referencing. You could spend a lot of time doing this if you really
+want…or you could just use software that’s been developed for it.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="introducing-r.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["SEL2229_exercises.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+},
+"info": null
+});
+});
+</script>
+
+</body>
+
+</html>

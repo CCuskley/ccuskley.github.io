@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 3 Scripts &amp; Troubleshooting | Experimental Methods in Linguistics</title>
+  <meta name="description" content="These are the lab excercise for SEL2229: Experimental Methods in Linguistics at Newcastle University" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 3 Scripts &amp; Troubleshooting | Experimental Methods in Linguistics" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="These are the lab excercise for SEL2229: Experimental Methods in Linguistics at Newcastle University" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 3 Scripts &amp; Troubleshooting | Experimental Methods in Linguistics" />
+  
+  <meta name="twitter:description" content="These are the lab excercise for SEL2229: Experimental Methods in Linguistics at Newcastle University" />
+  
+
+<meta name="author" content="Christine Cuskley" />
+
+
+<meta name="date" content="2025-01-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introducing-r.html"/>
+<link rel="next" href="tidying-visualisation.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html">Experimental Methods in Linguistics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> New Tools</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#aims"><i class="fa fa-check"></i><b>1.1</b> Aims</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#introduction"><i class="fa fa-check"></i><b>1.2</b> Introduction</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#perusall"><i class="fa fa-check"></i><b>1.3</b> Perusall</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#context"><i class="fa fa-check"></i><b>1.3.1</b> Context</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#tasks"><i class="fa fa-check"></i><b>1.3.2</b> Tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#posit"><i class="fa fa-check"></i><b>1.4</b> Posit</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="index.html"><a href="index.html#context-1"><i class="fa fa-check"></i><b>1.4.1</b> Context</a></li>
+<li class="chapter" data-level="1.4.2" data-path="index.html"><a href="index.html#tasks-1"><i class="fa fa-check"></i><b>1.4.2</b> Tasks</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introducing-r.html"><a href="introducing-r.html"><i class="fa fa-check"></i><b>2</b> Introducing R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introducing-r.html"><a href="introducing-r.html#getting-started-with-r"><i class="fa fa-check"></i><b>2.1</b> Getting started with R</a></li>
+<li class="chapter" data-level="2.2" data-path="introducing-r.html"><a href="introducing-r.html#exploring-the-interface"><i class="fa fa-check"></i><b>2.2</b> Exploring the interface</a></li>
+<li class="chapter" data-level="2.3" data-path="introducing-r.html"><a href="introducing-r.html#dealing-with-external-data"><i class="fa fa-check"></i><b>2.3</b> Dealing with external data</a></li>
+<li class="chapter" data-level="2.4" data-path="introducing-r.html"><a href="introducing-r.html#try-swirl"><i class="fa fa-check"></i><b>2.4</b> Try Swirl</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html"><i class="fa fa-check"></i><b>3</b> Scripts &amp; Troubleshooting</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#using-documentation"><i class="fa fa-check"></i><b>3.1</b> Using documentation</a></li>
+<li class="chapter" data-level="3.2" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#troubleshooting"><i class="fa fa-check"></i><b>3.2</b> Troubleshooting</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#using-an-existing-script"><i class="fa fa-check"></i><b>3.2.1</b> Using an existing script</a></li>
+<li class="chapter" data-level="3.2.2" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#fixing-bugs"><i class="fa fa-check"></i><b>3.2.2</b> Fixing bugs</a></li>
+<li class="chapter" data-level="3.2.3" data-path="scripts-troubleshooting.html"><a href="scripts-troubleshooting.html#adding-comments"><i class="fa fa-check"></i><b>3.2.3</b> Adding comments</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html"><i class="fa fa-check"></i><b>4</b> Tidying &amp; Visualisation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#tidying"><i class="fa fa-check"></i><b>4.1</b> Tidying</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#cleaning"><i class="fa fa-check"></i><b>4.1.1</b> Cleaning</a></li>
+<li class="chapter" data-level="4.1.2" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#coding"><i class="fa fa-check"></i><b>4.1.2</b> Coding</a></li>
+<li class="chapter" data-level="4.1.3" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#wrangling"><i class="fa fa-check"></i><b>4.1.3</b> Wrangling</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#introduction-to-visualization"><i class="fa fa-check"></i><b>4.2</b> Introduction to visualization</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#data-visualisation"><i class="fa fa-check"></i><b>4.2.1</b> Data visualisation</a></li>
+<li class="chapter" data-level="4.2.2" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#understanding-plotting-code"><i class="fa fa-check"></i><b>4.2.2</b> Understanding plotting code</a></li>
+<li class="chapter" data-level="4.2.3" data-path="tidying-visualisation.html"><a href="tidying-visualisation.html#explore-layers-and-geoms"><i class="fa fa-check"></i><b>4.2.3</b> Explore layers and geoms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="creating-surveys.html"><a href="creating-surveys.html"><i class="fa fa-check"></i><b>5</b> Creating surveys</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="creating-surveys.html"><a href="creating-surveys.html#what-is-a-survey"><i class="fa fa-check"></i><b>5.1</b> What is a survey?</a></li>
+<li class="chapter" data-level="5.2" data-path="creating-surveys.html"><a href="creating-surveys.html#creating-a-survey"><i class="fa fa-check"></i><b>5.2</b> Creating a survey</a></li>
+<li class="chapter" data-level="5.3" data-path="creating-surveys.html"><a href="creating-surveys.html#logic-and-validation"><i class="fa fa-check"></i><b>5.3</b> Logic and validation</a></li>
+<li class="chapter" data-level="5.4" data-path="creating-surveys.html"><a href="creating-surveys.html#moving-it-to-your-assignment"><i class="fa fa-check"></i><b>5.4</b> Moving it to your assignment</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="acceptability-judgement-data.html"><a href="acceptability-judgement-data.html"><i class="fa fa-check"></i><b>6</b> Acceptability Judgement Data</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="acceptability-judgement-data.html"><a href="acceptability-judgement-data.html#load-the-data"><i class="fa fa-check"></i><b>6.1</b> Load the data</a></li>
+<li class="chapter" data-level="6.2" data-path="acceptability-judgement-data.html"><a href="acceptability-judgement-data.html#visualising-trends"><i class="fa fa-check"></i><b>6.2</b> Visualising trends</a></li>
+<li class="chapter" data-level="6.3" data-path="acceptability-judgement-data.html"><a href="acceptability-judgement-data.html#plotting-means-and-standard-error"><i class="fa fa-check"></i><b>6.3</b> Plotting means and standard error</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="lexical-decision-data.html"><a href="lexical-decision-data.html"><i class="fa fa-check"></i><b>7</b> Lexical Decision Data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="lexical-decision-data.html"><a href="lexical-decision-data.html#get-the-data"><i class="fa fa-check"></i><b>7.1</b> Get the data</a></li>
+<li class="chapter" data-level="7.2" data-path="lexical-decision-data.html"><a href="lexical-decision-data.html#load-and-understand-the-data"><i class="fa fa-check"></i><b>7.2</b> Load and understand the data</a></li>
+<li class="chapter" data-level="7.3" data-path="lexical-decision-data.html"><a href="lexical-decision-data.html#make-a-plot"><i class="fa fa-check"></i><b>7.3</b> Make a plot</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html"><i class="fa fa-check"></i><b>8</b> Artificial Language Learning Data</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#get-the-data-1"><i class="fa fa-check"></i><b>8.1</b> Get the data</a></li>
+<li class="chapter" data-level="8.2" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#clean-the-data"><i class="fa fa-check"></i><b>8.2</b> Clean the data</a></li>
+<li class="chapter" data-level="8.3" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#calculating-edit-distances"><i class="fa fa-check"></i><b>8.3</b> Calculating edit distances</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#normalising-distances"><i class="fa fa-check"></i><b>8.3.1</b> Normalising distances</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="artificial-language-learning-data.html"><a href="artificial-language-learning-data.html#summarise-and-plot"><i class="fa fa-check"></i><b>8.4</b> Summarise and plot</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="submitting-your-assignment.html"><a href="submitting-your-assignment.html"><i class="fa fa-check"></i><b>9</b> Submitting your assignment</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Experimental Methods in Linguistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="scripts-troubleshooting" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Week 3</span> Scripts &amp; Troubleshooting<a href="scripts-troubleshooting.html#scripts-troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Aims: Get used using scripts, and start to understand tidying data, including wrangling, cleaning, and re-coding.</p>
+<p>This week in lecture we started to look at some actual experiments, and the kinds of data they generate. While the reading in Winter talked a fair bit about <em>how</em> we might restructure and tidy data, our lectures focused more on <em>why</em> you need to do that with real data. Now, you’re going to spend some time actually getting that done with real data yourself.</p>
+<p>As you go through this, <strong>remember</strong>: there is more than one way to solve these tasks. Recall last week, even with very simple problems (e.g., generate a vector of ten numbers), there were <a href="#MultipleApproaches">:multiple ways to approach</a> a given task. It doesn’t matter all that much how you do it, just that you get the outcome you need and you understand how you got there. Like learning a natural language, learning a programming language is difficult - but think of this functionally. Most people don’t try to sit down and learn the entire grammar of a natural language by rote; they start by focusing on how to order a coffee and say good morning. As you become more advanced in your R skills, your code will get more tidy, and your understanding of the “grammar” of R will come, but for now, worry mainly about using your code to solve problems - efficiency will come later.</p>
+<div id="using-documentation" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Using documentation<a href="scripts-troubleshooting.html#using-documentation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Below, I’ve provided a list of key functions from the tidyverse that we’ll see throughout the semester, with links to their documentation. It’s a good idea to start by poking around the documentation for each function to understand a bit more about what it does and how it does it, including the kids of arguments each function expects and whether there are any relevant defaults.</p>
+<ul>
+<li><p><a href="https://www.rdocumentation.org/packages/qtl2/versions/0.32/topics/read_csv" target="_blank">read_csv()</a></p></li>
+<li><p><a href="https://dplyr.tidyverse.org/reference/filter.html" target="_blank">filter()</a></p></li>
+<li><p><a href="https://dplyr.tidyverse.org/reference/mutate.html" target="_blank">mutate()</a></p></li>
+<li><p><a href="https://dplyr.tidyverse.org/reference/rowwise.html" target="_blank">rowwise()</a></p></li>
+<li><p><a href="https://dtplyr.tidyverse.org/reference/group_by.dtplyr_step.html" target="_blank">group_by()</a></p></li>
+<li><p><a href="https://dplyr.tidyverse.org/reference/select.html" class="https://dplyr.tidyverse.org/reference/select.html" target=”_blank”>select()</a></p></li>
+<li><p><a href="https://tidyr.tidyverse.org/reference/pivot_longer.html" target="_blank">pivot_longer()</a></p></li>
+<li><p><a href="https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/View" target="_blank">View()</a></p></li>
+</ul>
+<p>Note that there are also <a href="https://posit.co/resources/cheatsheets/" target="_blank">lots of R cheatsheets</a> that you can download for reference as PDFs, or just bookmark for later. There is <a href="https://rstudio.github.io/cheatsheets/html/tidyr.html" target="_blank">one for tidyr</a> and <a href="https://rstudio.github.io/cheatsheets/html/rstudio-ide.html" target="_blank">one for the RStudio (Posit) IDE</a>. For the RStudio one, just keep in mind that there might be minor differences since you’re using Posit online in the browser instead of locally.</p>
+</div>
+<div id="troubleshooting" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Troubleshooting<a href="scripts-troubleshooting.html#troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You’re going to make mistakes when you write code, so being able to spot them and fix them is a key skill. The nice thing about R, relative to a point and click program like Excel or Google Sheets, is that it will usually tell you when you make an error. More often than not, errors in your code will be incredibly stupid: things like misspelling a variable name, forgetting to add a pipe, or load a file. This exercise involves finding those kinds of errors and fixing them.</p>
+<p>Note that this is a domain where tidy pipes might hurt us a bit; every bit of code “piped” together is run as one, meaning we can’t run long pipes line by line to troubleshoot exactly where an error is coming from in our code. However: tidyverse will try to tell us where our pipe is broken, so pay attention to the errors it generates.</p>
+<div id="using-an-existing-script" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Using an existing script<a href="scripts-troubleshooting.html#using-an-existing-script" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Get the files:</strong> To do this troubleshooting exercise, you’ll need to download some files from another project and upload them into your posit project. Download the files <code>colourTidy.R</code>, and <code>colourData.csv</code> <a href="https://posit.cloud/content/5418213" target="_blank">from this project</a>. Note that <code>colourData.csv</code> is inside a top level <code>Data</code> folder.</li>
+<li><strong>Organise and Upload:</strong> You’re putting a lot of work from different weeks into this project, and it might get messy if you’re not careful. You need to organise your project so I can make sense of it when it’s submitted - when I’m marking, I’ll be looking closely at your reflections file, but <em>also</em> your scripts and whether you have all the right data files in the right place.
+<ul>
+<li>Create two new folders: one called Data and one called Scripts</li>
+<li>Move your scripts from earlier weeks into the scripts folder, and the <code>nettle.csv</code> data file and the <code>Week6_AJT_AEP.csv</code> file (which we’ll work with in week 6) to your Data folder.</li>
+<li>Upload the <code>colourTidy.R</code> script to the scripts folder, and <code>colourData.csv</code> to the Data folder.</li>
+</ul></li>
+</ul>
+</div>
+<div id="fixing-bugs" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Fixing bugs<a href="scripts-troubleshooting.html#fixing-bugs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Now it’s time to dig in and fix this script. <strong>It’s important for the purposes of your assignment, but also to get used to commenting scripts, to use comments to explain what you find while you’re debugging.</strong> In addition to this, when you’re working with a script you didn’t write, it’s always best to preserve the original script so you can check back to it to see if you accidentally introduced something you didn’t intend to. Start by creating a copy of <code>colourTidy.R</code> called <code>colourTidyR_Troubleshooting.R</code> that you’ll use to fix the bugs in the original script. You can do this by creating a new, blank script and copying and pasting everything in; but you can also select the file in the files pane and use the gear icon to make a copy of it.</p>
+<p>For each issue you find and fix, create a corresponding comment that explains the problem and how you have solved it. I’ll tell you the first few things you’re likely to encounter for free:</p>
+<ul>
+<li>You may not have the tidyverse package installed - because that’s what the script uses, it will immediately fail unless you do install it. As soon as you open <code>colourTidy.R</code>, Posit can tell and it will prompt you to install this - go ahead and do that.
+<ul>
+<li><strong>Note that because most every script you use will use the tidyverse, and because you want your scripts to be able to standalone, the first line of <em>all</em> your <code>.R</code> scripts going forward should be <code>library(tidyverse)</code></strong></li>
+</ul></li>
+<li>You’ve started your own way of organising scripts and files, so on the second line of the script where it tries to load the data file, it won’t be able to find it. You need to change the filepath, i.e., the argument string passed to <code>read_csv()</code>, so that it makes sense <em>relative to where your script file is</em>. That means you need to use the path to tell it to go <em>out</em> of the Scripts folder into the main level <em>and then</em> into the Data folder where you put the file. To get you started, you use “../” to get out of the folder you’re in and “up to the next level.</li>
+<li>If you’re still getting a problem with the script loading the data, look <em>very</em> carefully at the filename.</li>
+</ul>
+</div>
+<div id="adding-comments" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Adding comments<a href="scripts-troubleshooting.html#adding-comments" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Once you’ve fixed all the bugs and everything works, it’s time to add some comments. Comments start with a <code>#</code>, and represent information about the code, but the <code>#</code> at the start of the line lets R know that whatever comes after it shouldn’t be run. This is primarily used to explain what code does for others or your future self, but can also be used for “debugging”: you can comment out a specific line of code to find out if it’s causing a problem, or to test something without that line. See the example below:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="scripts-troubleshooting.html#cb1-1" tabindex="-1"></a><span class="co">#Define x</span></span>
+<span id="cb1-2"><a href="scripts-troubleshooting.html#cb1-2" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="dv">6</span><span class="sc">+</span><span class="dv">3</span></span>
+<span id="cb1-3"><a href="scripts-troubleshooting.html#cb1-3" tabindex="-1"></a><span class="co">#Define y</span></span>
+<span id="cb1-4"><a href="scripts-troubleshooting.html#cb1-4" tabindex="-1"></a>y<span class="ot">&lt;-</span><span class="dv">9</span><span class="sc">*</span><span class="dv">3</span></span>
+<span id="cb1-5"><a href="scripts-troubleshooting.html#cb1-5" tabindex="-1"></a><span class="co">#Define z as y divided by x</span></span>
+<span id="cb1-6"><a href="scripts-troubleshooting.html#cb1-6" tabindex="-1"></a>z<span class="ot">&lt;-</span>y<span class="sc">/</span>x</span>
+<span id="cb1-7"><a href="scripts-troubleshooting.html#cb1-7" tabindex="-1"></a><span class="co">#will test the square root of z later</span></span>
+<span id="cb1-8"><a href="scripts-troubleshooting.html#cb1-8" tabindex="-1"></a><span class="co">#myvar&lt;-sqrt(z)</span></span></code></pre></div>
+<ul>
+<li>Add comments to <code>colourTidy_troubleshooting.R</code> throughout, indicating what each type of command is doing to the data. Note that this need not be every single line, since some lines repeat the same kind of operation</li>
+</ul>
+</div>
+</div>
+<div id="nutshells-2" class="section level2 nutshells unlisted unnumbered hasAnchor">
+<h2>Nutshells<a href="scripts-troubleshooting.html#nutshells-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+<div id="multiple-approaches" class="section level3 hasAnchor" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Multiple Approaches<a href="scripts-troubleshooting.html#multiple-approaches" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For example <code>myNumbers&lt;-c(4,2,7,9,1,4,7,3,0,1)</code> worked as well as <code>myNumbers&lt;-c(0:9)</code>, given the constraint of the task that we didn’t care about the values of those ten numbers.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introducing-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tidying-visualisation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["SEL2229_exercises.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+},
+"info": null
+});
+});
+</script>
+
+</body>
+
+</html>
