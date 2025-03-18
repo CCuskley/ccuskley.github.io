@@ -291,19 +291,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>Use reasonable axis labels and a title.</li>
 <li><code>ylim()</code> should reflect the actual range of possible distances, not just what occurs in the data.</li>
+<li>add <code>geom_line()</code> so that the slope of the difference between block A and B is visible</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="artificial-language-learning-data.html#cb6-1" tabindex="-1"></a><span class="co">#make sure to change the dataframe name to what you created in your new code</span></span>
-<span id="cb6-2"><a href="artificial-language-learning-data.html#cb6-2" tabindex="-1"></a>allPlot<span class="ot">&lt;-</span><span class="fu">ggplot</span>(<span class="at">data=</span>dfname, <span class="fu">aes</span>(<span class="at">x=</span>,<span class="at">y=</span>,<span class="at">colour=</span>))<span class="sc">+</span></span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="artificial-language-learning-data.html#cb6-1" tabindex="-1"></a><span class="co">#colour and group should be the same</span></span>
+<span id="cb6-2"><a href="artificial-language-learning-data.html#cb6-2" tabindex="-1"></a>allPlot<span class="ot">&lt;-</span><span class="fu">ggplot</span>(<span class="at">data=</span>, <span class="fu">aes</span>(<span class="at">x=</span>,<span class="at">y=</span>,<span class="at">colour=</span>, <span class="at">group=</span>))<span class="sc">+</span></span>
 <span id="cb6-3"><a href="artificial-language-learning-data.html#cb6-3" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
-<span id="cb6-4"><a href="artificial-language-learning-data.html#cb6-4" tabindex="-1"></a>  <span class="co">#add se bars - check week 6 for how this works; min should be mean-se, max should be mean+se</span></span>
-<span id="cb6-5"><a href="artificial-language-learning-data.html#cb6-5" tabindex="-1"></a>  <span class="fu">geom_errorbars</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>,<span class="at">ymax=</span>), <span class="at">width=</span><span class="fl">0.02</span>)<span class="sc">+</span></span>
-<span id="cb6-6"><a href="artificial-language-learning-data.html#cb6-6" tabindex="-1"></a>  <span class="fu">geom_line</span>()<span class="sc">+</span></span>
-<span id="cb6-7"><a href="artificial-language-learning-data.html#cb6-7" tabindex="-1"></a>  <span class="fu">ylim</span>()<span class="sc">+</span></span>
-<span id="cb6-8"><a href="artificial-language-learning-data.html#cb6-8" tabindex="-1"></a>  <span class="fu">xlab</span>()<span class="sc">+</span></span>
-<span id="cb6-9"><a href="artificial-language-learning-data.html#cb6-9" tabindex="-1"></a>  <span class="fu">ylab</span>()<span class="sc">+</span></span>
-<span id="cb6-10"><a href="artificial-language-learning-data.html#cb6-10" tabindex="-1"></a>  <span class="fu">ggtitle</span>()<span class="sc">+</span></span>
-<span id="cb6-11"><a href="artificial-language-learning-data.html#cb6-11" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div>
+<span id="cb6-4"><a href="artificial-language-learning-data.html#cb6-4" tabindex="-1"></a>  <span class="co">#add se bars - check week 6 for how this works</span></span>
+<span id="cb6-5"><a href="artificial-language-learning-data.html#cb6-5" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>,<span class="at">ymax=</span>), <span class="at">width=</span><span class="fl">0.02</span>)<span class="sc">+</span></span>
+<span id="cb6-6"><a href="artificial-language-learning-data.html#cb6-6" tabindex="-1"></a>  <span class="fu">ylim</span>()<span class="sc">+</span></span>
+<span id="cb6-7"><a href="artificial-language-learning-data.html#cb6-7" tabindex="-1"></a>  <span class="fu">xlab</span>()<span class="sc">+</span></span>
+<span id="cb6-8"><a href="artificial-language-learning-data.html#cb6-8" tabindex="-1"></a>  <span class="fu">ylab</span>()<span class="sc">+</span></span>
+<span id="cb6-9"><a href="artificial-language-learning-data.html#cb6-9" tabindex="-1"></a>  <span class="fu">ggtitle</span>()<span class="sc">+</span></span>
+<span id="cb6-10"><a href="artificial-language-learning-data.html#cb6-10" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span>
+<span id="cb6-11"><a href="artificial-language-learning-data.html#cb6-11" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="artificial-language-learning-data.html#cb6-12" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;ALL_Plot.png&quot;</span>, <span class="at">width=</span><span class="dv">10</span>, <span class="at">height=</span><span class="dv">8</span>)</span></code></pre></div>
 </div>
 <div id="nutshells-7" class="section level2 nutshells unlisted unnumbered hasAnchor">
 <h2>Nutshells<a href="artificial-language-learning-data.html#nutshells-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
