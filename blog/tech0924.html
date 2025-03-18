@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Christine Cuskley">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Mixed Signals</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+</svg>
+
+<div class="container">
+  <header class="border-bottom lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <!--<div class="col-4 pt-1">
+        <a class="link-secondary" href="#">Subscribe</a>
+      </div>-->
+      <div class="col-12 text-center">
+        <a class="blog-header-logo text-body-emphasis text-decoration-none" href="index.html">Mixed Signals</a>
+
+      </div>
+    </div>
+  </header>
+
+</div>
+
+<main class="container">
+ 
+
+  <div class="row g-5">
+    <div class="col-md-12">
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">The rise and fall of digital literacy</h2>
+        <p class="blog-post-meta">September 20, 2024 by <a href="#">Chrissy</a></p>
+
+        <p>How curricular reforms gutted basic computer skills, and why it won't get better anytime soon.</p>
+        <hr>
+        <p>It's been a rough few years for higher education in the UK. Widespread and <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-9387/" target="_blank">almost constant industrial action</a>, <a href="https://www.bbc.co.uk/news/education-64130367" target="_blank">pivots between online and in person teaching</a>, and <a href="https://www.theguardian.com/education/2023/aug/02/minister-rules-out-lifting-cap-on-student-tuition-fees-in-england" target="_blank">financial</a> woes for both students and institutions. But among these looming systemic challenges lies a more pernicious one: a precipitous drop in knowledge and skills related to technology among university students, especially in the social sciences and humanities.</p>
+        
+        <p>I teach programming, data analysis, and experimental methods in a school that is dominated by English literature. It is not something my students are necessarily expecting - many of them abandoned "hard" STEM subjects like mathematics and computing at the first opportunity, probably in their early teens. 20 years ago, many linguistics departments may have been more theoretical than anything else. Now, any competitive linguistics programme should provide students a certain level of data literacy, or at least offer them the opportunity for it. A linguistics graduate should be able to engage with quantitative methods at a fairly high level, at the very least as consumers, if not as producers, of primary research.</p>
+        
+        <p>Nonetheless, when students sign up for my module, they are often surprised by the content. It is titled "Experimental Methods in Linguistics", and there is clear detail in the description that they will be learning and using the programming language R. In the first year I taught this module, a student was nearly in tears and informed me "they did not study English to do maths". Over the years, multiple students have asked if they need to “know how to use a computer”. When I ask for a novel experimental design with details about a recruitment strategy, I've had multiple students suggest they can  “post” an email to everyone in the university, indicating they see this as some kind of closed social network more like Facebook and less like a descendant of snail mail. When I tell students they will need to use a desktop computer to complete their assignments, I often get dismissive eyerolls [nutshell: they later concede]. Over the course of a few years, I've done a little typing test with my students just to see where they are - typing speeds below 30 words per minute with less than 60% accuracy are not unusual [NUTSHELL: as a comparison, a slow reader takes in about 100 words per minute].</p>
+        
+        <p>Some of this is purely the widening gap between me and my students: I am an 80s baby; my parents met when they were both programmers in the financial sector. There were computers in my house before there were computers in many houses, but my education in the US was also fundamentally different. I was drilled in touch typing with the now problematic Mavis Beacon[NUTSHELL] from about the age of 8, and I can now stare out a window while typing at around 80-90 words per minute with little loss in accuracy [NUTSHELL: I consider this a superpower]. I know my way around a computer, but  I don't  really remember being taught how to use one any more than I remember learning how to use a fork. It is something I just grew up with in the ambient atmosphere, and I absorbed <em>a lot</em>. I never really studied computers; I originally applied to university to do studio art and ended up in Psychology. It wasn't until years after my undergraduate, when I had to build my own interfaces for behavioural expeirments during my PhD in linguistics, that I began to program[NUTSHELL (at the time, R was barely a thing and Python wasn't either)]. I was able to Google may way into programming in my mid-twenties in part because I <em>hadn't</em> been bottlenecked into a particular subject in my teens in the way that students are in the UK (and in England in particular). No one was encouraging a girl who liked to paint to become a computer scientist, but no one was saying she couldn't mess around with code either</p>
+
+        <p>In contrast, many of my students fled from "difficult" subjects in the sciences at the first opportunity. In England and Wales, that opportunity comes along when students are about 14-16, an age group well-known for their sound decision making, penetrating foresight, and penchant for sticking with difficult things even if they may be slightly unpleasant in the moment. I'm not picking on a handful of students that don't get something: this is a critical mass indicative of a more widespread problem. I don't work at some impoverished institution with a reputation for under-prepared undergrads: I work at a Russel Group University with rigorous entry requirements [NUTSHELL: this is sort of the equivalent of a US R1, although dumber because some men invented it ina hotel in 1992]. My university also has a computer science programme: as far as I can gather, lecturers there do not encounter the same worrying anecdotes surrounding digital literacy that I do. What is going on?</p>
+
+        <h2>Widening a new gap</h2>
+
+        <p>As if there weren't enough axes of inequality surrounding technology, what we're seeing is a new one: science, engineering and medicine students are more likely to "get" computers [NUTSHELL: sometimes literally], while students in the humanities and social sciences avoid them. They do so to the point failures in basic in digital literacy, like knowing how to type or find a file on a computer. As a morbid upside, I worry about cheating using generative AI less than one might think: most of my students, by their own admission, wouldn't know where to begin in using it [NUTSHELL: those that do often do so quite gormlessly, e.g., forgetting to delete the prompt from their submission]. Most of them aren't even aware that my university has made the questionable decision of providing them with unfettered access to Microsoft Copilot (which uses GPT 4 for text generation, among other things). For now, this is a significant win at least for me, but it is a harbinger: even the technology that is supposed to be so intuitive and seamless that it changes the way we do everything is not within reach for many of my students, despite being <em>right there</em>.</p>
+        
+        <p> If we observe these failures in humanities students at university level, the issue is likely to be widespread, also affecting <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-7857/#:~:text=The%20higher%20education%20entry%20rate,highest%20ever%20level%2C%20in%202022." target="_blank">the more than 60% of students in England who don’t go on to study at university</a>. University or not, basic digital literacy is something workers need: a <a href="https://digital-strategy.ec.europa.eu/en/news/new-report-shows-digital-skills-are-required-all-types-jobs" target="_blank">2017 European Commission study</a> identified that more than 93% of all jobs require the use of a desktop or laptop computer. This extends beyond traditional office jobs and into areas of work like farming and construction. Correspondingly, almost all university courses – from mathematics to music – require students to complete essential coursework on a computer, from navigating a virtual learning environment to managing email and using a word processor.</p>
+        
+        <p>Because basic digital skills and literacy are not nationally assessed in England, quantitative data about what students actually understand about technology and how to use it by the time they leave secondary school is difficult to come by. We know what they are <em>supposed</em> to have been taught and understand: in England, the <a href="https://assets.publishing.service.gov.uk/media/5a7cb981ed915d682236228d/SECONDARY_national_curriculum_-_Computing.pdf" target="_blank">Key Stage 3-4 Curriculum</a> requirements for computing – standards that supposedly every student should meet, regardless of their specific GCSE or A-Level subjects – are high:</p>
+        
+        <p>
+          <ul>
+            <li>Design, use, and evaluate computational abstractions that model the state and behaviour of real-world problems and physical systems.</li>
+            <li>Undertake creative projects that involve selecting, using, and combining multiple applications, preferably across a range of devices, to achieve challenging goals, including collecting and analysing data and meeting the needs of known users.</li>
+            <li>Use two or more programming languages, at least one of which is textual, to solve a variety of computational problems; make appropriate use of data structures; design and develop modular programs that use procedures or functions.</li>
+          </ul>
+        </p>
+
+        <p>How is it that the national computing curriculum shares some key elements wtih the job description for a data scientist, but my students <em>don't know how to find a downloaded file</em>? The computing curriculum was overhauled by Michael Gove as part of sweeping educational reforms in the early 2010s. This overhaul was supposed to occur in consultation with teachers, but it was eventually formulated predominantly by two professional organisations: the British Computing Society and Royal Academy of Engineering (Laura Larke, a researcher on educational policy, <a href="https://ora.ox.ac.uk/objects/uuid:32344f98-05e0-45ce-969a-f3cae46c3d6c/download_file?file_format=pdf&hyrax_fileset_id=maf05393f2b4f3055accaa216b2bf5d94&safe_filename=Larke%2B%282019%29.pdf&type_of_work=Journal+article" target="_blank">provides a more detailed analysis here</a>). In short, it is not surprising that this new and improved computing curriculum sounds like a LinkedIn job posting: it was created by professional computer scientists, with limited input from primary and secondary educators on the ground. Consequently, its implementation has been patchy at best. Even putting crass <a href="https://www.independent.co.uk/news/uk/politics/coronavirus-government-advert-ballet-dancer-retrain-it-cyber-oliver-dowden-b987403.html" target="_blank">government efforts at digital upskilling</a> aside, a 30-year-old ballet dancer probably knows how to use a desktop or laptop computer more effectively than most people starting university in the latter half of the 2020s.</p> 
+        
+        <!--<p>Amid these curriculur reforms, the government has also concerned itself with the digital literacy of adults - an arena where professional societies should arguably dominate. <a href="https://www.independent.co.uk/news/uk/politics/coronavirus-government-advert-ballet-dancer-retrain-it-cyber-oliver-dowden-b987403.html" target="_blank">Pushes for 'upskilling' </a> arguably infantilize adults who chose to work in arts and culture rather than technology, but we still need a different approach for actual children. A 30-year-old ballet dancer probably knows how to use a desktop or laptop computer more effectively than most people now starting university at age 17-18 in 2024. An effective approach to getting this fictional dancer coding (if they even want to) must be entirely different to the approach we take with children.</p>-->
+        <p>In all, these curricular reforms - which kicked in starting in 2013 - involved a typical conservative approach. Details of how to implement the ambitious curriculum were devolved to individual schools, without really considering what this would look like or cost, beyond <a href="https://www.gov.uk/government/news/harmful-ict-curriculum-set-to-be-dropped-to-make-way-for-rigorous-computer-science" target="_blank">the vague notion that the private sector would somehow fill the void</a>. With a few computer scientists in every school to lend a helping hand, creating innovative and bespoke solutions for every student population, perhaps it would have been a resounding success. To some extent, the Department for Education has collaborated with the private sector to fill this void: the <a href="https://teachcomputing.org/" target="_blank">National Centre for Computing Education</a> (NCCE) provides training and resources for teachers. But the fact remains that it doesn't actually provide fully qualified computing teachers, a subject where there is a severe and growing shortage of primary and secondary educators in <a href="https://www.theguardian.com/education/2019/nov/28/government-falls-short-on-secondary-teacher-recruitment-targets" target="_blank">a sea of widespread teaching shortages that span many other subjects</a>. </p>
+        
+        <p>The widespread impact of training resources for existing teachers is difficult to assess; <a href="https://static.teachcomputing.org/NCCE-Impact-report-2022.pdf" target="_blank">a report on the impact of the NCCE training initiatives</a> tells us how many teachers they trained, or focuses on A-Level Computer Science <em>outcomes</em>. Such outcomes by definition from a biased - and dwindling - sample of students who continue on to relatively advanced levels of digital literacy. <a href="https://royalsociety.org/-/media/policy/publications/2019/21-08-19-policy-briefing-on-teachers-of-computing.pdf" target="_blank">A 2019 Royal Society report</a> describes the reforms as leading to ‘computing provision [that is] ‘patchy and fragile’, particularly identifying a mismatch between teacher training and the content of the curriculum as a leading cause. Alongside this, uptake of computer science has tanked from 40% to 20% among girls at GCSE level, dropping to 9% at A-Level. Impact reports like this are all spin and sunshine, and are not as interested as they should be in telling the story of what computing and digital literacy education <em>everyone</em> is getting. What does provision look like in schools with teachers who haven’t even been able to take up training from the NCCE? Particularly for key stages 1-4,  there is little guidance or oversight as to how the curriculum should be implemented, or even evaluation of whether it is meaningfully delivered at all. We simply don't have data about what the least common denominator for digital literacy is on the ground. If the anecdata at university level is any indication, it has fallen off a cliff.</p>
+            
+        <p>Curiously, this runs counter to discourse about “ditigal natives”, which of course all young people are supposed to be. But digital natives don’t just happen, they <em>develop</em>. A barrage of data-science-oriented training might work for someone in their 30s, 40s, or 50s – they already know how to use a desktop computer. It’s not much use diving in trying to teach this to a ten-year-old - or even a 20 year old - when we never taught them how to type. This would not be an effective strategy even if schools were adequately and uniformly resourced, <a href="https://www.gov.uk/government/publications/research-review-series-computing/research-review-series-computing#assessment" target="_blank">which the government itself concedes they are not</a>.  Put simply, many professions may not use programming languages or algorithms, but they <em>do</em> use computers. Students seem to lack the basic skills to find their way around one, because at least some of them seem to have never been taught.</p>
+
+        <h2>A glitch in cumulative culture</h2>
+        
+        <p>Technology is a stereotypical example of <em><a href="https://royalsocietypublishing.org/doi/10.1098/rspb.2018.0712" target="_blank">cumulative cultural evolution</a></em>: thankfully, I don't have to learn how to build a computer in order to use a word processor. In using a word processor, I’m using a technological product that is the cumulative product of hundreds of years of technological advancement – none of which I need to understand for it to be useful to me. Cultural evolution on its own is the idea that a species can have socially learned behaviors that are passed down culturally, instead of being genetically inherited or individually learned – humans do this, but so do apes, dogs, and meerkats, among many others. The <em>cumulative</em> part is what many researchers believe is uniquely human, because it adds the capacity to build on earlier behaviors, accumulating complexity by expanding and improving them.</p>
+        
+        <p>Those of us born in the 80s and 90s grew up in the wolf-ridden wilds of internet forums and spreadsheets; people in their early 20s grew up in a sheltered smartphone house with golden retriever apps. Yet, the national curriculum, out of nowhere, describes a skill set associated with data science and web development. We are expecting modern children to somehow arrive ahead of where most of us ended up as adults, only without our <em>very</em> unique formative experiences. Replicating those experiences entirely isn't necessarily the point – aside from being impossible, it would be relying on the idiosyncrasies and intense investment of individual learning, rather than the potential of cultural accumulation. We want to take advantage of cumulative cultural evolution by replicating the <em>outcomes</em> of those experiences, so that we can build on them.</p>
+        
+        <p>What are those outcomes, exactly? Nothing that is clearly reflected in the national curriculum for computing. The sum of the complex co-evolution of millennials, computers, and the internet is not “understanding key algorithms”, or “understanding how data of various types can be represented in the form of binary digits”.  The key outcome for “digital natives” is that basic skills about how to use a laptop or desktop computer beyond the browser are often second nature to us. Perhaps more importantly, on the occasions when they're not, we don't hesitate to figure something out as needed, often using the internet. Students entering university not only fail to meet the standards set out in the national curriculum, but they fail to meet very basic “digitally native” criteria. We could hem and haw about teaching pivot tables, or how to use proper headers in a word processor; all things first-year students grasped upon arrival a decade ago (or quickly and independently acquired), and now often seem completely baffled by. And they are baffled not just in the details of the execution, but hit an absolute wall at the prospect of figuring it out: they seem to completely lack the millenial compulsion to <em>just google it</em>.</p>
+
+        <p>  When Gove roped in professional computer scientists and excluded teachers to create his new and ambitious curriculum, he eliminated the old Information and Communication Technology (ICTcurriculum, which focused on teaching students "boring" stuff like, you know, <em>using a computer</em>. There is not just a small gap between the national curriculum and what students know because the national curriculum is too aspirational (not to mention woefully under-resourced). There is an <em>ocean</em>: current students lack even basic skills that were seemingly second nature as recently 5-10 years ago. According to <a href="https://milesberry.net/2018/01/computing-timeline/" target="_blank">a detailed timeline of the Gove reforms by Miles Berry</a>, the previous ICT curriculum had become “devalued by students and employers due to a focus on relatively mundane, user-level skills”. The reforms would see these "mundane" skills supplanted by the National Computing Curriculum, with ICT exams at GCSE and A-Level being scrapped by 2018, replaced by Computer Science. Students taht started their university studies in 2023 would have been finishing key stage 2 as the reforms were announced, starting stage 3-4 just as the more ambitious curriculum was rolled out. In other words, they may have never been taught the kinds of “mundane user-level skills” we previously took for granted at university level.</p>
+
+        <h2>The death of information seeking, the birth of new inequalities</h2>
+
+        <p>Even if this were a simple case of the growing pains of educational reform – undoubtedly not helped by the pandemic - we could expect those pains to last a decade or more. But this is unlikely to be a transient problem without further reform. The 2013 curriculum seems to assume students will absorb basic digital literacy from the ambient atmosphere - this seems to have worked for me, but it's not <em>in</em> the atmosphere now, and this won't work. Rather than pushing this to an earlier stage in the curriculum, the reform seems to have abolished “user-level skills” altogether and replaced them with a combination of “algorithms”, “two or more programming languages” and thin air. It leaps to teaching computer programming without ever teaching how to use a computer – a non-trivial task when many primary and secondary classrooms are full of touchscreen tablets, if they are fortunate enough to have digital devices at all.</p>
+
+        <p>We need to rethink computing skills as broader realms of understanding in terms of how technology works;  not just how to use it, but how to continually and independently learn and re-learn how to use it. This is particularly the case as computers seep into most aspects of our lives. This seepage is pervasive, in a way that even the <a href="https://www.bbc.co.uk/news/uk-politics-11828193" target="_blank">noted educational futurist Michael Gove</a> could not have imagined more than a decade ago. What we need is for students to understand why we might want a table that crosses two variables, or to organize sections and subsections of a text, and that computers are ideal tools for doing these kinds of things, which are not only tedious as fully human tasks, but also very error-prone. Specific idiosyncratic strategies with particular software (or algorithms or programming languages) are beside the point; they potentially change too rapidly to matter. Modern children and teenagers are, in fact, “digitally native” – they are just native to devices like tablets and phones. Information often comes through these devices in the form of personalized notifications, messages, or recommendations. The information comes to them; the entire ethos behind recommendation algorithms is that if it is relevant, the content will find you, and it rarely has to work the other way around. As a result, students lack a broader capacity for resilient information seeking and problem solving that give them the confidence to figure it out themselves, regardless of the software solution <em>du jour</em>. </p>
+
+        <p>Ultimately, this has the makings of a perfect storm of deepening divisions and inequalities in digital literacy. In the first instance, declines in digital literacy will only worsen the supply and demand death spiral for primary and secondary computing teachers, and in turn for the wider technology economy. Inadequate provision leads to inadequate general skills; this means only the motivated, well-resourced few pursue the subject at GCSE, A-level, and beyond. This leads to unmet demand for computing experts not just in teaching, but also in the for-profit sector – widening, rather than closing, the digital skills gap in the UK workforce. Perhaps we could climb out of this hole if computing provision were sufficient to provide a competent and uniform baseline of digital literacy; but inadequate provision leads to inadequate general skills. Lather, rinse, repeat.</p>
+
+        <p>Computer science is already <a href="https://www.openaccessgovernment.org/gender-inequality-computer-science-early-elementary-school-years/159177/" target="_blank">overwhelmingly male</a>, <a href="https://cepa.stanford.edu/content/race-and-gender-trends-computer-science-silicon-valley-1980-2015" target="_blank">white</a>, and those who study it are <a href="https://www.raspberrypi.org/blog/digital-divide-socioeconomic-disadvantage-computing-education/" target="_blank">more likely to come from generational wealth</a>. Much ink has been spilled about <a href="https://uis.unesco.org/sites/default/files/documents/fs60-women-in-science-2020-en.pdf" target="_blank">inequalities in STEM generally</a>, which includes computer science; almost none of it finds the idea of deepening these inequalities to be a morally or practically desirable one.  Nonetheless, the 2013 reforms have created conditions where the cumulative cultural evolution of digital literacy, skills, and computer science run through lines of inheritance dictated by gender, race and wealth disparities – deepening these disparities in the process.</p>
+
+        <p>Digital literacy and understanding of technology are acutely important in the humanities – and acutely impoverished especially for students more likely to study these subjects. For example, it is essential for journalists, creative writers, and policy makers to understand the implications of increasingly pervasive generative AI. Journalism is coming up against this technology in concrete ways. Google may have had <a href="https://www.cnet.com/tech/computing/googles-ai-overviews-fail-at-fact-finding-but-excel-at-entertaining-and-other-ai-news" target="_blank">a bit of an oopsy when its AI overview told people to eat rocks and add glue to recipes</a>, but <a href="https://www.theguardian.com/technology/2024/apr/25/google-revenue-quarter-one" target="_blank">profits were nonetheless soaring</a>. How many vital local news outlets <a href='https://www.theguardian.com/media/newspaper-closures' target="_blank">will close in the meantime</a>? Policy makers have recently announced a plan to "mainline" AI into government decision making, belying a complete ignorance of a wide body of work about how the technology works, and thus it's practical limitations and deep ethical problems [NUTSHELL: to say nothing of having completely forgotten that "mainlining" something is, you know, generally associated with drug use and considered bad]. An environment where humanities subjects at university level are forced to remove depth from their curricula to fit in basic digital literacy will make this worse. Uneven basic digital literacy will lead to a deepening and widening of existing inequalities in technology, <em>and</em> a weakening of comprehensive university-level studies in the humanities and social sciences. Alongside existing divisions, we are creating a new class of digital literacy haves and have nots.</p>
+        
+        <p>A basic understanding of technology isn’t just important for the people we expect to build it; they certainly require a different depth of expertise, but that doesn’t mean the rest of us should be content with smartphones. We cannot acknowledge in one breath that a breadth and depth of technological expertise is a key aspect of modern adult life, and then in the next say it’s probably fine if many people don’t really know how to use it or how it works. Given the drastic changes to technology in the last few years (to say nothing of the last decade) the way forward is clear: we need urgent reform in both the primary and secondary curriculum surrouding digital literacy, and resource to match. Until then, my students will just have to learn less linguistics and more about how to find a file.</p>
+        <!--<p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h2>Blockquotes</h2>
+        <p>This is an example blockquote in action:</p>
+        <blockquote class="blockquote">
+          <p>Quoted text goes here.</p>
+        </blockquote>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Example lists</h3>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+        <ul>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ul>
+        <p>And this is an ordered list:</p>
+        <ol>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ol>
+        <p>And this is a definition list:</p>
+        <dl>
+          <dt>HyperText Markup Language (HTML)</dt>
+          <dd>The language used to describe and define the content of a Web page</dd>
+          <dt>Cascading Style Sheets (CSS)</dt>
+          <dd>Used to describe the appearance of Web content</dd>
+          <dt>JavaScript (JS)</dt>
+          <dd>The programming language used to build advanced Web sites and applications</dd>
+        </dl>
+        <h2>Inline HTML elements</h2>
+        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+        <ul>
+          <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+          <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+          <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+          <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+          <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+          <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+        </ul>
+        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+        <h2>Heading</h2>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Sub-heading</h3>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <pre><code>Example code block</code></pre>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>-->
+      </article>
+
+   
+        <div class="p-4">
+          <hr>
+          <h4 class="fst-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://ccuskley.github.io" target="_blank">Website</a></li>
+            <li><a href="https://github.com/CCuskley" target="_blank">Github</a></li>
+            <li><a href="https://bsky.app/profile/nerdpro.bsky.social" target="_blank">Bluesky</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p class="mb-0">
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    </body>
+</html>

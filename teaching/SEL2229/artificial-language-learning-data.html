@@ -23,7 +23,7 @@
 <meta name="author" content="Christine Cuskley" />
 
 
-<meta name="date" content="2025-01-29" />
+<meta name="date" content="2025-03-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -287,7 +287,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>Pipe in an <code>ungroup()</code> statement. This is currently grouped <code>rowwise()</code>, but we want to calculate the mean grouping it by <code>TestBlock</code> and <code>Condition</code>, so we have to ungroup it first.</li>
 <li>Pipe in a <code>group_by()</code> statement that groups the data by <code>TestBlock</code> and <code>Condition</code>, and a <code>summarise()</code> statement that defines a variable called <code>MeanDist</code> as the mean of the <code>NormDist</code> column across those groups, and <code>seDist</code> as the standard error of this mean <a href="#StandardError">:hint</a></li>
-<li>Copy the skeletal plotting code below to your script and modify it to create a plot with mean distance on the x axis, test block on the y axis, and different colours for each condition. Remember:
+<li>Copy the skeletal plotting code below to your script and modify it to create a plot with mean distance on the y axis, test block on the x axis, and different colours for each condition. Remember:
 <ul>
 <li>Use reasonable axis labels and a title.</li>
 <li><code>ylim()</code> should reflect the actual range of possible distances, not just what occurs in the data.</li>
