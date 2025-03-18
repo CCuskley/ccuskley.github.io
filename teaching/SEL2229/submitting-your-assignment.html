@@ -23,7 +23,7 @@
 <meta name="author" content="Christine Cuskley" />
 
 
-<meta name="date" content="2025-01-29" />
+<meta name="date" content="2025-03-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -244,11 +244,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Once you’ve completed the week 1-8 exercises, and double checked your reflections document and task checklist, it’s time to submit your work. You won’t submit this as a document like you would most assignments; you will download and submit your entire R Project as a zip file so that I can see your reflections <em>and</em> scripts you’ve written <em>and</em> plots you have made in your own organised little project.</p>
 <p>To do this:</p>
 <ul>
-<li><p>You’ve done your reflections in your <code>.Rmd</code> file, but this is designed to be “knit” into a more readable (but not editable) file. This kind of file will be much easier for me to mark than the raw <code>.Rmd</code> file.</p>
+<li><p>You’ve done your reflections in your <code>.Rmd</code> file, but this is designed to be “knit” into a more readable (but not editable) PDF file. This PDF file is the version of your reflections I will mark, so <strong>make sure you are completely happy with your reflections before you knit them to a PDF</strong>.</p>
 <ul>
 <li>At the very top of your <code>assignment_reflections.Rmd</code> file, there’s some info about the file between two sets of three dashes, e.g., <code>title</code>, <code>author</code>, etc. After <code>author</code> where it says <code>"[STUDENT NUMBER HERE]"</code>, enter your student number between the double quotes.</li>
 <li>There’s a little button at the top of the tab that says “Knit” - click the little arrow next to this and select ‘Knit to PDF’. This should cause some action in the console for a few seconds, and eventually generate a PDF with your student number and the date at the top, as well as a handy table of contents.</li>
 <li>For boring regulatory reasons, you also need to complete <a href="SEL2229_Assignment1Coversheet.docx" target="_blank">a standard school coversheet for the assignment in Word</a>. Enter your student number at the bottom, save it, and upload it into your Posit assignment project.</li>
+</ul></li>
+<li><p><strong>HELP IT WON’T KNIT!!</strong> This is probably because you have a code chunk that’s using variables you’ve modified or overwritten and so it won’t run properly. Here’s what to do:</p>
+<ul>
+<li><p>When it fails to knit, it will show you an error referring to a code chunk on a specific line(s) in the console.</p></li>
+<li><p>Switch the view of your reflections from Visual to Source to see the line numbers and find the problematic code chunk.</p></li>
+<li><p>At the top of the chunk, where it says <code>{r}</code>, before the closing curly bracket, add <code>eval=FALSE</code>, so that the top line of the chunk reads <code>{r eval=FALSE}</code>. This will mean it ignores that code chunk when compiling.</p></li>
+<li><p>Note that because there may be a few problematic code chunks, you may need to do this a few times.</p></li>
 </ul></li>
 <li><p>Once everything is ready, go to the files pane and select <em>all</em> the files and folders on the top level (e.g., <code>.Rhistory</code>, <code>project.Rproj,</code> your reflections documents (the .Rmd and .pdf), your coversheet, the <code>Week5_SurveyDemo</code>, your <code>Scripts</code> and <code>Data</code> folders, and any other files or folders that are part of your project). <strong>Selecting a folder automatically selects all of the files inside it,</strong> so you don’t need to dig below the top level.</p>
 <ul>
