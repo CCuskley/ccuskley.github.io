@@ -9,6 +9,16 @@
   text-decoration: none;
 }
 
+.post-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+  color:grey;
+}
+
+.post-header-logo:hover {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
 }
