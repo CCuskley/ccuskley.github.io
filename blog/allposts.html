@@ -81,7 +81,18 @@
     </div>
 
     
-
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+</svg>
   <header class="border-bottom lh-1 py-3 b-header">
     <div class="row flex-nowrap justify-content-between align-items-center">
       <!--<div class="col-4 pt-1">
@@ -101,91 +112,34 @@
   </header>
 <div class="container">
 
+  <p style="font-variant:small-caps;font-weight:600;color:grey">frequent tags</p>
+  <div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav nav-underline justify-content-between">
+        <p><a class="nav-item nav-link link-body-emphasis" href="#">World</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">U.S.</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Technology</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Design</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Culture</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Business</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Politics</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Opinion</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Science</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Health</a></p>
+     <p> <a class="nav-item nav-link link-body-emphasis" href="#">Style</a></p>
+      <p><a class="nav-item nav-link link-body-emphasis" href="#">Travel</a></p>
+
+    </nav>
+  </div>
 </div>
 
 <main class="container">
-  <!--<div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-    <div class="col-lg-6 px-0">
-      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
-    </div>
-  </div>-->
-
-  <!--<div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-body-secondary">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-          <h3 class="mb-0">Post title</h3>
-          <div class="mb-1 text-body-secondary">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-      </div>
-    </div>
-  </div>-->
 
   <div class="row g-5">
     <div class="col-md-8">
       <h3 style="font-variant:small-caps; colour:grey">
-        latest post
+        all posts
       </h3>
-
-      <article class="blog-post">
-        <a href="tech0925.html" style="text-decoration:none"><h2 class="display-5 link-body-emphasis mb-1">The rise and fall of digital literacy</h2></a>
-        <p class="blog-post-meta">25 September, 2024 | <em class="tags">#teaching #programming #hottakes</em></p>
-        <p>It's been a rough few years for higher education in the UK. Widespread and <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-9387/" target="_blank">almost constant industrial action</a>, <a href="https://www.bbc.co.uk/news/education-64130367" target="_blank">pivots between online and in person teaching</a>, and <a href="https://www.theguardian.com/education/2023/aug/02/minister-rules-out-lifting-cap-on-student-tuition-fees-in-england" target="_blank">financial</a> woes for both students and institutions. But among these looming systemic challenges lies a more pernicious one: a precipitous drop in knowledge and skills related to technology among university students, especially in the social sciences and humanities.</p>
-        
-        <p>I teach programming, data analysis, and experimental methods in a school that is dominated by English literature. It is not something my students are necessarily expecting - many of them abandoned "hard" STEM subjects like mathematics and computing at the first opportunity, probably in their early teens. 20 years ago, many linguistics departments may have been more theoretical than anything else. Now, any competitive linguistics programme should provide students a certain level of data literacy, or at least offer them the opportunity for it. A linguistics graduate should be able to engage with quantitative methods at a fairly high level, at the very least as a consumer, if not a producer, of primary quantitative research in the field.</p>
-        <p>Nonetheless, when students sign up for my module, they are often surprised by the content. It is titled "Experimental Methods in Linguistics", and there is clear detail in the description that they will be learning and using the programming language R. In the first year I taught this module, a student was nearly in tears and informed me "they did not study English to do maths". Over the years, multiple students have asked if they need to “know how to use a computer”.</p>
-        <a class="btn btn-outline-primary rounded-pill" href="tech0925.html#readMoreStart">Read More...</a>
-
-        
-      </article>
-
-      <!--<nav class="blog-pagination" aria-label="Pagination">
-        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-        <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
-      </nav>-->
-
-    </div>
-
-    <div class="col-md-4">
-      <div class="position-sticky" style="top: 100px;">
-        <div class="p-4 mb-3 bg-body-tertiary rounded">
-          <h4 class="fst-italic">About</h4>
-        <p class="p-about">Writing about academia, language, cognition, commmunication, and whatever I damn well please. By Christine Cuskley, Reader in Language and Cognition at Newcastle University. All opinions definitively my own.</p></p>
-        </div>
-        <div>
-          <h4 style="font-variant:small-caps; colour:grey !important;"><a href="allposts.html" style="text-decoration:none"><i class="bi bi-door-open"></i> all posts</a> <span style="font-weight:lighter"> |</span> <a href="#" style="text-decoration:none" id="launchSearch"><i class="bi bi-search"></i>search</a></h4>
-          <hr>
-        </div>
-        <div>
-          <h4 style="font-variant:small-caps; colour:grey">recent posts</h4>
+              <div>
           <ul class="list-unstyled">
             <li>
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
@@ -202,12 +156,13 @@
                 <div class="col-lg-8">
                   <h6 class="mb-0">Academic wives</h6>
                   <small class="text-body-secondary">January 14, 2024</small>
+                  <p class="p-lede">This is a short desription of the post, with a little bit of context</p>
                 </div>
               </a>
             </li>
             <li>
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                <img src="static/images/computer.jpg" class="bd-placeholder-img" width="100%" height="96">
+                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
                 <div class="col-lg-8">
                   <h6 class="mb-0">Digital Literacy</h6>
                   <small class="text-body-secondary">September 13, 2024</small>
@@ -217,23 +172,26 @@
           </ul>
         </div>
 
-        <!--<div class="p-4">
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 100px;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">About</h4>
+        <p class="p-about">Writing about academia, language, cognition, commmunication, and whatever I damn well please. By Christine Cuskley, Reader in Language and Cognition at Newcastle University. All opinions definitively my own.</p></p>
+        </div>
+        <div>
+          <h4 style="font-variant:small-caps; colour:grey !important;"><a href="allposts.html" style="text-decoration:none"><i class="bi bi-house-door"></i>home</a> <span style="font-weight:lighter"> |</span> <a href="#" style="text-decoration:none" id="launchSearch"><i class="bi bi-search"></i>search</a></h4>
+          <hr>
+        </div>
+
+
+        <div class="p-4">
           <h4 class="fst-italic">Archives</h4>
           <ol class="list-unstyled mb-0">
-            <li><a href="#">March 2021</a></li>
-            <li><a href="#">February 2021</a></li>
-            <li><a href="#">January 2021</a></li>
-            <li><a href="#">December 2020</a></li>
-            <li><a href="#">November 2020</a></li>
-            <li><a href="#">October 2020</a></li>
-            <li><a href="#">September 2020</a></li>
-            <li><a href="#">August 2020</a></li>
-            <li><a href="#">July 2020</a></li>
-            <li><a href="#">June 2020</a></li>
-            <li><a href="#">May 2020</a></li>
-            <li><a href="#">April 2020</a></li>
+            <li><a href="#">November 2024</a></li>
           </ol>
-        </div>-->
+        </div>
 
       </div>
     </div>
@@ -243,7 +201,7 @@
 
 <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
   <div class="p-4">
-          <h4 style="font-variant:small-caps;">elsewhere</h4>
+          <h4 style="font-variant:small-caps; colour:grey">elsewhere</h4>
           <p><a href="https://ccuskley.github.io" target="_blank">Website</a> | <a href="https://github.com/CCuskley" target="_blank">Github</a> | <a href="https://bsky.app/profile/nerdpro.bsky.social" target="_blank">Bluesky</a></p>
         </div>
         <hr>

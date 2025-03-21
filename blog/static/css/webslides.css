@@ -1153,6 +1153,11 @@ h1 span {
   text-transform: uppercase;
 }
 
+.section-para p {
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
 /* -- Heading with border -- */
 .text-context {
   position: relative; }
@@ -1301,14 +1306,16 @@ footer p {
 header[role='banner'] img,
 footer img {
   height: 4rem;
-  vertical-align: middle; }
+  vertical-align: middle;
+  position:relative }
 
 footer {
   position: relative; }
 
 header,
 footer {
-  z-index: 3; }
+  z-index: 3;
+  }
 
 header,
 .ws-ready footer {
@@ -1321,7 +1328,7 @@ header,
   top: auto; }
 
 header[role='banner'] {
-  opacity: 0; }
+  opacity: 1; }
   header[role='banner']:hover {
     opacity: 1; }
 

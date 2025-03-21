@@ -1,0 +1,169 @@
+
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+      
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+      
+      Thanks!
+    -->
+      
+    <!-- SEO -->
+    <title>Digital literacy</title>
+    <meta name="description" content="WebSlides is about telling the story, and sharing it in a beautiful way. Create longform articles with ease.">
+    
+    <!-- URL CANONICAL -->
+    <link rel="canonical" href="https://ccuskley.github.io/blog/">
+    <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    
+    <!-- CSS Base + Colors -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/webslides.css">
+    
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+    <style>
+      .blog-title {
+        min-height:10vh;
+        text-decoration:none;
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+        padding-bottom:1rem;
+        padding-top:3rem;
+        
+        color:#8b8c8c;
+        
+      }
+
+      .hlink {
+        text-decoration: none !important;
+        color: grey !important;
+      }
+
+
+      header {
+        position:sticky;
+        top:0;
+        z-index:99;
+        padding-bottom: 0px !important;
+
+      }
+      section {
+        padding-bottom:1rem;
+        padding-top:3rem;
+      }
+
+      .nutshell-heading-embed {
+        display:none;
+      }
+
+      .post-header {
+        background-color: #f7f9fb !important;
+      }
+
+      .post-title {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+      }
+    </style>
+    
+ 
+    
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="/static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="/static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="/static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="/static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="/static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="/static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="/static/images/favicons/favicon-192.png">
+    
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  
+  </head>
+
+  <header role="banner" class="post-header">
+      <!--<nav role="navigation">-->
+        <section class="blog-title">
+          <div class="wrap aligncenter">
+            
+              <h2>
+              <a href="index.html" class="hlink">Mixed Signals</a>
+              <hr>
+            </h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+      <!--</nav>-->
+    </header>
+  <body>
+
+    
+    <main role="main">
+
+      <article>
+      
+        
+        <section class="bg-white">
+          <!--.wrap.longform (width:72rem=720px) = Better reading experience (90-95 characters per line) -->
+          <div class="wrap longform">
+            <h2 class="post-title"><strong>Post title here</strong></h2>
+            <p><a href="https://ccuskley.github.io" title="Christine Cuskley"> Chrissy Cuskley</a>, Month Year</p>
+            <p class="text-intro">
+              Lede/description
+            </p>
+            <hr>
+            <div class="section-para">
+              <p>First paragraph of first section</p>
+            </div>
+        
+            <p>Second paragraph. </p>
+
+       
+          </div>
+         </section>
+         <section >
+          <div class="wrap longform">
+            <h3 class="text-context">Middle title</h3>
+            <div class="section-para">
+              <p>First paragraph.</p>
+            </div>
+            <p>Other paragraphs</p>
+          </div>
+         </section>
+         <section class="bg-white">
+          <div class="wrap longform">
+           <h3 class="text-context">Section context</h3>
+            <div class="wrap longform">
+              <div class="section-para">
+              <p>First paragraph of final section</p>
+            </div>
+            <p>Another.</p>
+            
+          </div>
+        </section>
+        <section style="display:none" id="nutshells">
+          <h1>Nutshell title</h1>
+          <h1>Nutshell content</h1>
+        </section>
+        
+      </article>
+    </main>
+
+    
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="/static/js/svg-icons.js"></script>
+    
+
+    
+  </body>
+</html>
