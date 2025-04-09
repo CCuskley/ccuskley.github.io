@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CLEAN MARKUP = GOOD KARMA.
+		  Hi source code lover,
+
+		  you're a curious person and a fast learner ;)
+		  Let's make something beautiful together. Contribute on Github:
+		  https://github.com/webslides/webslides
+
+		  Thanks!
+		  -->
+
+		<!-- SEO -->
+		<title>Language Experiment</title>
+		<meta name="description" content="Online linguistics experiment from Newcastle university">
+
+		<!-- URL CANONICAL -->
+		<link rel="canonical" href="http://ccuskley.github.io/interactives/wguess.html">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+		<!-- CSS Base -->
+		<link rel="stylesheet" type='text/css' media='all' href="../blog/static/css/webslides.css">
+
+		<!-- Optional - CSS SVG Icons (Font Awesome) -->
+		<!--<link rel="stylesheet" type="text/css" media="all" href="../static/wsassets/css/svg-icons.css">-->
+		<link rel="stylesheet" type="text/css" media="all" href="../css/ltcustom.css">
+
+
+
+		<!-- Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#333333">
+	</head>
+	<body>
+	<!--<header role="banner">
+	  <<nav role="navigation">
+		<p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+		<ul>
+		  <li class="github">
+			<a rel="external" href="https://github.com/webslides/webslides" title="Github">
+			  <svg class="fa-github">
+				<use xlink:href="#fa-github"></use>
+			  </svg>
+			  <em>WebSlides</em>
+			</a>
+		  </li>
+		  <li class="twitter">
+			<a rel="external" href="https://twitter.com/webslides" title="Twitter">
+			  <svg class="fa-twitter">
+				<use xlink:href="#fa-twitter"></use>
+			  </svg>
+			  <em>@WebSlides</em>
+			</a>
+		  </li>
+		  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> 
+		</ul>
+	  </nav>
+	</header>-->
+
+	<main role="main">
+		<article id="webslides">
+
+		<!-- Quick Guide
+		  - Each parent <section> in the <article id="webslides"> element is an individual slide.
+		  - Vertical sliding = <article id="webslides" class="vertical">
+		  - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+		-->
+
+			<section class="bg-white">
+				<div class="grid vertical-align loadgif">
+	              <div class="column">
+	                <h3><strong>Loading...</strong></h3>
+	                <p style="font-size: 2rem" class="text-intro">We'll be right with you</p>
+	              </div>
+
+	              <div class="column">
+	                <iframe src="../images/waiting.gif" width="480" height="355" frameBorder="0" allowfullscreen></iframe>
+	              </div>
+            	</div>
+            	<div class="wrap aligncenter demoSplash" style="display:none">
+            		<h1><strong>Welcome to the word guesser!</strong>
+            		<h3>Press 'Start' to begin.</h3>
+            		<div class="wrap aligncenter demoSplash bottombutton" style="display:none">
+					<p>
+						<a class="button demoStart" href="#slide=5"title="start">Start</a>
+					</p>
+				</div>
+            	</div>
+				<div class="wrap aligncenter urlerror" style="display:none">
+					<h1><strong>There's been a problem.</strong></h1>
+					<p style="color:red">Something isn't quite right with the URL. If you've reached this page from Mechanical Turk, contact the requester. If not, <a href="https://exps-main.herokuapp.com/wguess?workerId=vol">try this link instead</a>.</p>
+				</div>
+				<div class="wrap aligncenter repeatworker" style="display:none">
+					<h1><strong>Sorry...you've been here before</strong></h1>
+					<p>Sorry, but our records indicate you've already completed this HIT. We can only have one response for each worker, so you can't do it again. Please close this window, release the HIT, and have a nice day!.</p>
+				</div>
+				<div class="wrap aligncenter genwelcome slide-top" style="display:none">
+					<h1><strong>Welcome to the experiment!</strong></h1>
+				</div>
+				<div class="wrap turkerOnly turkerWelcome slide-top" style="display:none">
+
+					<p>This is a study on language conducted by Laura Taylor and <a href="https://ccuskley.github.io" target="_blank">Christine Cuskley</a> at <a href="https://ncl.ac.uk" target="_blank">Newcastle University</a>. You will recieve $2.50 for your participation, and it should take no more than 15 minutes total. <b>You'll need to listen to audio as part of the task, so please make sure you can do this before starting.</b></p>
+					<p>First we will ask you for some general information about yourself. Then, we will ask you to guess the meanings of some words in other languages. Your answers will be recorded for the research, but will not be identifiable to you personally. You will recieve a completion code at the end of the task that you will have to enter in Mechanical Turk to recieve payment.</p>
+					<p>Please <a href="../static/StudyInformation_LTa.pdf" target="_blank">click here</a> to read more detailed information about the study, which you can download as a PDF and keep for your records.</p>
+					<p>Clicking the "Agree" box below indicates that:</p>
+					<ul>
+						<li><p>You agree that your anonymised data may be kept permanently in the archives at Newcastle University and may be used by qualified researchers for teaching and research purposes.</p></li>
+						<li><p>You agree that your anonymised data may be made publicly available for general use, e.g., released as part of scholarly publication.</p></li>
+						<li><p>You voluntarily agree to participate and can stop or withdraw at any time without penalty.</p></li>
+					</ul>
+					<p>If you do not agree to these terms and don't wish to participate, simply close this window and have a nice day!</p>
+				</div>
+				<div class="wrap volunteerWelcome slide-top" style="display:none">
+					<p class="text-danger">No data is being collected at this time, but the information below shows the kind of consent information that would go with this study.</p>
+					<p>This is a study on language conducted by Laura Taylor and <a href="https://ccuskley.github.io" target="_blank">Christine Cuskley</a> at <a href="https://ncl.ac.uk" target="_blank">Newcastle University</a>. <b>You'll need to listen to audio as part of the task, so please make sure you can do this before starting.</b></p>
+					<p>First we will ask you for some general information about yourself. Then, we will ask you to guess the meanings of some words in other languages. Your answers will be recorded for the research, but will not be identifiable to you personally. You can make as many, or as few, guesses as you like. We'll use cookies to recognise you, so you can also come and go once you've agreed to participate.</p>
+					<p>Please <a href="../static/StudyInformation_LTb.pdf" target="_blank">click here</a> to read more detailed information about the study, which you can download as a PDF and keep for your records.</p>
+					<p>You agree that:</p>
+					<ul>
+						<li><p>You agree to the use of cookies.</p></li>
+						<li><p>You agree that your anonymised data may be kept permanently in the archives at Newcastle University and may be used by qualified researchers for teaching and research purposes.</p></li>
+						<li><p>You agree that your anonymised data may be made publicly available for general use, e.g., released as part of scholarly publication.</p></li>
+						<li><p>You voluntarily agree to participate and can stop or withdraw at any time without penalty.</p></li>
+					</ul>
+					<p class="text-danger">Click agree below to start; no data is being collected at this time, so the terms above do not apply.</p>
+					<p style="display:none">If you do not agree to these terms and don't wish to participate, simply close this window and have a nice day!</p>
+				</div>
+				
+				<div class="wrap aligncenter genwelcome bottombutton" style="display:none">
+					<p>
+						<a class="button experimentConsent" href="#" id="agreeConsent"title="start">Agree</a>
+					</p>
+				</div>
+			</section>
+			<section class="bg-green">
+				<div class="wrap aligncenter">
+					<h1><strong>About you</strong></h1>
+					<p>Before we get started with the task, we have a few basic questions about you. Once these are done you'll recieve more specific instructions about the task.</p>
+					<h5>First, we need to make sure you're a genuine human.</h5>
+					<p>We'll start by making sure you aren't a bot or a script. Follow the instructions below carefully so we can make sure you aren't a robot.</p>
+				</div>
+				<div class="wrap">
+					<ul>
+						<li>Type the third and fifth words of this sentence into the white box below.</li>
+						<li>Add a question mark and exclamation point after the words (in that order) for style.</li>
+					</ul>
+				</div>
+				<div class="wrap aligncenter bottombutton">
+					<input id="bCheck" type="text" style="width:250px"class="form-control" placeholder="See above">
+					<p class="text-symbols">* * * </p>
+					<a href="#slide=3" class="button" id="humanTest">Continue</a>
+				</div>
+			</section>
+			<section class="bg-green">
+				<div class="wrap aligncenter" id="itsBot" style="display:none">
+					<h1>Ooops...</h1>
+					<p>You seem to have failed our bot detection. Unless we can guarantee you're human, you can't continue with the task. If you think this is a misunderstanding, re-load the page and try again - note that you'll have to agree to participation again. <span class="turkOnly" style="display:none">If you're here as an Amazon Mechanical Turk worker, you'll need to re-load by clicking the link within the HIT again, as it sends vital information for completing the task within the URL</span></p>
+					<a href="/wguess?workerId=vol" class="button volunteerOnly" style="display:none">Reload</a>
+				</div>
+				<div class="wrap aligncenter bottombutton" id="itsHuman" style="display:none">
+					<h1 class="turkerOnly">Great!</h1>
+					<h1 class="volunteerOnly">About you</h1>
+					<p class="turkerOnly">You seem very human, so we're good to go!</p>
+					<p>We'll start by asking you a few questions about you and your experience with language(s), and then we'll give you more specific instructions about the task.</p>
+					<h5>First, how old are you?</h5>
+					<input id="ageEnter" type="text" style="width:250px"class="form-control" placeholder="Enter Age">
+					<p style="display:none" class="error">Please enter a valid age. You must be 18 or older to participate.</p>
+					<p class="text-symbols">* * * </p>
+					<a href="#" class="button" id="ageTest">Continue</a>
+				</div>
+			</section>
+			<section class="bg-green">
+				<div class="wrap aligncenter">
+					<h1><strong>Your Language(s)</strong></h1>
+					<div id="L1Info">
+						<p>Is English your first language (or one of them)?</p>
+						<p class="text-symbols">* * * </p>
+						<a href="#" class="button L1Select" id="L1Eng">Yes</a>
+						<a href="#" class="button L1Select" id="L2Eng">No</a>
+					</div>
+					<div id="otherLangs_L1Eng" style="display:none">
+						<p>Do you speak any other languages fluently? If so, list them below.</p>
+						<input id="otherLangsL1" type="text" style="width:350px"class="form-control" placeholder="List languages here">
+						<p class="text-symbols">* * * </p>
+						<a href="#" class="button" id="oLangs_L1">Next</a>
+					</div>
+					<div id="otherLangs_L2Eng" style="display:none">
+						<p><b>What age were you when you started studying or learning English?</b></p>
+						<input id="aoaEnter" type="text" style="width:250px"class="form-control" placeholder="Enter Age">
+						<p style="display:none" class="error ageErr">Please enter a valid age.</p>
+						<p class="text-symbols">* * * </p>
+						<p><b>Using the slider below, rate your own proficiency in English</b> on a scale of 1-100, where 1 is beginner and 100 is fluent.</p>
+						<div class="rangeLabel">
+							<div class="rangeAnchor leftAnchor">Beginner</div>
+							<div class="rangeAnchor rightAnchor">Fluent</div>
+						</div>
+						<div class="range">
+  							<input type="range" min="1" max="100" value="50" class="slider" id="engProficiency">
+						</div>
+						<p style="text-align:center; font-size:12px">Your rating: <span id="profVal">50</span></p>
+						<p class="text-symbols">* * * </p>
+						<p><b>Lastly, what do you consider to be your first language?</b> If you have more than one, just list them separated by a comma.</p>
+						<p class="error l1err">Please list at least one language.</p>
+						<input id="otherLangsL2" type="text" style="width:350px"class="form-control" placeholder="List languages here">
+						<p class="text-symbols">~~</p>
+						<a href="#" class="button buttonbottom" id="oLangs_L2">Next</a>
+					</div>
+				</div>
+			</section>
+			<section class="bg-white">
+				<div class="wrap returnerValidate" style="display:none">
+					<h1 class="aligncenter">Welcome back!</h1>
+					<p><b>The task requires audio.</b>Before you resume, let's make sure yours is on. <b>Click the button to play some audio and type what you hear in the box.</b></p>
+					<p style="display:none;colour:red" id="emptyError" class="aligncenter error">Oops, you haven't entered anything. Try again.</p>
+					<p style='display:none;colour:red' id='wrongError' class="aligncenter error">Oops, that's not what the audio says. Try again.</p>
+				</div>
+				<div class="wrap initialValidate audioValidate">
+					<h1 class="aligncenter">This task requires audio.</h1>
+					<p>Let's make sure yours is on and you can hear what it's doing. <b>Click the button to play some audio and type what you hear in the box.</b></p>
+					<p style="display:none;colour:red" id="emptyError" class="aligncenter error">Oops, you haven't entered anything. Try again.</p>
+					<p style='display:none;colour:red' id='wrongError' class="aligncenter error">Oops, that's not what the audio says. Try again.</p>
+				</div>
+				<div class="wrap aligncenter audioValidate">
+					<audio id="myAudio0">
+						<source src="../media/audiotest0.mp3" type="audio/mpeg">
+  						Your browser does not support the audio element.
+					</audio>
+					<audio id="myAudio1">
+						<source src="../media/audiotest1.mp3" type="audio/mpeg">
+  						Your browser does not support the audio element.
+					</audio>
+					<audio id="myAudio2">
+						<source src="../media/audiotest2.mp3" type="audio/mpeg">
+  						Your browser does not support the audio element.
+					</audio>
+					<audio id="myAudio3">
+						<source src="../media/audiotest3.mp3" type="audio/mpeg">
+  						Your browser does not support the audio element.
+					</audio>
+					<audio id="myAudio4">
+						<source src="../media/audiotest4.mp3" type="audio/mpeg">
+  						Your browser does not support the audio element.
+					</audio>
+					<a href="#" class="button" id="audioTestPlay">Play Audio</a>
+					<input id="audioValidate" type="text" style="width:350px"class="form-control" placeholder="Type the word you hear">
+					<p class="text-symbols">* * * </p>
+					<a href="#" class="button ghost" id="audioTest" style="display:none">Submit</a>
+				</div>
+				<div class="wrap taskInstruct" style="display:none">
+					<h1 class="aligncenter"><strong>Let's get started</strong></h1>
+					<p>The main goal of this task is to play a guessing game. You'll see a CONCEPT in the centre of the screen, with two buttons below it, like this:</p>
+					<h3 class="aligncenter">SOUR</h3>
+				</div>
+				<div class="wrap aligncenter taskInstruct" style="display:none">
+					<audio id="testAudioA">
+						<source src="../media/instructA.mp3" type="audio/mpeg">
+  						Your browser does not support the audio element.
+					</audio>
+					<audio id="testAudioB">
+						<source src="../media/instructB.mp3" type="audio/mpeg">
+  						Your browser does not support the audio element.
+					</audio>
+					<a href="#" class="button btnplay" id="playtestA">Play Word A</a>
+					<a href="#" class="button btnplay" id="playtestB">Play Word B</a>
+				</div>
+				<div class="wrap taskInstruct" style="display:none">
+					<p>Clicking each button will play an audio file of a word in a language other than English. <b>Your job is to listen to each word, and guess which word has the meaning of the concept above it.</b> In this case, play each word and guess which word means "SOUR".</p>
+					<p>Try it by playing the words using the buttons above. <b>You will have to play each word before you can answer - we want you to guess based on how they sound, not just randomly!</b> You can play them as many times as you want. Once you play them at least once, the answer buttons will activate below.</p>
+					<p class="aligncenter"><b>Which word do you think means SOUR?</b></p>
+				</div>
+				<div class="wrap aligncenter responseButtons bottombutton" style="display:none">
+					<a href="#" class="button chooseTest" id="word_A">Word A means SOUR</a>
+					<a href="#" class="button chooseTest" id="word_B">Word B means SOUR</a>
+
+					<span style="display:none" class="taskInstruct2">
+						<p><b><span class="rightFeedback" style="display:none">You got that one right!</span><span style="display: none;" class="wrongFeedback">Oops, it was word A that meant SOUR.</span></b> For each guess, you'll get a point based on whether you guessed right, or wrong - but you won't see feedback on each guess. We'll only show you your score every few guesses. <span style='display:none' class="volunteerOnly"> You can guess as many items as you want - there are 80 in total. You can also leave and come back later to continue playing.</span><span style='display:none' class="turkOnly"> There are 80 items in total. Once you've finished all of them, you'll get the completion code to hand in to Mechanical Turk.</span></p>
+						<p class="text-symbols">* * * </p>
+						<a href="#" class="button ghost bottombutton" id="revTask">Next</a>
+					</span>
+				</div>
+				<div class="wrap returnTaskReview bottombutton" style="display:none">
+
+					<p><b>Great, your audio is on!</b> A quick reminder of how it works before you dive back in:</p>
+					<ul>
+						<li>You'll see a concept and two buttons, each button plays a different word.</li>
+						<li>You have to guess which word means the concept based on how it sounds.</li>
+						<li>You need to listen to each word at least once before you can guess, but you can listen as many times as you want.</li>
+						<li>You get a point for each one you guess right.</li>
+					</ul>
+					<p><b>Click below to jump back in.</b></p>
+					<p class="text-symbols">* * * </p>
+					<p class="aligncenter">
+						<a href="#slide=6" class="button ghost" id="resumeTask">Resume</a>
+					</p>
+					
+				</div>
+				<div class="wrap taskReview" style="display:none">
+
+					<p><b>Now that you get the idea, you should be ready to start the task.</b> As a quick reminder before you start:</p>
+					<ul>
+						<li>You'll see a concept and two buttons, each button plays a different word.</li>
+						<li>You have to guess which word means the concept based on how it sounds.</li>
+						<li>You need to listen to each word at least once before you can guess, but you can listen as many times as you want.</li>
+						<li> You get a point for each one you guess right.</li>
+					</ul>
+					<p><b>Ready to get started? Click below to jump in.</b></p>
+					<p class="text-symbols">* * * </p>
+					<p class="aligncenter buttonbottom">
+						<a href="#slide=6" class="button ghost" id="beginTask">Start Task</a>
+					</p>
+					
+				</div>
+			</section>
+			<section class="bg-white">
+				<div class="wrap">
+					<h4 class="aligncenter">Your Points: <b><span class="numCorrect">?</span>/<span class="totalGuessed">0</span></b></h4>
+				<hr>
+				</div>
+				<div class="wrap aligncenter taskCentral">
+					<h3 class="targetConcept">CONCEPT</h3>
+					<audio id="targetAudioA">
+							<source src="../media/instructA.mp3" type="audio/mpeg">
+  							Your browser does not support the audio element.
+					</audio>
+					<audio id="targetAudioB">
+							<source src="../media/instructB.mp3" type="audio/mpeg">
+  								Your browser does not support the audio element.
+					</audio>
+					<a href="#" class="button btnplay" id="playTargetA">Play Word A</a>
+					<a href="#" class="button btnplay" id="playTargetB">Play Word B</a>
+					<p style="font-size:12px">Remember: You need to listen to each word at least once before response buttons appear.</p>
+					<p class="aligncenter"><b>Which word do you think means <span class="targetConcept">CONCEPT</span>?</b></p>
+					
+					<div class="responseButtons buttonbottom" style="display:none">
+						<a href="#" class="button chooseTarget" id="targetword_A">Word A means <span class="targetConcept">---</span></a>
+							
+						<a href="#" class="button chooseTarget" id="targetword_B">Word B means <span class="targetConcept">---</span></a>
+
+
+					</div>
+				</div>
+				<div class="wrap aligncenter advanceTask buttonbottom" style="display:none">
+					<p style="display:none;color:green" class="rightFeedback"><b>Not bad! You're doing better than guessing randomly so far...good ear!</b></p>
+					<p style="display:none;color:blue" class="neutralFeedback"><b>Keep going! Your success rate is about random - you can do better! Remember to listen carefully to the words.</b></p>
+					<p style="display:none;color:red" class="wrongFeedback"><b>Good effort! But your success is worse than random! Keep trying, and remember to listen carefully to the words.</b></p>
+
+					<a href="#" class="button ghost" id="fwdTask">Next</a>
+				</div>
+				<div class="wrap aligncenter volunteerOnly buttonbottom">
+					<p class="text-symbols">* * * </p>
+					<a href="#slide=7" class="smallStop"><p>Finish</p></a>
+				</div>
+			</section>
+			<section class="bg-white">
+				<div class="grid vertical-align loadgif">
+	              <div class="column">
+	                <h3><strong>Loading...</strong></h3>
+	                <p style="font-size: 2rem" class="text-intro">We'll be right with you</p>
+	              </div>
+
+	              <div class="column">
+	                <iframe src="../images/waiting.gif" width="480" height="355" frameBorder="0" allowfullscreen></iframe>
+	              </div>
+            	</div>
+				<div class="wrap volunteerEnd volunteerPause turkEnd">
+					<h4 class="aligncenter">Thanks for playing!</h4>
+				<hr>
+				</div>
+				<div class="wrap aligncenter volunteerPause buttonbottom" style="display:none">
+					<h3>Your score so far: <span class="numCorrect"></span>/<span class="numGuesses"></span></h3>
+					<p>That's a success rate of about <span class="successRate"></span>%, the player average is 56.2%.%.</p>
+					<p><b>What's it all about?</b> You heard words for sweet, bitter, white and black from ten unrelated languages (Azerbaijani, Bengali, Fijian, Finnish, Kaingag, Nahuatl, Seri, Surin Khmer, Swahili, and Tongan). Sometimes you were asked to guess between words that meant sweet and bitter, sometimes between black and white, and sometimes beetween colour and taste (like white and sweet). There is already evidence <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00593/full" target="_blank">people can guess the meaning</a> of antonyms like black and white in langauges they don't know. This project was aiming to test whether this holds for related but different terms (like sweet and bitter) and whether it works across modalities like colour and taste (black and sweet, for example). Data is still being analyzed, so stay tuned!</p>
+				</div>
+				<div class="wrap aligncenter volunteerEnd buttonbottom" style="display:none">
+					<h3>Your final score: <span class="numCorrect"></span>/<span class="numGuesses"></span></h3>
+					<p>That's a success rate of about <span class="successRate"></span>%, the player average is 56.2%.</p>
+				</div>
+
+			</section>
+		</article>
+	</main>
+	<!--main-->
+
+	<!-- Required -->
+	
+
+	<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.2/socket.io.js"></script>-->
+	<script src="https://code.jquery.com/jquery-1.8.3.min.js" integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
+	<!--<script defer src="../static/wsassets/js/svg-icons.js"></script>--
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.2/socket.io.js"></script>
+	<!--using webslides js with some minor modifications tomake it suitable for experiments; mainly eliminating controls.-->
+	<script src="../js/libs/webslides_nocontrol.js"></script>
+
+	<script src="../js/custom/ltcustom.js"></script>
+
+  </body>
+</html>

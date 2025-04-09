@@ -1,0 +1,40 @@
+      .blog-title {
+        min-height:10vh;
+        text-decoration:none;
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+        padding-bottom:1rem;
+        padding-top:3rem;
+        
+        color:#8b8c8c;
+        
+      }
+
+      .hlink {
+        text-decoration: none !important;
+        color: grey !important;
+      }
+
+
+      header {
+        position:sticky;
+        top:0;
+        z-index:99;
+        padding-bottom: 0px !important;
+
+      }
+      section {
+        padding-bottom:1rem;
+        padding-top:3rem;
+      }
+
+      .nutshell-heading-embed, .nutshell-bubble-overflow-embed-button,.nutshell-bubble-from {
+        display:none;
+      }
+
+      .post-header {
+        background-color: #f7f9fb !important;
+      }
+
+      .post-title {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+      }

@@ -8,17 +8,12 @@
     <meta name="author" content="Christine Cuskley">
     <meta name="generator" content="Hugo 0.122.0">
     <title>Mixed Signals</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
-
-    
-
-
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://ccuskley.github.io/blog/index.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   
     
@@ -26,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
+    <link href="static/css/blog.css" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -99,70 +94,39 @@
       </div>-->
     </div>
   </header>
-<div class="container">
 
+
+<!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Search Posts</h5>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Enter search term(s) below, separated by spaces</label>
+          <input type="searchterm" class="form-control" id="searchQuery" placeholder="e.g., language technology">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="executeSearch">Search</button>
+      </div>
+    </div>
+  </div>
 </div>
-
 <main class="container">
-  <!--<div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-    <div class="col-lg-6 px-0">
-      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
-    </div>
-  </div>-->
-
-  <!--<div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-body-secondary">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-          <h3 class="mb-0">Post title</h3>
-          <div class="mb-1 text-body-secondary">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-      </div>
-    </div>
-  </div>-->
-
   <div class="row g-5">
     <div class="col-md-8">
       <h3 style="font-variant:small-caps; colour:grey">
-        latest post
+        featured post
       </h3>
 
       <article class="blog-post">
-        <a href="tech0925.html" style="text-decoration:none"><h2 class="display-5 link-body-emphasis mb-1">The rise and fall of digital literacy</h2></a>
-        <p class="blog-post-meta">25 September, 2024 | <em class="tags">#teaching #programming #hottakes</em></p>
-        <p>It's been a rough few years for higher education in the UK. Widespread and <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-9387/" target="_blank">almost constant industrial action</a>, <a href="https://www.bbc.co.uk/news/education-64130367" target="_blank">pivots between online and in person teaching</a>, and <a href="https://www.theguardian.com/education/2023/aug/02/minister-rules-out-lifting-cap-on-student-tuition-fees-in-england" target="_blank">financial</a> woes for both students and institutions. But among these looming systemic challenges lies a more pernicious one: a precipitous drop in knowledge and skills related to technology among university students, especially in the social sciences and humanities.</p>
-        
-        <p>I teach programming, data analysis, and experimental methods in a school that is dominated by English literature. It is not something my students are necessarily expecting - many of them abandoned "hard" STEM subjects like mathematics and computing at the first opportunity, probably in their early teens. 20 years ago, many linguistics departments may have been more theoretical than anything else. Now, any competitive linguistics programme should provide students a certain level of data literacy, or at least offer them the opportunity for it. A linguistics graduate should be able to engage with quantitative methods at a fairly high level, at the very least as a consumer, if not a producer, of primary quantitative research in the field.</p>
-        <p>Nonetheless, when students sign up for my module, they are often surprised by the content. It is titled "Experimental Methods in Linguistics", and there is clear detail in the description that they will be learning and using the programming language R. In the first year I taught this module, a student was nearly in tears and informed me "they did not study English to do maths". Over the years, multiple students have asked if they need to “know how to use a computer”.</p>
-        <a class="btn btn-outline-primary rounded-pill" href="tech0925.html#readMoreStart">Read More...</a>
+        <a id="latestPostLink" href="#" style="text-decoration:none"><h2 class="display-5 link-body-emphasis mb-1 postTitle"></h2></a>
+        <p class="blog-post-meta"><span class="postDate">25 September, 2024</span> | tags: <em class="tags"></em></p>
+        <span id="fpSnippet"></span>
+        <a class="btn btn-outline-primary rounded-pill" id="readMorePostLink" href="#">Read More...</a>
 
         
       </article>
@@ -178,39 +142,43 @@
       <div class="position-sticky" style="top: 100px;">
         <div class="p-4 mb-3 bg-body-tertiary rounded">
           <h4 class="fst-italic">About</h4>
-        <p class="p-about">Writing about academia, language, cognition, commmunication, and whatever I damn well please. By Christine Cuskley, Reader in Language and Cognition at Newcastle University. All opinions definitively my own.</p></p>
+        <p class="p-about">Writing about academia, language, cognition, commmunication, and whatever I damn well please. By <a href="https://ccuskley.github.io" target="_blank">Chrissy Cuskley</a>. All opinions definitively my own.</p></p>
         </div>
         <div>
-          <h4 style="font-variant:small-caps; colour:grey !important;"><a href="allposts.html" style="text-decoration:none"><i class="bi bi-door-open"></i> all posts</a> <span style="font-weight:lighter"> |</span> <a href="#" style="text-decoration:none" id="launchSearch"><i class="bi bi-search"></i>search</a></h4>
+          <h4 style="font-variant:small-caps; colour:grey !important;"><a href="allposts.html" style="text-decoration:none"><i class="bi bi-door-open"></i> all posts</a> <span style="font-weight:lighter"> |</span> 
+
+            <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#searchModal">
+  Launch demo modal
+</button>--><a href="#" style="text-decoration:none" id="launchSearch"><i class="bi bi-search"></i>search</a></h4>
           <hr>
         </div>
         <div>
-          <h4 style="font-variant:small-caps; colour:grey">recent posts</h4>
+          <h4 style="font-variant:small-caps; colour:grey">other recent posts</h4>
           <ul class="list-unstyled">
             <li>
               <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <img src="" id="img1" class="bd-placeholder-img" width="100%" height="96">
                 <div class="col-lg-8">
-                  <h6 class="mb-0">Building heptapod</h6>
-                  <small class="text-body-secondary">January 15, 2024</small>
+                  <h6 class="mb-0" id="shortTitle1"></h6>
+                  <small class="text-body-secondary" id="date1"></small>
                 </div>
               </a>
             </li>
             <li>
-              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" id="link2" href="#">
+                <img src="" id="img2" class="bd-placeholder-img" width="100%" height="96">
                 <div class="col-lg-8">
-                  <h6 class="mb-0">Academic wives</h6>
-                  <small class="text-body-secondary">January 14, 2024</small>
+                  <h6 class="mb-0" id="shortTitle2"></h6>
+                  <small class="text-body-secondary" id="date2"></small>
                 </div>
               </a>
             </li>
             <li>
-              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                <img src="static/images/computer.jpg" class="bd-placeholder-img" width="100%" height="96">
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" id="link3" href="#">
+                <img src="" id="img3" class="bd-placeholder-img" width="100%" height="96">
                 <div class="col-lg-8">
-                  <h6 class="mb-0">Digital Literacy</h6>
-                  <small class="text-body-secondary">September 13, 2024</small>
+                  <h6 class="mb-0" id="shortTitle3"></h6>
+                  <small class="text-body-secondary" id="date3"></small>
                 </div>
               </a>
             </li>
@@ -243,16 +211,20 @@
 
 <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
   <div class="p-4">
+    <p><a href="#"><i class="bi bi-house-door"></i></a></p>
           <h4 style="font-variant:small-caps;">elsewhere</h4>
           <p><a href="https://ccuskley.github.io" target="_blank">Website</a> | <a href="https://github.com/CCuskley" target="_blank">Github</a> | <a href="https://bsky.app/profile/nerdpro.bsky.social" target="_blank">Bluesky</a></p>
+          <p style="font-size:12px" class="aligncenter">Content license: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC-BY-NC-ND 4.0</a></p>
         </div>
+        
         <hr>
-  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-  <p class="mb-0">
-    <a href="#">Back to top</a>
-  </p>
+  <p style="font-size:12px">Adapted from the <a href="https://getbootstrap.com/docs/5.3/examples/blog/#" target="_blank">Bootstrap Blog Template</a> by @mdo.</p>
+  
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="static/js/postslist.js"></script>
+<script src="static/js/postinfo.js"></script>
 
     </body>
 </html>

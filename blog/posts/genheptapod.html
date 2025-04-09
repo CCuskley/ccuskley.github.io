@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO -->
+    <title>Building Heptapod B</title>
+    <link rel="icon" type="image/x-icon" href="../static/images/favicon.png">
+    <meta name="description" content="lede description">
+    
+    <!-- URL CANONICAL -->
+    <link rel="canonical" href="https://ccuskley.github.io/blog/">
+    <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- CSS Base + Colors -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/webslides.css">
+    
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/svg-icons.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/posts.css">
+    
+ 
+    
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
+    
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  
+  </head>
+
+  <header role="banner" class="post-header">
+      <!--<nav role="navigation">-->
+        <section class="blog-title">
+          <div class="wrap aligncenter">
+            
+              <h2>
+              <a href="../index.html" class="hlink">Mixed Signals</a>
+              <hr>
+            </h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+      <!--</nav>-->
+    </header>
+  <body>
+
+    
+    <main role="main">
+
+      <article>
+      
+        
+        <section class="bg-white">
+          <!--.wrap.longform (width:72rem=720px) = Better reading experience (90-95 characters per line) -->
+          <div class="wrap longform">
+            <h2 class="post-title"><strong>Building Heptapod B</strong></h2>
+            <p><a href="https://ccuskley.github.io" title="Christine Cuskley"> Chrissy Cuskley</a>, Month, Year</p>
+            <p class="text-intro">
+              Generative art for your alien orthography needs.
+            </p>
+            <hr>
+            <div class="section-para">
+              <p>In April 2025, I worked with <a href='https://www.simonkirby.net/about' target="_blank">Prof Simon Kirby</a> and <a href='https://www.mediascot.org/atmosphere/arrival' target="_blank">New Media Scotland</a> to create multimedia animations to accompany a screening of the 2016 Dennis Villeneuve film <em>Arrival</em>. This is one of the the only films out there with a serious academic linguist protaganist (Louise Banks, played by Amy Adams), and one which also takes linguistics itself quite seriously. <a href='https://jessica.lingspace.org/' target="_blank">Professor Jessica Coon</a>, a professor in linguistics at McGill University, worked on the film as a consultant. You can read more about our take on what the film means for the relationship between language and cognition <a href='https://ccuskley.github.com/blog/posts/circlecog.html' target="_blank">in this short essay we wrote for the event</a>. This post will focus on the process and inspiration behind the visual generative animations I built for the film.</p>
+            </div>
+            <p>The film is based on Ted Chaing&#39;s excellent short story, <em>The Story of Your Life</em>. The very broad strokes of both the story and the film are of a first encounter: aliens - called Heptapods for their seven-pointed radial forms - have landed on Earth. Humans can do little with their collective curiosity and anxiety about that fact unless we figure out <em>how to communcate with them</em>. In cognitive science, this is actually a common thought experiment we use to help understand language, especially its evolution. Assuming a species possesses incredibly complex general cognition, computational abilities, and irrepressible socio-cognitive urges to communicate with others (a state some might refer to as &quot;language-ready&quot;), <em>how do we go from nothing to something</em>? Even with two willing and able intelligent beings ready to do communicative business, how we establish an effective communication system from nothing is non-trivial.</p>
+            <p id="readMoreStart">This is the technical engine for the plot in both the story and the film, but as you may have guessed from the title of the original story, the emotional hook is far more personal. It is about the inertia caused by romantic and parental love, and about how we weather intense interpersonal loss and change, but somehow still remain the same person (at least a little) throughout our lives. I&#39;ll say no more because spoilers, but if you have seen the film, read the story - if you&#39;re not familiar with either, do both.</p>
+          </div>
+        </section>
+        <section >
+          <div class="wrap longform">
+            <h3 class="text-context">The film and the story</h3>
+            <div class="section-para">
+              <p>Our starting point for the event was to connect the film to the story more explicitly - many people don&#39;t even know it&#39;s adapted from a story at all. We aimed to somehow translate quotes from the original story into Heptapod B, mapping those to particular points in the film in a non-linear way. Understanding our approach to this requires a little bit of background about key features of Heptapod B - and the story explains this more fully than the film.</p>
+            </div>
+            <p>While the film adaptation is certainly a love letter to the story, the latter explains key facts about the aliens&#39; language more technically, particularly how it relates to their cognition and experience in the physical world. The film, on the other hand, takes advantage of its visual medium in ways you may not expect. Mercifully, Villeneuve does not immediately shove a glistening, quivering alien body on screen (though eventually we do get a good look at the Heptapods); instead, the visual impact the aliens make is mainly through their distictive visual language, called Heptapod B. This is not to be confused with Heptapod A:  the chittering, growly acoustic language we first hear from the Heptapods (they never make progress with Heptapod A in the film, but seem to learn both Heptapod A and B in the story).</p>
+            <blockquote class="text-pull-right">
+              <p>I delimited certain sections of the spectrograph and typed in a tentative gloss for each: "heptapod" for [flutter1], "yes" for [flutter2], and "chair" for [flutter3]. Then I typed "Language: Heptapod A" as a heading for all the utterances.</p>
+              <p>Gary watched as I was typing. "What's the 'A' for?"</p>
+              <p>"It just distinguishes this language from any other ones the heptapods might use,"</p>
+              <p><cite>The Story of Your Life, p.98</cite></p>
+            </blockquote>
+            <p>A key point about Heptapod B is that it is not a writing system for Heptapod A; it is <em>an entirely different language</em>. The Heptapods are <em>bimodal bilinguals</em>: they communicate in two modalities (auditory and visual), and the languages in each of those modalities are completely different. This holds important insights about the kind of complex communcation system language is, and the similarly complex system we know Heptapods must have to have arrived on Earth.  First, humans as a species have thousands of languages, and that&#39;s just right now: there&#39;s no reason to believe that any other species with a complex communication system would have only one, especially if many of their ships have landed all over Earth. Second, it shows that language is <em>modality independent</em> - humans mostly use spoken languages, but that doesn&#39;t mean that this is how language (or complex communication more generally) <em>must</em> be or even <em>should</em> be. </p>
+            
+            <div class="section-para">
+              <p>You might think the most obvious counter-example to this what you&#39;re looking at right now: a writing system. But actually, human writing systems aren&#39;t languages in themselves: they are idiosyncratically compressed mirrors of existing spoken langauges. The more relevant human analogue for Heptapod B is signed langauges, of which there are at least 200-500 in the world, and which live in the <a href='#NoSignedWriting'>:visual-gestural modality</a>. Heptapod A is to Heptapod B as spoken English is to ASL or BSL; not as spoken English is to written English. Interestingly, people often make the same mistake about signed langauges that Louise pre-empted by immediately identifying Heptapod <em>A</em>: people erroneously assume that there is only one universal sign language, and/or that all signed languages are somehow mutually intelligible because they live in the visual/gestural modality.</p>
+
+            </div>
+            <p>In short, what makes signed languages a better analogue to Heptapod B than written languages is that they is they are not mirrors of spoken languages like writing systems are. British Sign Language (BSL) is not a gestural instantiation of spoken English in the way that graphemes stand-in for sounds and words in written English. BSL actually has little to do with British English, other than this being another language it is obviously in contact with. We don&#39;t consider someone who speaks, reads, and writes English to be multilingual, though they are arguably multimodal - but someone who signs BSL and reads and writes English is (like a Heptapod) a <a href='#BimodalBilingual'>:bimodal bilingual</a>. </p>
+<p>The separation of spoken and signed languages is also well-illustrated by the fact that while British English and American English are generally quite similar and very mutually intelligible, BSL and American Sign Language (ASL) are two <em>completely different</em> languages. In a family tree of signed languages, ASL is closer to French Sign Language and Chinese Sign Language than BSL. This is just the tip of the iceberg of hundreds of other distinct sign languages. </p>
+<p>The takeaway is that Heptapod B is not a written form of Heptapod A, it is its own language entirely. Louise identifies this as a new kind of visual language; she deliberately discards terms like alphabetic, logographic, or syllabic that we use for written forms of spoken languages. Instead, she coins the term <em>semasiographic</em>:</p>
+</div>
+</section>
+<section class="bg-white">
+  <div class="wrap longform">
+    <hr>
+  <blockquote >
+              <p>I went to the charlkboard and drew a circle with a diagonal line bisecting it. "What does this mean?"</p>
+              <p>"'Not allowed?'"</p>
+              <p>"Right." Next I printed the words <span style="font-variant:small-caps;">not allowed</span> on the chalkboard. "And so does this. But only one is a representation of speech."</p>
+              <p>Gary nodded. "Okay"</p>
+              <p>"Linguists describe writing like this" &mdash; I indicated the printed words &mdash; "as 'glottographic,' because it represents speech. Every human written language is in this category. However, this symbol" &mdash; I indicated the circle and diagonal line &mdash; "is 'semasiographic' writing, because it conveys meaning without reference to speech. There's no correspondence between its components and any particular sounds."</p>
+              <p>"And you think all of heptapod writing is like this?"</p>
+              <p>"From what I've seen so far, yes. It's not picture writing, it's far more complex, It has its own system of rules for constructing sentences, like a visual syntax that's unrelated to the syntax for their spoken language."</p>
+              <hr>
+              <p><cite>The Story of Your Life, p.108</cite></p>
+            </blockquote>
+          </div>
+         </section>
+         <section>
+          <div class="wrap longform">
+            <h3 class="text-context">Imagining Heptapod B</h3>
+            <div class="section-para">
+              <p>Before the film&#39;s distinctive smoky, inky symbols, it&#39;s not clear anyone had really thought much about what Heptapod B looked like, including Ted Chiang. The story doesn&#39;t need this; it gets a lot done with detail about how Heptapod B is <em>not</em> like human writing (or human language) than what it actually is like - particularly visually. Chiang doesn&#39;t give the reader much to go on: &quot;a doodle of script; vaguely cursive&quot;. But given its visual medium, the film could hardly leave this as a mystery: they had to make the inky, circular Heptapod B symbols that are now synonymous with the film.</p>
+            </div>
+            <p>
+              <img src="../static/images/heptapodstill.png" width="100%">
+            </p>
+            <p>My first stop when looking into making some Heptapod B animations for our screening was to dig into how the Heptapod B symbols were made for the film. How did they go from &quot;a doodle of script; vaguely cursive&quot; to the gorgeous radial symbols in the film? The story is illustrative: to sum up, <a href="https://www.wired.com/2016/11/arrivals-designers-crafted-mesmerizing-alien-alphabet/" target="_blank">they started trying to make something like an alphabet</a>, drawing on inspiration from existing human writing systems. But it all looked very clunky and <em>very</em>  human. In the end, the production designer's artist wife, <a href="https://www.martinebertrand-art.com/" target="_blank">Martine Bertrand</a>, just designed something weird, which eventually became the Heptapod B we see in the film.</p>
+            <p>How, then, did they decide what the symbols meant? They mapped them onto some utterances, and had computer scientists analyse them for patterns, post-hoc. Those patterns became the &quot;rules&quot; of Heptapod B that we glimpse in the film. <a href="https://www.youtube.com/watch?v=r8nTifCIr0c" target="_blank">You can watch a (long) video of how they did this here</a>; this process is the basis for the analysis you see in the film, where networks of little dots connect across the symbols.</p>
+            <p>
+              <img src="../static/images/heptapodanalysis.jpg" width="100%">
+            </p>
+            <p>First, this story is cool because it makes these symbols feel more organic: these weren&#39;t really designed for a specific function, they were designed to look cool, and that&#39;s pretty much it. It&#39;s less <a href='https://en.wikipedia.org/wiki/Esperanto' target="_blank">Esperanto</a> and much more <a href='https://en.wikipedia.org/wiki/Wingdings#:~:text=Wingdings%20is%20a%20series%20of,Charles%20Bigelow%20and%20Kris%20Holmes.' target="_blank">Wingdings</a> than I thought it might be (though clearly, significantly more elevated than Wingdings). This has some nice paralells with natural language: language has the <em>appearance</em> of having been designed for a specific function, but it isn&#39;t actually designed by anyone. Language just evolves and structure emerges as an adaptive feature during this process. In the case of Heptapod B, they just designed it to look cool, but it turns out there&#39;s naturally enough structure in looking cool to meaningfully analyse it.</p>
+            <p>Second, I was hyped because I thought that if they mapped out some features perhaps they tried to articulate some generative rules for Heptapod B, and then surely there was some kind of Heptapod B generator out there and I would have less work to do. But alas: no such luck. There&#39;s <a href='https://shoptly.com/i/btfa'>a Heptapod B font</a>, but this is not quite right. As we elaborated in <a href='https://ccuskley.github.io/blog/posts/circlecog.html' target="_blank">the short essay that accompanied the screening</a>, the whole point of Heptapod (A or B) is that it <em>isn&#39;t</em> linear. As such, generating it by typing out a sequence of letters feels like cheating. </p>
+            <p>There&#39;s also <a href='https://www.etsy.com/uk/listing/812022075/arrival-heptapod-scifi-alien-movie-ink'>sort of dictionary of Heptapod symbols from the movie that you can get a cool poster of</a>, but part of our aim was to make Heptapod B &quot;translations&quot; of quotes from the story - not just display symbols you already see at some point in the film. In the film, they do come up with a way to write Heptapod B, using a touch screen where they select little segments to form a whole signal; but even this feels like squential humans making Heptapod B. While Heptapod B is mostly produced through this weird app, later in the film Louise is able to form a few Heptapod B symbols more organically with her hands and the inky dust (handily provided for her from her Heptapod friends' appendages).</p> <p>It's this more organic effect that we really wanted; so neither the font or some tap-n-go generator would work. I wanted it to feel more like Heptapods were <em>sending</em> quotes from the story using new symbols; and Heptapods build a symbol all at once. Beyond the cheating or the lack of novelty, the real issue is that both of these solutions are just static images: it would be difficult to use either the font or images from the film to make symbols <em>grow</em> in real time like they do when the Heptapods actually generate them. I would have to grow them myself.</p>
+          </div>
+        </section>
+        <section class="bg-white">
+          <div class="wrap longform">
+            <h3 class="text-context">Growing Heptapod B</h3>
+            <div class="section-para">
+              <p>Before you nod off hearing more about how I made the thing, it&#39;s probably worth seeing for yourself. In the end, the concept was pretty simple: we generate a heptapod symbol, and then it dissolves/morphs into text, specifically, choice quotes from the story, aligned with specific moments in the film. The short clip below shows the &quot;raw&quot; animation, which you can also <a href="https://ccuskley.github.io/interactives/heptapod/heptapodlive.html" target="_blank">demo in your browser here</a>. You can also <a href="https://openprocessing.org/sketch/2607570" target="_blank">see and interact with the code on Open Processing</a>.</p>
+            </div>
+              <p><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1073544147?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HeptapodBExample"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              </p>
+              <p>For the event itself, Simon added some effects to make things more watery, in addition to some sounds - and magically editing around the time issues discussed below.</p>
+              <p><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1074003348?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Heptapod B Animation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></p>
+            <p>I am not actually a digital artist or animator as part of my &quot;real job&quot; (which is technically, to be a linguist). And so, as much as I would love to have spent a couple hours here and there replicating visuals from a film with a $47 million budget and a special effects team to match, I tried to bring myself back down to Earth. Here&#39;s what it can&#39;t do:</p>
+<p><ul>
+<li>Have the dusty/inky three-dimensional quality the Heptapod B in the film does, particularly when we first glimpse it;</li>
+<li>Come out of a ghostly fog from a seven-pointed, starfish-esque appendage (alas);</li>
+<li>Have random gaps in the circles for some symbols; I might build this in later.</li>
+
+</ul></p>
+            <p>In addition to this, there are some other aesthetics that had to change. Although the heptapod in the film is mainly black on <a href='#NoFog'>grey-ish fog</a>, we needed to project white on black to prevent the intermittent projection of the Heptapod B from blinding people while they were trying to watch the $47 million film.</p>
+<p>You might have noticed if you look at the two videos above, or futz around enough with refreshing the web page: <strong>the same English quote doesn&#39;t generate the same Heptapod symbol</strong>. It can&#39;t, because there are a lot of random parameters in here (which you can read more about below): the number of protrusions is random (albeit falling within a range determined by the total number of particles, so somewhat tied to the quote), the size of each protrusion is random, the number of tendrils it has is random, and the number of tendrils that have bulbs is random. One could also <a href='#TieQuote'>:tie some of these to the quote</a>; but for now, the only fixed parameter set by the English text is the total number of particles (which sets the maximum <em>possible</em> number of protrusions). This means that it would be more or less impossible to generate the same Heptapod B symbol twice, unless you changed the code so you could <a href='#FiddleParameters'>:set these parameters more directly</a>.</p>
+<p>In the end, I think there&#39;s something nice about this: the English quote very loosely determines the form of the Heptapod B symbol, but there is a lot of potential for variation. If we think of Heptapod B as designating a very broad family of Heptapod visual languages, I like to think of this as getting a different Heptapod B language from a different Heptapod B culture each time it loads. As Louise points out in the story, we should expect there to be potentially thousands of Heptapod languages, so why not?</p>
+</div>
+</section>
+<section>
+          <div class="wrap longform">
+            <h3 class="text-context">Getting in the weeds: How the code works</h3>
+            <div class="section-para">
+              <p>You can <a href="https://openprocessing.org/sketch/2607570" target="_blank">find the full code for the Heptapod B Generator on Open Processing</a>,  where you&#39;re welcome to remix and adapt it for your Heptapod B needs with attribution. You might be able to figure out howt he code works just by looking at if you know some Processing or p5js, but I doubt my code is that clean or transparent, so you may want to read below first to understand a bit about how it works.</p>
+            </div>
+            <p>The engine behind the whole animation is a particle system, which allows for the application of specific forces to particles to make them move to where you need them when you need them to. This is how the morphing is accomplished: the same particles that make up the Heptapod B symbol build the English text (in fact, the number of particles is determined by the English text, <em>a priori</em>). The code relies on a few emitters and two classes of particles, which differ mainly in how they are drawn, alongside a class of little tendril appendages:</p>
+<p>
+  <p><a href="#FileNames">[:a brief note on filenames on Open Processing]</a></p>
+<ul>
+<li><strong>Emitters</strong>, which are invisible but &quot;spew&quot; out all the particles. These allow us to apply forces or actions (like, move to English text) to all the <a href="#ThreeEmitters">:child particles of an emitter</a> at once, rather than iterating over particles in the space. This is in <code>emitter.js</code>, which is based on code from <a href='https://p5js.org/examples/math-and-physics-smoke-particle-system/' target="_blank">basic particles in p5js</a></li>
+<li><strong>Basic particles</strong> only appear as a circle, also based on <a href='https://p5js.org/examples/math-and-physics-smoke-particle-system/' target="_blank">basic particles in p5js</a>. When they&#39;re part of the Heptapod B symbol, they appear as a circle with a random diameter between 3 and 15px. This all happens in <code>basicparticle.js</code>. When they are &quot;dust&quot; elsewhere in the space, they&#39;re drawn as a circle with a diameter of 2px.</li>
+<li>Some particles are classed as more complex <strong>protrusion</strong> particles, and are drawn on the Heptapod B circle as a bulge with a random size (within a range). This happens in <code>protrusion.js</code></li>
+<li>Protrusions are extended by a separate class of <strong>tendrils</strong>, which randomly reach into or outside of the circle (within limits). Some tendrils randomly have &quot;bulbs&quot; at the end of them, sort of like little ink blots or drips. This happens in <code>tendril.js</code></li>
+
+</ul>
+</p>
+<p>These are the classes on which the code relies, but the action is directed from a p5js sketch, <code>heptapodsketch.js</code>, which relies on a <a href='https://p5js.org/reference/p5/draw/' target="_blank">draw()</a> loop running at 60 frames per second. This starts in the setup stage with a quote from the story, and uses the p5js function <a href=''>textToPoints()</a>. This determines how many points are required to write out the quote, and determines the location of these points of these points for the English text; this, in turn, determines how many particles to create in the system.  This is a few thousand particles for a quote like &quot;From the beginning, I knew my destination, and I chose my route accordingly&quot; - this is actually quite a lot, and this can make things slow. Normally when using particle systems with continuous emitters, you&#39;d want a mechanism by which the particles eventually die based on how long they&#39;ve been around, since managing lots of them can grind an animation to a halt.</p>
+<p>Depending on the number of points in the quote, a random number of protrusions is set (i.e., longer, <a href="#MoreComplex">:more complex quotes</a> will generally have more protrusions in their corresponding Heptapod B symbol). Each is set to emerge at roughly equal intervals sometime between when most of the outer circle is visually complete and just before the symbol disperses to dust to form the text. The number of protrusions is based on the points required to write the text: it determines the <em>maximum</em> possible number of protrusions by choosing a random integer between 2 and the number of points divided by 400, which I chose arbitraily after some testing (any lower and the protrusions sometimes got a bit out of control; any higher and they may be a bit too sparse). The list of quotes is determined in the <code>quotes.json</code> file.</p>
+<p>The space has three invisible particle emitters in the centre, which shoot out particles until the number of particles is equal to the number of points required to form the relevant quote. Each particle is initiated and &quot;spewed&quot; out from the middle of the space without a target: it&#39;s pushed outward by a semi-random &quot;wind&quot; force. But even without executing on its destination <em>yet</em>, each particle already knows it&#39;s eventual position in the human (in this case, English) text as a <a href='https://p5js.org/reference/p5/p5.Vector/' target="_blank">p5js vector</a> (i.e., an x,y point on the Canvas). </p>
+<p>As I mentioned earlier, a few thousand particles is actually quite a lot, which makes the whole animation a bit long: the Heptapod B symbol <em>can&#39;t</em> morph into English text until there are enough particles in the space to spell out that text. Even spewing a few particles out each frame at 60 frames per second, you&#39;re looking at 15+ seconds until there are enough particles to actually write a short sentence like the quote above. This is slightly annoying for my very human impatience, but there&#39;s an elegance to it that aligns with the story: the Heptapod symbol can just get out there without a temporal care in the world - all the protrusions <em>could</em> come out right away because their parameters are set; I&#39;ve only made them come out gradually so our bored little human eyes have something to look at. This is because we <em>can&#39;t</em> write the English text until we&#39;ve done the proper particle emitting to write the sequence the human way.</p>
+<p>So, there is a little something to see while we&#39;re waiting for all these particles to exist.  When the particles hit an outer circle, most of them &quot;solidify&quot; and slow down: each particle is drawn as a circle of a random size with a diameter between 3 and 15 pixels. Unless, of course, they are protrusions: these are set to come out at more or less equal intervals after a few seconds, and emerge gradually: bulges first, tendrils second, and bulbs last. Tendrils are initiated with a random size between slightly larger than the protrusion itself (so it&#39;s visible) and a quarter of the circle&#39;s diameter (which is determined as 1/3 of the width of the window), randomly going either inside or outside the circle. Tendrils are drawn with random decreasing stroke weight, and some tendrils randomly end in &quot;bulbs&quot;, which are drawn as a series of little circles of increasing size starting with the stroke weight at the end of the tendril.</p>
+<p>When the emitters have created a number of particles equal to the number of points required to write the quote, they shut off. At the same time, the physical forces in the space shift: each particle&#39;s stored attractor from the text is turned on, and all of the particles float towards the text until it&#39;s visible. Once everything settles, at least in the interactive HTML version, you can press the &#39;f&#39; key to shift each particle&#39;s attractor again, making the particles &quot;flee&quot; off screen. Finally, you can press the &#39;j&#39; key to kill all the existing particles, reset the quote, and advance to the next Heptapod B symbol.</p>
+            <!--mic drop-->
+            <div class="content-center">
+              <p><i class="bi bi-mic"></i><i class="bi bi-droplet"></i>
+                </p>
+            </div>
+          </div>
+        </section>
+        <section style="display:none" id="nutshells">
+          <h2 id='no-signed-writing'>No Signed Writing</h2>
+<p>Interestingly, no known signed language on Earth has a writing system - although, to be fair, sign languages are very much understudied, and absence of evidence is not evidence of absence. So this doesn&#39;t necessarily mean it&#39;s impossible, or even that it doesn&#39;t exist - but if it does, we don&#39;t know anything about it.</p>
+<h2 id='bimodal-bilingual'>Bimodal bilingual</h2>
+<p>For example, BSL signer who can read English must be fully bilingual. This is something linguists didn&#39;t fully recognise until the 1970s, and is still a misconception even now. As recently as about 15 years ago, I attended a talk by a BSL expert in which a linguistics professor in the audience argued vociferously that signing BSL and reading and writing English does not make a person bilingual (it does!).</p>
+<h2 id='no-fog'>No Fog</h2>
+<p>I actually did start out quite married to the fog, and did some work to this sketch on Open Processing to create a version that was just generative fog as the backdrop for the Heptapod B generation...however, in the end this didn&#39;t work out because we needed the projection to be dark anyway, and it&#39;s really just as well because the generative fog also makes it very, very slow. Nonetheless, you can see a (probably laggy) version that generates black symbols on this foggy background here.</p>
+<p>&nbsp;</p>
+<h2 id='fiddle-parameters'>Fiddle Parameters</h2>
+<p>If I have capacity, I may make a separate version where one can do this...this could allow us to have a communication game where people try to communicate in Heptapod B. This shouldn&#39;t be too hard, because it&#39;s mainly a scaling down of the existing code to remove the constraints set by the quotes, and strictly speaking, you wouldn&#39;t need particles at all. Maybe I&#39;ll get to it; <a href='https://www.nature.com/articles/s41599-019-0299-5' target="_blank">I&#39;ve done weirder things</a> - watch this space!</p>
+<h2 id='tie-quote'>Tie quote</h2>
+<p>You could, for example, have the number of content words determine the number of protrusions, and have properties of those protrusions tied to the syntactic or thematic role of the word (e.g., SVO, agent-patient, etc). Tendrils could be determined something else arbitrary like concreteness. You could go crazy with this kind of thing; but it would take a lot to make it generate the same exact Heptapod B symbol for the same sentence...you&#39;d more or less have to build all of English morphosyntax and semantics into the code, which would sort of take the fun out of it. Doing a bit more of this could be cool though.</p>
+<h2 id="three-emitters">Three Emitters</h2>
+<p>This didn't end up being necessary or something I used, but it's a legacy from some point in the development process when I was applying separate forces to each emitter, rather than doing this per particle. The function to do this is still in the emitter class; but the per particle approach ended up being better because their motion looks more random (otherwise all the particles owned by an emitter move together making it difficult to apply random motion to a specific particle).</p>
+<h2 id="file-names">File Names</h2>
+<p>For all this code, I couldn't figure out how to rename files on Open Processing, and it looks like you just can't. Because of this, <code>heptapodsketch.js</code> is actually called <code>mySketch.js</code>, and the other files are called <code>tab4.js</code>, <code>tab5.js</code>, etc. Which is which is noted in comments in the main <code>index.html</code> file within the sketch.</p>
+<h2 id="more-complexity">More Complexity</h2>
+<p>To some extent, this complexity will be structural/syntactic or semantic, in that longer sentences are more likely to be more syntactically or semantically complex (whatever that means - don't ask a linguist, it's a morass). But probably more deterministic here is the complexity of the font - the font I've used here, <a href="https://fonts.google.com/specimen/Reenie+Beanie" target="_blank">Reenie Beanie</a> is a fairly simple sans-serif one. A more complicated font would need more points to draw the same sentence. This probably entails some cross-linguistic effects: e.g., I'm guessing that the same sentence written in Roman orthography and Tamil script would require more points for the latter.</p>
+      </article>
+    </main>
+        <footer>
+      <div class="aligncenter">
+        <p><a href="../index.html" style="text-decoration:none"><i class="bi bi-house-door"></i></a></p>
+        <h4 style='font-variant:small-caps; font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;'>elsewhere</h4>
+        <p><a href="https://ccuskley.github.io" target="_blank">Website</a> | <a href="https://github.com/CCuskley" target="_blank">Github</a> | <a href="https://bsky.app/profile/nerdpro.bsky.social" target="_blank">Bluesky</a></p>
+        <p style="font-size:12px" class="aligncenter">Content license: <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC-BY-NC-ND 4.0</a></p>
+      </div>
+
+      <hr>
+      <p style="font-size:12px" class="aligncenter">Built with <a href="https://webslides.tv" target="_blank">Webslides</a></p>
+    </footer>
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="/static/js/svg-icons.js"></script>
+  </body>
+</html>
