@@ -78,3 +78,14 @@ new-functions
 why-new-mutate
 standard-error
 submitting-your-assignment
+preparing-your-final-assignment
+starting-with-a-skeleton
+referencing
+using-zotero-and-.bib-files
+reference-as-you-write
+word-processor-integration
+nutshells-8
+markdown-generally
+open-document
+low-mark
+year-only
