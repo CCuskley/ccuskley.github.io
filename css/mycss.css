@@ -6,9 +6,21 @@
 	color:white;
 }
 
+.nutshell-heading-embed {
+  display:none;
+}
+
 .publink {
 	padding:3px;
-	color:#007BFF;
+	color:#613A3A;
+}
+
+.bg-grey {
+  background-color: #F3F7F3;
+}
+
+.grey-icon {
+  color:#DAE7DA;
 }
 
 .icon-link, .icon-ttip .publink { 

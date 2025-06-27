@@ -11,13 +11,13 @@
 		"type":"article",
 	},
 */
-var subjIcon_eye='<i class="fas fa-eye"></i>'
-var subjIcon_rules='<i class="fas fa-users"></i>'
-var subjIcon_games='<i class="fas fa-gamepad"></i>'
-var subjIcon_book='<i class="fas fa-book"></i>'
-var subjIcon_abs='<i class="fas fa-signature"></i>'
-var subjIcon_info='<i class="fas fa-info-circle"></i>'
-var subjIcon_pen='<i class="fas fa-pen"></i>'
+var subjIcon_eye='<i class="fas fa-eye grey-icon"></i>'
+var subjIcon_rules='<i class="fas fa-users grey-icon"></i>'
+var subjIcon_games='<i class="fas fa-gamepad grey-icon"></i>'
+var subjIcon_book='<i class="fas fa-book grey-icon"></i>'
+var subjIcon_abs='<i class="fas fa-signature grey-icon"></i>'
+var subjIcon_info='<i class="fas fa-info-circle grey-icon"></i>'
+var subjIcon_pen='<i class="fas fa-pen grey-icon"></i>'
 var oaicon='<span class="ai ai-open-access"></span>'
 var pdficon='<a href="%PDFLINK" target="_blank"><span class="far fa-file-pdf publink"></span></a>'
 var githubicon='<a href="%GITHUBLINK" target="_blank"><span class="fab fa-github publink"></span></a>'
@@ -26,7 +26,7 @@ var osficon='<a href="%OSFLINK" target="_blank"><span class="ai ai-osf"></span><
 var pubTemplate ='<div class="row"><div class="col process p-3 %TYPECLASS">\
               <span class="number">%SUBJICON</span>\
               <div>\
-                <h3>%OAICON<a href="%EXTLINK" target="_blank">%SUMMARY</a></h3>\
+                <h3 class="pub-title">%OAICON<a href="%EXTLINK" target="_blank">%SUMMARY</a></h3>\
                 <p>%PDFICON%GITHUB%FULLREF</p>\
               </div>\
             </div></div>'

@@ -84,7 +84,6 @@ referencing
 using-zotero-and-.bib-files
 reference-as-you-write
 word-processor-integration
-nutshells-8
 markdown-generally
 open-document
 low-mark
